@@ -40,7 +40,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
             <CheckCircle2 className="w-16 h-16 text-emerald-400 mx-auto animate-bounce" />
             <h3 className="text-2xl font-bold font-syne uppercase">Consultation Request Received</h3>
             <p className="text-sm text-neutral-300 max-w-md mx-auto leading-relaxed">
-              Thank you for reaching out to RENOVA. Our lead interior architect will review your project requirements and get in touch within 24 business hours.
+              Thank you for reaching out to 2BHK Interiors. Our lead interior architect will review your project requirements and get in touch within 24 business hours.
             </p>
             <button
               onClick={handleReset}

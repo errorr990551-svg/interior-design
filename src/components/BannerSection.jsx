@@ -9,7 +9,7 @@ export default function BannerSection({ onExpandBanner }) {
           <div className="relative aspect-4/3 sm:aspect-video md:aspect-21/10 w-full overflow-hidden bg-neutral-100">
             <img
               src="/images/banner.jpg"
-              alt="RENOVA Japanese Wabi-Sabi Sanctuary Living Architecture"
+              alt="2BHK Interiors Japanese Wabi-Sabi Sanctuary Living Architecture"
               className="w-full h-full object-cover object-center hd-image filter brightness-[1.04] contrast-[1.08] saturate-[1.04] transition-transform duration-1000 group-hover:scale-105"
             />
 

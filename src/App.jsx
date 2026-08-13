@@ -42,7 +42,7 @@ export default function App() {
       {/* 2. Hero Section */}
       <Hero onOpenConsultation={handleOpenConsultation} />
 
-      {/* 3. Behind Renova (Studio & 3 Grid Service Cards) */}
+      {/* 3. Behind 2BHK Interiors (Studio & 3 Grid Service Cards) */}
       <BehindRenova onLearnMore={handleOpenConsultation} />
 
       {/* 4. Project Highlight Showcase */}

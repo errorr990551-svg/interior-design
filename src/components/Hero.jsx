@@ -12,7 +12,7 @@ export default function Hero({ onOpenConsultation }) {
       <div className="absolute inset-0 z-0">
         <img
           src="/images/hero-bg.jpg"
-          alt="RENOVA Japanese Wabi-Sabi Sanctuary Architecture"
+          alt="2BHK Interiors Japanese Wabi-Sabi Sanctuary Architecture"
           className="w-full h-full object-cover object-center hd-image filter brightness-[0.95] contrast-[1.05] saturate-[1.02] transition-all duration-700"
         />
         {/* Dual gradient overlay to ensure top navbar and bottom text are 100% visible */}
@@ -47,7 +47,7 @@ export default function Hero({ onOpenConsultation }) {
           {/* Description */}
           <div className="md:col-span-5">
             <p className="text-sm sm:text-base text-neutral-100 leading-relaxed font-normal max-w-lg drop-shadow-sm">
-              Renova creates functional, timeless interiors tailored to the way you live.
+              2BHK Interiors creates functional, timeless interiors tailored to the way you live.
             </p>
           </div>
 

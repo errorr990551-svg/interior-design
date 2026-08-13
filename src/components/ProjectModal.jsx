@@ -36,7 +36,7 @@ export default function ProjectModal({ project, imageUrl, onClose, onBookConsult
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-6">
             <div>
               <span className="text-xs font-mono tracking-widest text-neutral-400 uppercase block mb-1">
-                RENOVA PORTFOLIO SELECTION
+                2BHK INTERIORS PORTFOLIO SELECTION
               </span>
               <h2 className="text-2xl sm:text-4xl font-bold font-syne tracking-tight">
                 {displayTitle}

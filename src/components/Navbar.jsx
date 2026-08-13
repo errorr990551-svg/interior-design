@@ -34,12 +34,12 @@ export default function Navbar({ onOpenConsultation }) {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
-        {/* Brand Logo */}
         <a
           href="#"
-          className="text-2xl font-bold tracking-[0.18em] text-white font-syne hover:opacity-80 transition-opacity"
+          className="text-2xl font-syne text-white hover:opacity-80 transition-opacity flex items-center gap-2"
         >
-          RENOVA
+          <span className="font-extrabold tracking-tight">2BHK</span>
+          <span className="font-light tracking-[0.25em] text-neutral-300 text-lg uppercase">INTERIORS</span>
         </a>
 
         {/* Desktop Navigation */}

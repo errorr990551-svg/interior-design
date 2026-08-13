@@ -7,7 +7,7 @@ export default function Testimonials() {
   const testimonials = [
     {
       quote:
-        '“Renova completely changed the atmosphere of our home, blending beauty and function effortlessly.”',
+        '“2BHK Interiors completely changed the atmosphere of our home, blending beauty and function effortlessly.”',
       author: 'SARAH',
       role: 'RESIDENTIAL CLIENT',
     },
@@ -25,13 +25,13 @@ export default function Testimonials() {
     },
     {
       quote:
-        '“Working with Renova felt like a true partnership. Every detail was crafted with spatial intelligence and warmth.”',
+        '“Working with 2BHK Interiors felt like a true partnership. Every detail was crafted with spatial intelligence and warmth.”',
       author: 'DAVID K.',
       role: 'ARCHITECT & RESIDENT',
     },
     {
       quote:
-        '“Timeless, functional, and deeply inspiring. Renova delivered a home that reflects exactly how we love to live.”',
+        '“Timeless, functional, and deeply inspiring. 2BHK Interiors delivered a home that reflects exactly how we love to live.”',
       author: 'CLARA & HANS',
       role: 'PRIVATE VILLA CLIENT',
     },

@@ -106,7 +106,7 @@ export default function ProjectHighlight({ onOpenGallery }) {
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                 <span className="text-xs font-mono tracking-widest uppercase text-white bg-black/60 px-4 py-2 backdrop-blur-md rounded border border-white/20">
-                  RENOVA STUDIO SELECTION
+                  2BHK INTERIORS STUDIO SELECTION
                 </span>
               </div>
             </div>

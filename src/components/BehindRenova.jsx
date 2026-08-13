@@ -46,12 +46,12 @@ export default function BehindRenova({ onLearnMore }) {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 pb-16">
           <div className="md:col-span-4 space-y-4">
             <span className="text-xs font-semibold tracking-widest uppercase text-neutral-500 font-syne block">
-              BEHIND RENOVA
+              BEHIND 2BHK INTERIORS
             </span>
             <div className="overflow-hidden rounded-sm shadow-xl bg-neutral-900 aspect-4/3 md:aspect-3/4 relative group border border-neutral-200">
               <img
                 src="/images/process-desk.jpg"
-                alt="RENOVA Studio Architecture & Philosophy"
+                alt="2BHK Interiors Studio Architecture & Philosophy"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-90 group-hover:opacity-60 transition-opacity p-4 flex items-end">

@@ -67,7 +67,7 @@ export default function Footer({ onOpenConsultation }) {
               <div className="bg-neutral-900 border border-white/20 rounded-lg p-6 flex items-center gap-4 text-emerald-400 animate-fadeIn">
                 <CheckCircle2 className="w-6 h-6 shrink-0" />
                 <div>
-                  <p className="font-semibold text-sm">Welcome to RENOVA Private Journal</p>
+                  <p className="font-semibold text-sm">Welcome to 2BHK Interiors Private Journal</p>
                   <p className="text-xs text-neutral-400">We've sent a confirmation to your email.</p>
                 </div>
               </div>
@@ -97,8 +97,9 @@ export default function Footer({ onOpenConsultation }) {
         <div className="py-20 grid grid-cols-1 md:grid-cols-12 gap-12 border-b border-white/10">
           {/* Brand Logo & Statement */}
           <div className="md:col-span-4 space-y-6">
-            <a href="#" className="text-3xl font-bold tracking-[0.2em] font-syne text-white block">
-              RENOVA
+            <a href="#" className="text-3xl font-syne text-white block hover:opacity-80 transition-opacity">
+              <span className="font-extrabold tracking-tight">2BHK</span>
+              <span className="font-light tracking-[0.25em] text-neutral-300 text-2xl uppercase ml-2.5">INTERIORS</span>
             </a>
             <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed font-light max-w-sm">
               An international interior design and architecture studio dedicated to timeless beauty, acoustic harmony, and spatial craftsmanship.
@@ -174,7 +175,7 @@ export default function Footer({ onOpenConsultation }) {
 
         {/* Bottom Copyright & Back to Top */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
-          <p>© 2026 RENOVA Interior Design Studio. All rights reserved.</p>
+          <p>© 2026 2BHK Interiors Studio. All rights reserved.</p>
 
           <button
             onClick={scrollToTop}
