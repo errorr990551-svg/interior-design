@@ -4,11 +4,12 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
+import PortfolioPage from './pages/PortfolioPage';
 import ConsultationModal from './components/ConsultationModal';
 import ProjectModal from './components/ProjectModal';
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState('home'); // 'home' | 'about' | 'services'
+  const [currentPage, setCurrentPage] = useState('home'); // 'home' | 'about' | 'services' | 'portfolio'
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
   const [modalImageUrl, setModalImageUrl] = useState(null);
@@ -22,6 +23,10 @@ export default function App() {
   const handleCloseConsultation = () => setIsConsultationOpen(false);
 
   const handleSelectProject = (project) => {
+    if (project?.isPdf) {
+      handleNavigate('portfolio');
+      return;
+    }
     setSelectedProject(project);
     setModalImageUrl(null);
   };
@@ -54,6 +59,7 @@ export default function App() {
             onOpenGallery={handleOpenGallery}
             onNavigateToAbout={() => handleNavigate('about')}
             onNavigateToServices={() => handleNavigate('services')}
+            onNavigateToPortfolio={() => handleNavigate('portfolio')}
           />
         )}
 
@@ -68,6 +74,14 @@ export default function App() {
           <ServicesPage
             onOpenConsultation={handleOpenConsultation}
             onNavigateHome={() => handleNavigate('home')}
+          />
+        )}
+
+        {currentPage === 'portfolio' && (
+          <PortfolioPage
+            onOpenConsultation={handleOpenConsultation}
+            onNavigateHome={() => handleNavigate('home')}
+            onSelectProject={handleSelectProject}
           />
         )}
       </main>

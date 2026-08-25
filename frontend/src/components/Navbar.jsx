@@ -36,7 +36,7 @@ export default function Navbar({ currentPage = 'home', onNavigate, onOpenConsult
     { name: 'Home', page: 'home', sectionId: null },
     { name: 'About Studio', page: 'about', sectionId: null },
     { name: 'Services', page: 'services', sectionId: null },
-    { name: 'Portfolio', page: 'home', sectionId: 'work' },
+    { name: 'Portfolio', page: 'portfolio', sectionId: null },
     { name: 'Process', page: 'home', sectionId: 'process' },
   ];
 
@@ -122,7 +122,7 @@ export default function Navbar({ currentPage = 'home', onNavigate, onOpenConsult
                   setMobileMenuOpen(false);
                   onOpenConsultation();
                 }}
-                className="w-full flex items-center justify-center gap-2 text-xs font-semibold tracking-widest uppercase bg-amber-400 text-black py-3 rounded-full hover:bg-amber-300 transition-colors"
+                className="w-full flex items-center justify-center gap-2 text-xs font-bold tracking-widest uppercase bg-amber-400 text-black py-3 rounded-full hover:bg-amber-300 transition-colors"
               >
                 <span>Book Consultation</span>
                 <ArrowUpRight className="w-4 h-4" />

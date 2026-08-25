@@ -187,11 +187,20 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
               </li>
               <li>
                 <button
-                  onClick={() => handleNavClick('home', 'work')}
+                  onClick={() => handleNavClick('portfolio')}
                   className="text-xs text-neutral-300 hover:text-white transition-colors bg-transparent border-0 p-0 cursor-pointer"
                 >
-                  Featured Portfolio
+                  Master Portfolio Deck
                 </button>
+              </li>
+              <li>
+                <a
+                  href="/pptt.pdf"
+                  download="2BHK_Interiors_Portfolio_Presentation.pdf"
+                  className="text-xs text-amber-300 font-semibold hover:text-amber-200 transition-colors inline-flex items-center gap-1"
+                >
+                  <span>Download Portfolio PDF</span>
+                </a>
               </li>
               <li>
                 <button

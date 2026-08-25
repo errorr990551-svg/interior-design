@@ -17,6 +17,7 @@ export default function HomePage({
   onOpenGallery,
   onNavigateToAbout,
   onNavigateToServices,
+  onNavigateToPortfolio,
 }) {
   const homeFaqs = [
     {
@@ -60,7 +61,7 @@ export default function HomePage({
       {/* 4. Portfolio Projects */}
       <RecentTransformations
         onSelectProject={onSelectProject}
-        onViewAll={onOpenConsultation}
+        onViewAll={onNavigateToPortfolio || onOpenConsultation}
       />
 
       {/* 5. 5-Step Design Process */}

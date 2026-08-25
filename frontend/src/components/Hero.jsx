@@ -1,4 +1,4 @@
-import { ArrowUpRight, ChevronDown } from 'lucide-react';
+import { ArrowUpRight, ChevronDown, Download } from 'lucide-react';
 
 export default function Hero({ onOpenConsultation, onNavigateToWork }) {
   const scrollToExplore = () => {
