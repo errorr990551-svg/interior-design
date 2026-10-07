@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- 1. Home Page -->
+  <url>
+    <loc>https://2bhkinteriors.com/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://2bhkinteriors.com/images/home_hero_bg.jpg</image:loc>
+      <image:title>2BHK Interiors — Luxury Residential Interior Design Studio Mumbai</image:title>
+      <image:caption>Timeless Architecture &amp; Luxury Interior Spaces</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://2bhkinteriors.com/images/project-highlight.jpg</image:loc>
+      <image:title>Featured Architectural Showcase</image:title>
+    </image:image>
+  </url>
+
+  <!-- 2. About Studio Page -->
+  <url>
+    <loc>https://2bhkinteriors.com/about</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://2bhkinteriors.com/images/about_banner.jpg</image:loc>
+      <image:title>2BHK Interiors Studio Philosophy &amp; Craftsmanship</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://2bhkinteriors.com/images/about_story.jpg</image:loc>
+      <image:title>Studio Story and Interior Design Practice</image:title>
+    </image:image>
+  </url>
+
+  <!-- 3. Services Page -->
+  <url>
+    <loc>https://2bhkinteriors.com/services</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://2bhkinteriors.com/images/service_moodboard.jpg</image:loc>
+      <image:title>Tactile Mood Boards &amp; Material Palettes</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://2bhkinteriors.com/images/service_2d_plan.jpg</image:loc>
+      <image:title>2D Space Planning &amp; Architectural Layouts</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://2bhkinteriors.com/images/service_3d_render.jpg</image:loc>
+      <image:title>Photorealistic 3D Visualisation &amp; CGI Walkthroughs</image:title>
+    </image:image>
+  </url>
+
+  <!-- 4. Master Portfolio Page -->
+  <url>
+    <loc>https://2bhkinteriors.com/portfolio</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://2bhkinteriors.com/images/linden-house.jpg</image:loc>
+      <image:title>The Linden House - Private Residence Interior</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://2bhkinteriors.com/images/urban-dwelling.jpg</image:loc>
+      <image:title>Urban Dwelling - Contemporary Apartment Design</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://2bhkinteriors.com/images/casa-serene.jpg</image:loc>
+      <image:title>Casa Serene - Luxury Residential Renovation</image:title>
+    </image:image>
+  </url>
+
+  <!-- 5. Downloadable Master Presentation PDF -->
+  <url>
+    <loc>https://2bhkinteriors.com/pptt.pdf</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

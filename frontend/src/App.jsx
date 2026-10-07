@@ -7,6 +7,7 @@ import ServicesPage from './pages/ServicesPage';
 import PortfolioPage from './pages/PortfolioPage';
 import ConsultationModal from './components/ConsultationModal';
 import ProjectModal from './components/ProjectModal';
+import { RobotsMeta } from './robot';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home'); // 'home' | 'about' | 'services' | 'portfolio'
@@ -43,6 +44,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#0e0e0e] text-[#f5f5f5] selection:bg-amber-400 selection:text-black">
+      {/* Search Engine Robots & Sitemap Metadata Sync */}
+      <RobotsMeta index={true} follow={true} maxImagePreview="large" />
+
       {/* 1. Global Navigation Bar */}
       <Navbar
         currentPage={currentPage}

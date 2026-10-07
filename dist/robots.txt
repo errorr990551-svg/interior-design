@@ -1,0 +1,13 @@
+# https://www.robotstxt.org/robotstxt.html
+# Robots.txt for 2BHK Interiors Studio (https://2bhkinteriors.com)
+
+User-agent: *
+Allow: /
+Allow: /images/
+Allow: /pptt.pdf
+
+# Crawl Delay to prevent search bot overload
+Crawl-delay: 1
+
+# XML Sitemap Location
+Sitemap: https://2bhkinteriors.com/sitemap.xml
