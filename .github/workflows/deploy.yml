@@ -90,3 +90,4 @@ jobs:
           DEPLOY_TOKEN: ${{ steps.generate-extractor.outputs.deploy_token }}
           SITE_URL: ${{ secrets.SITE_URL || 'https://2bhkinteriors.com' }}
         run: node .github/scripts/fast_deploy.mjs
+
