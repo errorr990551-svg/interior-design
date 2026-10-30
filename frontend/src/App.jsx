@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -15,13 +15,38 @@ export default function App() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [modalImageUrl, setModalImageUrl] = useState(null);
 
+  // Trigger consultation popup on first visit on any page
+  useEffect(() => {
+    try {
+      const searchParams = new URLSearchParams(window.location.search);
+      const forcePopup = searchParams.get('popup') === 'true' || searchParams.get('test') === 'true';
+
+      const hasSeen = localStorage.getItem('twobhk_seen_consultation_popup');
+      if (!hasSeen || forcePopup) {
+        const timer = setTimeout(() => {
+          setIsConsultationOpen(true);
+          localStorage.setItem('twobhk_seen_consultation_popup', 'true');
+        }, 1500);
+
+        return () => clearTimeout(timer);
+      }
+    } catch (e) {
+      console.warn('LocalStorage access warning:', e);
+    }
+  }, []);
+
   const handleNavigate = (page) => {
     setCurrentPage(page);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleOpenConsultation = () => setIsConsultationOpen(true);
-  const handleCloseConsultation = () => setIsConsultationOpen(false);
+  const handleCloseConsultation = () => {
+    setIsConsultationOpen(false);
+    try {
+      localStorage.setItem('twobhk_seen_consultation_popup', 'true');
+    } catch (_) {}
+  };
 
   const handleSelectProject = (project) => {
     if (project?.isPdf) {
