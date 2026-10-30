@@ -1,0 +1,335 @@
+{
+  "city": "pune",
+  "checked": "2026-10-30",
+  "facts": [
+    {
+      "id": "pune-ls-served",
+      "claim": "Livspace lists Pune as a city it serves, with experience centres where homeowners can meet its designers.",
+      "source_url": "https://www.livspace.com/in/interiors/pune",
+      "source_title": "Interior Designers in Pune",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "Visit Your Nearest Livspace Experience Centre in Pune and Meet Our Home Interior Designers",
+      "city_specific": true,
+      "source_type": "Livspace city page"
+    },
+    {
+      "id": "pune-ls-centres",
+      "claim": "Livspace lists Pune locations at NIBM, Kharadi, Bibwewadi, Hinjawadi, Pimpri Chinchwad (Rahatani), Baner and Bhawani Peth, plus \"Bello by Livspace\" modular kitchen and wardrobe stores in Kharadi and Baner.",
+      "source_url": "https://www.livspace.com/in/interiors/pune",
+      "source_title": "Interior Designers in Pune",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "NIBM, Pune Kharadi, Pune Bibwewadi, Pune Bello by Livspace, Kharadi Hinjawadi, Pune Pimpri Chinchwad, Pune Bello by Livspace, Baner Baner, Pune Bhawani Peth, Pune",
+      "city_specific": true,
+      "source_type": "Livspace city page"
+    },
+    {
+      "id": "pune-ls-appointments",
+      "claim": "Pune locations offer a 30-minute experience centre tour and a 60-minute design consultation.",
+      "source_url": "https://www.livspace.com/in/interiors/pune",
+      "source_title": "Interior Designers in Pune",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "Appointment types Experience Centre Tour - 30 minutes Design consultation - 60 minutes",
+      "city_specific": true,
+      "source_type": "Livspace city page"
+    },
+    {
+      "id": "pune-ls-prices",
+      "claim": "Livspace's Pune page lists starting prices of ₹3.57 lakh (2BHK), ₹4.23 lakh (3BHK), ₹4.81 lakh (4BHK) and ₹1.37 lakh (modular kitchen), covering only modular interiors for new homes.",
+      "source_url": "https://www.livspace.com/in/interiors/pune",
+      "source_title": "Interior Designers in Pune",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "2BHK Starting at 3.57L* 3BHK Starting at 4.23L* 4BHK Starting at 4.81L* Modular kitchens Starting at 1.37L* ... *The prices include only modular interiors for new homes.",
+      "city_specific": false,
+      "source_type": "Livspace city page",
+      "note": "Same figures appear on the Nashik page, so treat as national starting prices."
+    },
+    {
+      "id": "pune-ls-scope",
+      "claim": "Livspace says it also handles flooring, painting, false ceiling and plumbing work.",
+      "source_url": "https://www.livspace.com/in/interiors/pune",
+      "source_title": "Interior Designers in Pune",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "We handle the heavy lifting for you, including flooring, painting, false ceiling, plumbing and everything in between",
+      "city_specific": false,
+      "source_type": "Livspace city page"
+    },
+    {
+      "id": "pune-ls-timeline",
+      "claim": "Livspace's Pune FAQ says modular solutions are installed within 45 days and full-home interiors take around 90 days, varying by project.",
+      "source_url": "https://www.livspace.com/in/interiors/pune",
+      "source_title": "Interior Designers in Pune",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "all the modular solutions will be installed within a period of 45 days. To complete your full home interiors, we take around 90 days to complete your interior design project. However, the completion timeline may vary",
+      "city_specific": false,
+      "source_type": "Livspace city page"
+    },
+    {
+      "id": "pune-ls-45day-caveat",
+      "claim": "Livspace's 45-day installation claim applies to select finishes on modular products.",
+      "source_url": "https://www.livspace.com/in/interiors/pune",
+      "source_title": "Interior Designers in Pune",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "45-day installation^ ... ^For select finishes on modular products",
+      "city_specific": false,
+      "source_type": "Livspace city page"
+    },
+    {
+      "id": "pune-ls-warranty",
+      "claim": "Livspace advertises a lifetime warranty for modular and semi-modular products, with full scope on its service page.",
+      "source_url": "https://www.livspace.com/in/interiors/pune",
+      "source_title": "Interior Designers in Pune",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "T&Cs apply: *Lifetime warranty for modular and semi-modular products. For full scope on warranty, please visit www.livspace.com/in/service",
+      "city_specific": false,
+      "source_type": "Livspace city page"
+    },
+    {
+      "id": "pune-ls-warranty-10yr",
+      "claim": "The FAQ on the same Livspace Pune page refers to a 10-year product warranty.",
+      "source_url": "https://www.livspace.com/in/interiors/pune",
+      "source_title": "Interior Designers in Pune",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "What's covered under the 10-year product warranty?",
+      "city_specific": false,
+      "source_type": "Livspace city page",
+      "note": "Conflicts with the lifetime-warranty line on the same page; readers are told to get warranty terms in writing."
+    },
+    {
+      "id": "pune-ls-estimates",
+      "claim": "Livspace's Pune FAQ publishes its own per-sq-ft and package estimates.",
+      "source_url": "https://www.livspace.com/in/interiors/pune",
+      "source_title": "Interior Designers in Pune",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "What's the ₹/sq ft rate for interior design in Pune?",
+      "city_specific": false,
+      "source_type": "Livspace city page",
+      "note": "Figures not reproduced because they are Livspace marketing estimates without a stated basis."
+    },
+    {
+      "id": "ls-payments",
+      "claim": "Livspace asks for 10% of the final quote or ₹49,000 (whichever is higher) to book, a cumulative 60% to place the order, and 100% when materials are ready for dispatch.",
+      "source_url": "https://www.livspace.com/in/interiors/how-it-works",
+      "source_title": "How it works",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "pay 10% of the final quote or ₹49,000 (whichever is higher) to book us. ... Confirm your order with 60% payment ... Pay 100% at intimation of material dispatch",
+      "city_specific": false,
+      "source_type": "Livspace process page"
+    },
+    {
+      "id": "ls-roles",
+      "claim": "Livspace assigns a Design Lead and a Business Manager to each project.",
+      "source_url": "https://www.livspace.com/in/interiors/how-it-works",
+      "source_title": "How it works",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "The Design Lead (DL) The Design Lead gets to know your requirements and your lifestyle ... your Business Manager oversees the entire design process",
+      "city_specific": false,
+      "source_type": "Livspace process page"
+    },
+    {
+      "id": "pune-imd-rain",
+      "claim": "Pune (IMD station 43063) receives 841.2 mm of rain a year on average over 51.3 rainy days (1991–2020).",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-10-30",
+      "quote": "STATION : PUNE ... ANNUAL TOTAL OR MEAN  I  948.5  22.1  19.0  31.9  18.1  41.3  6.1  43.3  30  1.7  17  75  20.2  3.5  1.8  841.2  51.3",
+      "city_specific": true,
+      "source_type": "IMD climate normals",
+      "note": "Row I columns: station-level pressure, dry bulb, wet bulb, mean daily max, mean daily min, highest in month, lowest in month, extreme highest, date, extreme lowest, date, relative humidity (08:30 IST), vapour pressure, all clouds, low clouds, rainfall total (mm), rainy days, wettest month, driest month, heaviest 24h fall, date, wind speed. Row II repeats some fields for 17:30 IST (relative humidity in the 5th value) and extreme years."
+    },
+    {
+      "id": "pune-imd-monsoon",
+      "claim": "June to September bring 183.9, 190.0, 156.3 and 140.4 mm, 670.6 mm in total, which is about 80% of Pune's annual 841.2 mm.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-10-30",
+      "quote": "JUN I ... 183.9 9.3 | JUL I ... 190.0 13.1 | AUG I ... 156.3 10.8 | SEP I ... 140.4 8.3",
+      "city_specific": true,
+      "source_type": "IMD climate normals",
+      "note": "670.6 / 841.2 = 79.7%"
+    },
+    {
+      "id": "pune-imd-humidity",
+      "claim": "Pune's average relative humidity is 84% at 08:30 and 77% at 17:30 in July, 86% and 79% in August, falling to 57% and 22% in March.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-10-30",
+      "quote": "MAR I ... 57 ... II ... 22 | JUL I ... 84 ... II ... 77 | AUG I ... 86 ... II ... 79",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "pune-imd-heat",
+      "claim": "April is Pune's hottest month, with an average daily maximum of 37.9 °C; the station's record is 43.3 °C.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-10-30",
+      "quote": "अप्रैल APR I 948.6 26.7 19.2 37.9 19.9 40.6 15.1 43.3",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "pune-imd-winter",
+      "claim": "January nights in Pune average a minimum of 11.2 °C.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-10-30",
+      "quote": "जनवरी JAN I 952.6 14.2 13.1 29.8 11.2",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "pune-kf-sales",
+      "claim": "Knight Frank recorded 24,890 homes sold in Pune in H1 2026 (up 2% year on year), 31,116 units launched (up 17%) and an average price of INR 10,063 per sq ft (up 5%).",
+      "source_url": "https://www.punekarnews.in/pune-records-highest-ever-half-year-office-leasing-in-h1-2026-residential-sales-remain-resilient-as-launches-rise-17-yoy/",
+      "source_title": "Pune records highest-ever half-year office leasing in H1 2026 (reporting Knight Frank India Real Estate H1 2026)",
+      "publisher": "Punekar News / Knight Frank India",
+      "date_accessed": "2026-10-30",
+      "quote": "Pune continued to witness healthy end-user demand with 24,890 housing units sold during H1 2026 , a 2% YoY increase. Developers remained confident about the market outlook, launching 31,116 new housing units , reflecting a 17% YoY growth. Residential prices also continued their upward trajectory, increasing 5% YoY to an average of INR 10,063 per sq ft",
+      "city_specific": true,
+      "source_type": "Real-estate research (Knight Frank)"
+    },
+    {
+      "id": "pune-kf-tickets",
+      "claim": "In H1 2026 the share of Pune homes priced below INR 5 million fell, while the INR 5–10 million and 10–20 million bands took a larger share of sales.",
+      "source_url": "https://www.punekarnews.in/pune-records-highest-ever-half-year-office-leasing-in-h1-2026-residential-sales-remain-resilient-as-launches-rise-17-yoy/",
+      "source_title": "Pune records highest-ever half-year office leasing in H1 2026 (reporting Knight Frank India Real Estate H1 2026)",
+      "publisher": "Punekar News / Knight Frank India",
+      "date_accessed": "2026-10-30",
+      "quote": "The share of homes priced below INR 5 mn declined , while the INR 5–10 mn and INR 10–20 mn categories accounted for a larger share of overall sales.",
+      "city_specific": true,
+      "source_type": "Real-estate research (Knight Frank)"
+    },
+    {
+      "id": "pune-kf-localities",
+      "claim": "Knight Frank names Baner, Kharadi and Hinjewadi as locations with healthy buyer interest, citing employment centres, connectivity and projects with larger homes.",
+      "source_url": "https://www.punekarnews.in/pune-records-highest-ever-half-year-office-leasing-in-h1-2026-residential-sales-remain-resilient-as-launches-rise-17-yoy/",
+      "source_title": "Pune records highest-ever half-year office leasing in H1 2026 (reporting Knight Frank India Real Estate H1 2026)",
+      "publisher": "Punekar News / Knight Frank India",
+      "date_accessed": "2026-10-30",
+      "quote": "Locations such as Baner, Kharadi and Hinjewadi continued to witness healthy buyer interest owing to their proximity to major employment centres, improving connectivity and projects offering larger homes and enhanced lifestyle amenities.",
+      "city_specific": true,
+      "source_type": "Real-estate research (Knight Frank)"
+    },
+    {
+      "id": "pune-kf-corridors",
+      "claim": "Developers in Pune are concentrating launches in the western and eastern growth corridors.",
+      "source_url": "https://www.punekarnews.in/pune-records-highest-ever-half-year-office-leasing-in-h1-2026-residential-sales-remain-resilient-as-launches-rise-17-yoy/",
+      "source_title": "Pune records highest-ever half-year office leasing in H1 2026 (reporting Knight Frank India Real Estate H1 2026)",
+      "publisher": "Punekar News / Knight Frank India",
+      "date_accessed": "2026-10-30",
+      "quote": "with developers focusing on Pune’s western and eastern growth corridors where employment hubs and improving connectivity continue to drive demand",
+      "city_specific": true,
+      "source_type": "Real-estate research (Knight Frank)"
+    },
+    {
+      "id": "pune-kf-metro",
+      "claim": "The report expects the phased rollout of Metro Line 3 between Hinjewadi and Shivajinagar, and planned metro expansion towards Kharadi and Hadapsar.",
+      "source_url": "https://www.punekarnews.in/pune-records-highest-ever-half-year-office-leasing-in-h1-2026-residential-sales-remain-resilient-as-launches-rise-17-yoy/",
+      "source_title": "Pune records highest-ever half-year office leasing in H1 2026 (reporting Knight Frank India Real Estate H1 2026)",
+      "publisher": "Punekar News / Knight Frank India",
+      "date_accessed": "2026-10-30",
+      "quote": "including the phased rollout of Metro Line 3 connecting Hinjewadi and Shivajinagar , planned metro expansion towards Kharadi and Hadapsar",
+      "city_specific": true,
+      "source_type": "Real-estate research (Knight Frank)"
+    },
+    {
+      "id": "pune-kf-office",
+      "claim": "Pune recorded 6.6 million sq ft of office leasing in H1 2026, with Hinjawadi and Wakad in the largest office district (PBD West, 33% of transactions).",
+      "source_url": "https://www.punekarnews.in/pune-records-highest-ever-half-year-office-leasing-in-h1-2026-residential-sales-remain-resilient-as-launches-rise-17-yoy/",
+      "source_title": "Pune records highest-ever half-year office leasing in H1 2026 (reporting Knight Frank India Real Estate H1 2026)",
+      "publisher": "Punekar News / Knight Frank India",
+      "date_accessed": "2026-10-30",
+      "quote": "Peripheral Business District (PBD) West emerged as the city’s largest office destination, accounting for 33% of transactions ... supported by large contiguous office spaces in Hinjawadi and Wakad",
+      "city_specific": true,
+      "source_type": "Real-estate research (Knight Frank)"
+    },
+    {
+      "id": "pune-census",
+      "claim": "Pune Municipal Corporation had 3,124,458 residents in the 2011 Census.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/42876/download/46544/CLASS_I.xlsx",
+      "source_title": "Census 2011 Table A-4: Towns and Urban Agglomerations by population size class",
+      "publisher": "Census of India",
+      "date_accessed": "2026-10-30",
+      "quote": "(a) Pune [5] ... 2011 ... 3124458",
+      "city_specific": true,
+      "source_type": "Census of India"
+    },
+    {
+      "id": "nashik-imd-ref",
+      "claim": "Nashik receives a similar annual total (845.9 mm) but about 86% of it falls June to September, with July alone at 240.6 mm.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-10-30",
+      "quote": "STATION : NASHIK ... 845.9 52.0 ; JUN-SEP 120.1 / 240.6 / 196.5 / 169.4",
+      "city_specific": false,
+      "source_type": "IMD climate normals"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What is the cost for a 2 BHK interior in Pune?",
+      "source": "https://www.livspace.com/in/interiors/pune"
+    },
+    {
+      "q": "What's the ₹/sq ft rate for interior design in Pune?",
+      "source": "https://www.livspace.com/in/interiors/pune"
+    },
+    {
+      "q": "How do designers charge—% or per sq ft?",
+      "source": "https://www.livspace.com/in/interiors/pune"
+    },
+    {
+      "q": "What is the timeline for kitchen handover via Livspace?",
+      "source": "https://www.livspace.com/in/interiors/pune"
+    },
+    {
+      "q": "Do quotes include false ceiling, painting, lighting & electricals?",
+      "source": "https://www.livspace.com/in/interiors/pune"
+    },
+    {
+      "q": "Can I get local project references in my society (Baner/Wakad)?",
+      "source": "https://www.livspace.com/in/interiors/pune"
+    }
+  ],
+  "questions_note": "Google \"People also ask\" could not be read from this environment; questions are taken from the FAQ headings on Livspace's Pune page, which mirror common searches.",
+  "removed_claims": [
+    {
+      "claim": "Livspace has delivered 18,073+ / 16,601+ homes in Pune",
+      "reason": "The same Livspace page gives two different numbers; not used."
+    },
+    {
+      "claim": "Interior rates of ₹1,000–6,000 per sq ft and 2BHK ranges of ₹3.5–10 lakh (Livspace FAQ)",
+      "reason": "Livspace marketing estimates without a stated basis; only the dated 'starting at' prices are quoted."
+    },
+    {
+      "claim": "Typical Pune 2BHK/3BHK carpet areas",
+      "reason": "No credible, current source found; page gives size-led guidance without figures."
+    },
+    {
+      "claim": "Customer reviews and ratings shown on the Livspace page",
+      "reason": "Rule 3: no reviews or ratings reproduced."
+    },
+    {
+      "claim": "Experience-centre street addresses and phone numbers",
+      "reason": "These change; the page names localities and links to Livspace for current details."
+    }
+  ]
+}

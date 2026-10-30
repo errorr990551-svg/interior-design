@@ -1,0 +1,321 @@
+{
+  "city": "nashik",
+  "checked": "2026-10-30",
+  "facts": [
+    {
+      "id": "nashik-ls-served",
+      "claim": "Livspace lists Nashik as a city it serves, with experience centres where homeowners can meet its designers.",
+      "source_url": "https://www.livspace.com/in/interiors/nashik",
+      "source_title": "Interior Designers in Nashik",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "Eager to see your future home? Visit our Livspace experience centers and connect with the best interior designers in Nashik.",
+      "city_specific": true,
+      "source_type": "Livspace city page"
+    },
+    {
+      "id": "nashik-ls-centres",
+      "claim": "Livspace lists two Nashik locations: a \"Bello by Livspace\" modular kitchens and wardrobes store at Mumbai Naka, and a Livspace Interior Design Studio at Sharanpur near Canada Corner.",
+      "source_url": "https://www.livspace.com/in/interiors/nashik",
+      "source_title": "Interior Designers in Nashik",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "Bello by Livspace, Mumbai Naka - Modular Kitchens & Wardrobes ... Livspace - Interior Design Studio - ... Sharanpur Link Rd, Near Canada Corner",
+      "city_specific": true,
+      "source_type": "Livspace city page"
+    },
+    {
+      "id": "nashik-ls-hours",
+      "claim": "Both Nashik locations are listed as open Tuesday to Sunday (Mumbai Naka 10 AM–7 PM, Sharanpur 11 AM–8 PM).",
+      "source_url": "https://www.livspace.com/in/interiors/nashik",
+      "source_title": "Interior Designers in Nashik",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "Tuesday to Sunday | 10 AM - 7 PM ... Tuesday to Sunday | 11 AM - 8 PM",
+      "city_specific": true,
+      "source_type": "Livspace city page"
+    },
+    {
+      "id": "nashik-ls-appointments",
+      "claim": "Nashik locations offer a 30-minute experience centre tour and a 60-minute design consultation.",
+      "source_url": "https://www.livspace.com/in/interiors/nashik",
+      "source_title": "Interior Designers in Nashik",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "Appointment types Experience Centre Tour - 30 minutes Design consultation - 60 minutes",
+      "city_specific": true,
+      "source_type": "Livspace city page"
+    },
+    {
+      "id": "nashik-ls-prices",
+      "claim": "Livspace's Nashik page lists the same starting prices as its Pune page: ₹3.57 lakh (2BHK), ₹4.23 lakh (3BHK), ₹4.81 lakh (4BHK), ₹1.37 lakh (modular kitchen), for modular interiors in new homes only.",
+      "source_url": "https://www.livspace.com/in/interiors/nashik",
+      "source_title": "Interior Designers in Nashik",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "2BHK Starting at 3.57L* 3BHK Starting at 4.23L* 4BHK Starting at 4.81L* Modular kitchens Starting at 1.37L* ... *The prices include only modular interiors for new homes.",
+      "city_specific": false,
+      "source_type": "Livspace city page"
+    },
+    {
+      "id": "nashik-ls-scope",
+      "claim": "Livspace says it also handles flooring, painting, false ceiling and plumbing.",
+      "source_url": "https://www.livspace.com/in/interiors/nashik",
+      "source_title": "Interior Designers in Nashik",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "We'll do all the heavy-lifting–flooring, painting, false ceiling, plumbing and everything else in between",
+      "city_specific": false,
+      "source_type": "Livspace city page"
+    },
+    {
+      "id": "nashik-ls-warranty",
+      "claim": "Livspace's Nashik FAQ mentions \"up to 10 years of warranty on modular products and 1 year of service support\".",
+      "source_url": "https://www.livspace.com/in/interiors/nashik",
+      "source_title": "Interior Designers in Nashik",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "Livspace offers up to 10 years of warranty on modular products and 1 year of service support",
+      "city_specific": false,
+      "source_type": "Livspace city page"
+    },
+    {
+      "id": "ls-warranty-lifetime",
+      "claim": "Livspace's city pages also advertise a lifetime warranty for modular and semi-modular products, with full scope on its service page.",
+      "source_url": "https://www.livspace.com/in/interiors/pune",
+      "source_title": "Interior Designers in Pune",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "T&Cs apply: *Lifetime warranty for modular and semi-modular products. For full scope on warranty, please visit www.livspace.com/in/service",
+      "city_specific": false,
+      "source_type": "Livspace city page"
+    },
+    {
+      "id": "ls-payments-n",
+      "claim": "Livspace asks for 10% of the final quote or ₹49,000 (whichever is higher) to book, a cumulative 60% to place the order, and 100% when materials are ready for dispatch.",
+      "source_url": "https://www.livspace.com/in/interiors/how-it-works",
+      "source_title": "How it works",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "pay 10% of the final quote or ₹49,000 (whichever is higher) to book us. ... Confirm your order with 60% payment ... Pay 100% at intimation of material dispatch",
+      "city_specific": false,
+      "source_type": "Livspace process page"
+    },
+    {
+      "id": "ls-order-types",
+      "claim": "Livspace splits projects into order types (civil and MEP work, workshop-made custom furniture, on-site custom furniture, catalogue products), each paid against its own milestones.",
+      "source_url": "https://www.livspace.com/in/interiors/how-it-works",
+      "source_title": "How it works",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "Order type 1 Civil & MEP (Mechanical, Electrical & Plumbing) ... Order type 1 Custom furniture (workshop) ... Order type 1 Custom furniture (on-site) ... Order type 2 Catalogue products",
+      "city_specific": false,
+      "source_type": "Livspace process page"
+    },
+    {
+      "id": "nashik-imd-rain",
+      "claim": "Nashik (IMD station 42921) averages 845.9 mm of rain a year over 52.0 rainy days (1991–2020).",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-10-30",
+      "quote": "STATION : NASHIK ... ANNUAL  I  948.8  21.8  18.5  31.6  17.8  40.9  5.2  44.8  7  1.1  15  73  19.6  3.0  1.5  845.9  52.0",
+      "city_specific": true,
+      "source_type": "IMD climate normals",
+      "note": "Row I columns: station-level pressure, dry bulb, wet bulb, mean daily max, mean daily min, highest in month, lowest in month, extreme highest, date, extreme lowest, date, relative humidity (08:30 IST), vapour pressure, all clouds, low clouds, rainfall total (mm), rainy days, wettest month, driest month, heaviest 24h fall, date, wind speed. Row II repeats some fields for 17:30 IST (relative humidity in the 5th value) and extreme years."
+    },
+    {
+      "id": "nashik-imd-monsoon",
+      "claim": "Nashik's rain is concentrated in July (240.6 mm), August (196.5 mm) and September (169.4 mm); June brings 120.1 mm. June to September total 726.6 mm, about 86% of the year.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-10-30",
+      "quote": "जून I ... 120.1 6.6 | जुलाई I ... 240.6 14.4 | अगस्त I ... 196.5 12.5 | सितम्बर I ... 169.4 10.0",
+      "city_specific": true,
+      "source_type": "IMD climate normals",
+      "note": "726.6 / 845.9 = 85.9%; July–September alone = 240.6 + 196.5 + 169.4 = 606.5 mm"
+    },
+    {
+      "id": "nashik-imd-humidity",
+      "claim": "Nashik's morning (08:30) relative humidity averages 88% in July, 90% in August and 89% in September; evening humidity drops to 20% in March and April.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-10-30",
+      "quote": "जुलाई I ... 88 | अगस्त I ... 90 | सितम्बर I ... 89 | MAR II ... 20 | APR II ... 20",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "nashik-imd-heat",
+      "claim": "April and May are Nashik's hottest months, with average daily maxima of 37.6 °C and 37.4 °C; the station record is 44.8 °C.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-10-30",
+      "quote": "अप्रैल I 949.1 25.8 18.6 37.6 ... मई I 947.3 26.9 21.8 37.4 22.4 40.1 19.7 44.8",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "nashik-imd-winter",
+      "claim": "January nights in Nashik average a minimum of 10.4 °C.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-10-30",
+      "quote": "जनवरी I 953.2 14.4 11.8 29.0 10.4",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "pune-imd-rain-ref",
+      "claim": "For comparison, Pune averages 841.2 mm a year, with about 80% falling June to September.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-10-30",
+      "quote": "STATION : PUNE ... 841.2 51.3 ; JUN-SEP 183.9 / 190.0 / 156.3 / 140.4",
+      "city_specific": false,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "nashik-fpj-transactions",
+      "claim": "Property transactions registered in Nashik reached a record ₹17,543 crore in FY 2025–26, up from ₹13,529 crore in FY 2024–25, based on the Nashik Municipal Corporation's 1% cess.",
+      "source_url": "https://www.freepressjournal.in/pune/nashik-real-estate-market-expands-as-property-transactions-hit-record-high",
+      "source_title": "Nashik: Real Estate Market Expands As Property Transactions Hit Record High",
+      "publisher": "Free Press Journal",
+      "date_accessed": "2026-10-30",
+      "quote": "property transactions touching a record ₹17,543 crore during the financial year 2025–26 ... property registrations were valued at ₹13,529 crore in FY 2024–25",
+      "city_specific": true,
+      "source_type": "News report (municipal cess data)"
+    },
+    {
+      "id": "nashik-fpj-demand",
+      "claim": "Demand for second homes and larger 3BHK and 4BHK flats in Nashik has increased, and buyers prefer completed projects to under-construction ones.",
+      "source_url": "https://www.freepressjournal.in/pune/nashik-real-estate-market-expands-as-property-transactions-hit-record-high",
+      "source_title": "Nashik: Real Estate Market Expands As Property Transactions Hit Record High",
+      "publisher": "Free Press Journal",
+      "date_accessed": "2026-10-30",
+      "quote": "Demand for second homes and larger 3-BHK and 4-BHK apartments has increased significantly. Buyers are also showing a clear preference for purchasing completed projects rather than booking properties under construction.",
+      "city_specific": true,
+      "source_type": "News report"
+    },
+    {
+      "id": "nashik-fpj-investors",
+      "claim": "Developers say investors from Mumbai and Pune are choosing Nashik, and residential buildings of up to 52 storeys have recently been approved in the city.",
+      "source_url": "https://www.freepressjournal.in/pune/nashik-real-estate-market-expands-as-property-transactions-hit-record-high",
+      "source_title": "Nashik: Real Estate Market Expands As Property Transactions Hit Record High",
+      "publisher": "Free Press Journal",
+      "date_accessed": "2026-10-30",
+      "quote": "investors from Mumbai and Pune are increasingly choosing Nashik due to its growth potential. The recent approval allowing residential buildings of up to 52 storeys in the city",
+      "city_specific": true,
+      "source_type": "News report"
+    },
+    {
+      "id": "nashik-credai-supply",
+      "claim": "CREDAI–Liases Foras found new Nashik supply led by 2BHK and 3BHK homes, followed by 1BHK, with limited 4BHK and villa supply.",
+      "source_url": "https://admin.credai.org/public/upload/6a8d7a207c5a3f66595f086158f55353.pdf",
+      "source_title": "Nashik 2024: Overview of Real Estate in Nashik City",
+      "publisher": "CREDAI with Liases Foras",
+      "date_accessed": "2026-10-30",
+      "quote": "The new supply is led by 2BHK and 3BHK, catering to mid and luxury buyers. 1BHK follows, targeting budget-conscious buyers, while limited 4BHK and Villa supply indicates a lower focus on ultra-luxury housing.",
+      "city_specific": true,
+      "source_type": "Real-estate research (CREDAI / Liases Foras)"
+    },
+    {
+      "id": "nashik-credai-sales",
+      "claim": "Nashik sales were highest in the ₹10–40 lakh segment, where unsold stock was also highest.",
+      "source_url": "https://admin.credai.org/public/upload/6a8d7a207c5a3f66595f086158f55353.pdf",
+      "source_title": "Nashik 2024: Overview of Real Estate in Nashik City",
+      "publisher": "CREDAI with Liases Foras",
+      "date_accessed": "2026-10-30",
+      "quote": "Sales are highest in the PSL and Affordable Segment (₹10L - ₹40L) ... Unsold supply is highest in the PSL and Affordable Segment (₹10L - ₹40L)",
+      "city_specific": true,
+      "source_type": "Real-estate research (CREDAI / Liases Foras)"
+    },
+    {
+      "id": "nashik-credai-distance",
+      "claim": "Nashik is about 180 km from Mumbai.",
+      "source_url": "https://admin.credai.org/public/upload/6a8d7a207c5a3f66595f086158f55353.pdf",
+      "source_title": "Nashik 2024: Overview of Real Estate in Nashik City",
+      "publisher": "CREDAI with Liases Foras",
+      "date_accessed": "2026-10-30",
+      "quote": "Nashik, located 180 kilometers from Mumbai in northwestern Maharashtra",
+      "city_specific": true,
+      "source_type": "Real-estate research (CREDAI / Liases Foras)"
+    },
+    {
+      "id": "nashik-census",
+      "claim": "Nashik Municipal Corporation had 1,486,053 residents in the 2011 Census.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/42876/download/46544/CLASS_I.xlsx",
+      "source_title": "Census 2011 Table A-4: Towns and Urban Agglomerations by population size class",
+      "publisher": "Census of India",
+      "date_accessed": "2026-10-30",
+      "quote": "(a) Nashik [8] ... 2011 ... 1486053",
+      "city_specific": true,
+      "source_type": "Census of India"
+    },
+    {
+      "id": "nashik-ls-vacate",
+      "claim": "Livspace's Nashik FAQ says you may stay at home for kitchen or partial upgrades, but recommends vacating for full-home projects.",
+      "source_url": "https://www.livspace.com/in/interiors/nashik",
+      "source_title": "Interior Designers in Nashik",
+      "publisher": "Livspace",
+      "date_accessed": "2026-10-30",
+      "quote": "Not always. For kitchens or partial upgrades, you may stay during installation. However, for full-home projects , vacating is recommended to avoid dust and delays.",
+      "city_specific": false,
+      "source_type": "Livspace city page"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What is the cost of interior design in Nashik?",
+      "source": "https://www.livspace.com/in/interiors/nashik"
+    },
+    {
+      "q": "What’s the cost for a 2 BHK interior in Nashik?",
+      "source": "https://www.livspace.com/in/interiors/nashik"
+    },
+    {
+      "q": "How much is per sq ft pricing in Nashik?",
+      "source": "https://www.livspace.com/in/interiors/nashik"
+    },
+    {
+      "q": "Do I need to vacate for installation?",
+      "source": "https://www.livspace.com/in/interiors/nashik"
+    },
+    {
+      "q": "How long until my home is completed?",
+      "source": "https://www.livspace.com/in/interiors/nashik"
+    },
+    {
+      "q": "Are there warranties or after-sales support?",
+      "source": "https://www.livspace.com/in/interiors/nashik"
+    }
+  ],
+  "questions_note": "Google \"People also ask\" could not be read from this environment; questions are taken from the FAQ headings on Livspace's Nashik page, which mirror common searches.",
+  "removed_claims": [
+    {
+      "claim": "1,082+ homes delivered in Nashik",
+      "reason": "Livspace self-reported count; not needed and not independently verifiable."
+    },
+    {
+      "claim": "Nashik 2BHK ~950 sq ft costing ₹3.5–8 lakh; turnkey ₹1,200–4,500/sq ft (Livspace FAQ)",
+      "reason": "Livspace marketing estimates; the same page also lists 2BHK sizes of 680–780 sq ft, so the figures contradict each other."
+    },
+    {
+      "claim": "Consultation-only service from ₹50,000 (Livspace FAQ)",
+      "reason": "Not confirmed on Livspace's offerings or process pages; left out."
+    },
+    {
+      "claim": "Paithani textiles and local crafts can be integrated (Livspace FAQ)",
+      "reason": "Promotional claim without a source on what Livspace actually supplies."
+    },
+    {
+      "claim": "Nashik growth corridors and a 335-acre IT park at Adgaon (CREDAI map)",
+      "reason": "Map labels could not be read reliably from the PDF; left out."
+    }
+  ]
+}

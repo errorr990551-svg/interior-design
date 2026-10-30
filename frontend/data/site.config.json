@@ -1,0 +1,22 @@
+{
+  "_readme": "Fill every TODO before publishing. relationship must be one of: official | partner | affiliate | independent. QA blocks publishing while anything here is unset.",
+  "siteUrl": "https://2bhkinteriors.in",
+  "siteName": "2BHK Interiors",
+  "relationship": "unset",
+  "leadUrl": "",
+  "leadUrlParams": "",
+  "author": {
+    "name": "TODO: author name",
+    "role": "TODO: role",
+    "credentials": "TODO: relevant experience, e.g. years designing Indian homes",
+    "url": ""
+  },
+  "reviewer": null,
+  "disclosures": {
+    "affiliate": "2BHK Interiors is an independent interior design studio. We are not Livspace and this guide is not written by Livspace. Some links on this page are affiliate links: if you book through them, we may earn a commission at no extra cost to you. This does not change the information or prices shown.",
+    "partner": "2BHK Interiors is an authorised Livspace partner. This guide is written by our team, not by Livspace, and we may earn a fee when you book through our links.",
+    "independent": "2BHK Interiors is an independent interior design studio and has no commercial relationship with Livspace. We link to Livspace pages so you can check their current details yourself.",
+    "official": "",
+    "unset": "TODO DISCLOSURE: set \"relationship\" in data/site.config.json. 2BHK Interiors is an independent studio and is not Livspace."
+  }
+}
