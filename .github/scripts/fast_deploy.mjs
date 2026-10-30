@@ -11,7 +11,7 @@ const host = rawServer
 const user = (process.env.FTP_USERNAME || '').trim();
 const password = process.env.FTP_PASSWORD || '';
 const deployToken = process.env.DEPLOY_TOKEN || '';
-const siteUrl = (process.env.SITE_URL || 'https://2bhkinteriors.com').replace(/\/$/, '');
+const siteUrl = (process.env.SITE_URL || 'https://2bhkinteriors.in').replace(/\/$/, '');
 
 if (!host || !user || !password) {
   console.error('❌ Error: FTP_SERVER, FTP_USERNAME, or FTP_PASSWORD missing from GitHub Secrets!');
@@ -94,8 +94,10 @@ async function runDeploy() {
   client.close();
 
   // 6. Server-Side Auto-Extraction via HTTP Webhook
-  console.log('🔓 Triggering server-side extraction on Hostinger...');
+  console.log('🔓 Triggering server-side extraction on Hostinger (2bhkinteriors.in)...');
   const extractUrls = [
+    `https://2bhkinteriors.in/deploy_extract.php?token=${deployToken}`,
+    `http://2bhkinteriors.in/deploy_extract.php?token=${deployToken}`,
     `${siteUrl}/deploy_extract.php?token=${deployToken}`,
     `http://${host}/deploy_extract.php?token=${deployToken}`,
   ];
@@ -118,7 +120,8 @@ async function runDeploy() {
   }
 
   if (!extracted) {
-    console.log('ℹ️ Extraction request sent. If DNS is not yet live on this domain, extraction can be triggered directly once domain resolves.');
+    console.error('❌ Extraction failed or was not confirmed by Hostinger.');
+    process.exit(1);
   }
 
   console.log('✨ CI/CD Fast ZIP Auto-Deploy finished in under 45 seconds!');
@@ -128,4 +131,3 @@ runDeploy().catch(err => {
   console.error('❌ Deployment script failed:', err.message);
   process.exit(1);
 });
-

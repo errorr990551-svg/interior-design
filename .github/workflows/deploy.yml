@@ -88,6 +88,6 @@ jobs:
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
           DEPLOY_TOKEN: ${{ steps.generate-extractor.outputs.deploy_token }}
-          SITE_URL: ${{ secrets.SITE_URL || 'https://2bhkinteriors.com' }}
+          SITE_URL: ${{ secrets.SITE_URL || 'https://2bhkinteriors.in' }}
         run: node .github/scripts/fast_deploy.mjs
 
