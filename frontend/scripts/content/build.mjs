@@ -226,16 +226,19 @@ const pages = [
   ...guides.map((g) => ({ url: g.url, lastmod: g.meta.updated || today(), status: g.status })),
 ].filter((p) => MODE === 'preview' || !p.status || p.status === 'published');
 fs.mkdirSync(OUT, { recursive: true });
-fs.writeFileSync(path.join(OUT, 'sitemap-interior-design.xml'), `<?xml version="1.0" encoding="UTF-8"?>
+// Nothing published yet: don't ship an empty sitemap or point robots.txt at one.
+if (pages.length) {
+  fs.writeFileSync(path.join(OUT, 'sitemap-interior-design.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages.map((p) => `  <url><loc>${SITE}${p.url}</loc><lastmod>${p.lastmod}</lastmod></url>`).join('\n')}
 </urlset>
 `);
-const robotsFile = path.join(OUT, 'robots.txt');
-if (fs.existsSync(robotsFile)) {
-  const line = `Sitemap: ${SITE}/sitemap-interior-design.xml`;
-  const txt = fs.readFileSync(robotsFile, 'utf8');
-  if (!txt.includes(line)) fs.writeFileSync(robotsFile, txt.trimEnd() + '\n' + line + '\n');
+  const robotsFile = path.join(OUT, 'robots.txt');
+  if (fs.existsSync(robotsFile)) {
+    const line = `Sitemap: ${SITE}/sitemap-interior-design.xml`;
+    const txt = fs.readFileSync(robotsFile, 'utf8');
+    if (!txt.includes(line)) fs.writeFileSync(robotsFile, txt.trimEnd() + '\n' + line + '\n');
+  }
 }
 
 // --- Link graph (article/main links only, header/footer excluded) ---------------
