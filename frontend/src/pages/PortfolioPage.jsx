@@ -1,40 +1,13 @@
 import { useState } from 'react';
-import { Download, ExternalLink, FileText, Sparkles, ArrowUpRight, Eye, Calendar, Maximize2, ShieldCheck } from 'lucide-react';
+import { Download, ExternalLink, FileText, Sparkles, ArrowUpRight, Eye, Maximize2, ShieldCheck } from 'lucide-react';
 import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
 import { portfolioFaqs } from '../content/faqs';
+import { PORTFOLIO_ROOMS } from '../content/portfolio';
 
 export default function PortfolioPage({ onOpenConsultation, onNavigateHome, onSelectProject }) {
   const [fullscreenMode, setFullscreenMode] = useState(false);
   const [showDeck, setShowDeck] = useState(false);
-
-  const projects = [
-    {
-      id: 'linden-house',
-      title: 'The Linden House',
-      dates: '06.2024 – 09.2024',
-      type: 'Private Residence',
-      focus: 'Natural light, soft material layering, balanced proportions and calm spatial silence.',
-      image: '/images/linden-house.jpg',
-    },
-    {
-      id: 'urban-dwelling',
-      title: 'Urban Dwelling',
-      dates: '02.2024 – 05.2024',
-      type: 'Contemporary Apartment',
-      focus: 'Dark material palettes enhancing warmth, depth, and rich visual textures.',
-      image: '/images/urban-dwelling.jpg',
-    },
-    {
-      id: 'casa-serene',
-      title: 'Casa Serene',
-      dates: '03.2024 – 07.2024',
-      type: 'Residential Renovation',
-      focus: 'Thoughtful seating layouts balancing comfort, privacy, and architectural elegance.',
-      image: '/images/casa-serene.jpg',
-    },
-  ];
-
 
   return (
     <div className="space-y-0 pt-24 bg-[#0e0e0e] text-white selection:bg-amber-400 selection:text-black">
@@ -50,14 +23,14 @@ export default function PortfolioPage({ onOpenConsultation, onNavigateHome, onSe
               HOME
             </a>
             <span>/</span>
-            <span className="text-white font-bold">FULL PORTFOLIO DECK & PROJECTS</span>
+            <span className="text-white font-bold">PORTFOLIO</span>
           </nav>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end justify-between">
             <div className="lg:col-span-8 space-y-4">
               <div className="inline-flex items-center gap-2 text-xs font-mono font-semibold tracking-widest text-amber-300 bg-amber-400/10 px-3.5 py-1.5 rounded-full border border-amber-400/20 uppercase">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>STUDIO WORK & PRESENTATION DECK (17 SLIDES)</span>
+                <span>{PORTFOLIO_ROOMS.length} ROOMS • 3D VISUALISATIONS</span>
               </div>
 
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-syne tracking-tight uppercase leading-tight text-white">
@@ -65,7 +38,7 @@ export default function PortfolioPage({ onOpenConsultation, onNavigateHome, onSe
               </h1>
 
               <p className="text-sm sm:text-base md:text-lg text-neutral-300 font-light max-w-3xl leading-relaxed">
-                Scroll through our full 2026 digital presentation below or download the high-resolution PDF deck. Includes full residential design case studies, photorealistic 3D visualisations, and complete floor plan specifications.
+                Bedrooms, living rooms, a dining room and a study from our design work, shown as the 3D visualisations clients review and approve before anything is built. Each room below notes the design decisions worth looking at, from storage and seating to ceilings and finishes. The same renders are collected in the downloadable PDF deck.
               </p>
             </div>
 
@@ -93,7 +66,59 @@ export default function PortfolioPage({ onOpenConsultation, onNavigateHome, onSe
         </div>
       </section>
 
-      {/* 2. Full Size Interactive PDF Viewer Section */}
+      {/* 2. Room-by-room gallery of the portfolio renders */}
+      <section className="py-20 sm:py-28 bg-[#0e0e0e] border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 space-y-24">
+          {PORTFOLIO_ROOMS.map((room, roomIdx) => (
+            <article key={room.id} id={room.id} className="grid grid-cols-1 lg:grid-cols-12 gap-10 scroll-mt-28">
+              <div className="lg:col-span-4 space-y-5 lg:sticky lg:top-28 self-start">
+                <span className="text-xs font-mono tracking-widest text-amber-300 uppercase">
+                  {String(roomIdx + 1).padStart(2, '0')} • {room.room}
+                </span>
+                <h2 className="text-2xl sm:text-4xl font-bold font-syne tracking-tight text-white">{room.title}</h2>
+                <p className="text-sm sm:text-base text-neutral-300 font-light leading-relaxed">{room.summary}</p>
+                <div>
+                  <h3 className="text-xs font-semibold tracking-widest uppercase text-neutral-400 mb-3">Details to notice</h3>
+                  <ul className="space-y-2">
+                    {room.notes.map((note) => (
+                      <li key={note} className="flex gap-3 text-sm text-neutral-300 font-light leading-relaxed">
+                        <span className="mt-2 w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0" />
+                        <span>{note}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {room.images.map((image, imgIdx) => (
+                  <figure key={image.src} className={imgIdx === 0 ? 'sm:col-span-2' : ''}>
+                    <button
+                      type="button"
+                      onClick={() => onSelectProject({ title: room.title, image: image.src, type: `${room.room} • 3D visualisation`, focus: image.alt })}
+                      className="group block w-full overflow-hidden rounded-xl border border-white/10 bg-neutral-900 cursor-zoom-in"
+                      aria-label={`Enlarge: ${image.alt}`}
+                    >
+                      <img
+                        loading="lazy"
+                        decoding="async"
+                        src={image.src}
+                        width={image.width}
+                        height={image.height}
+                        alt={image.alt}
+                        className="w-full h-auto aspect-video object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                      />
+                    </button>
+                    <figcaption className="mt-2 text-xs text-neutral-500 font-light">{image.alt}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* 3. Full PDF deck */}
       <section className="py-12 bg-[#0a0a0a] border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
           {/* Controls Bar above Viewer */}
@@ -104,10 +129,10 @@ export default function PortfolioPage({ onOpenConsultation, onNavigateHome, onSe
               </div>
               <div>
                 <h3 className="text-sm sm:text-base font-bold font-syne text-white">
-                  2BHK_Interiors_Master_Portfolio_2026.pdf
+                  Portfolio deck (PDF)
                 </h3>
                 <span className="text-xs font-mono text-neutral-400">
-                  17 Pages • Full Resolution PDF Document • Scroll down to view all slides
+                  17 pages • the renders above, in presentation form
                 </span>
               </div>
             </div>
@@ -166,7 +191,7 @@ export default function PortfolioPage({ onOpenConsultation, onNavigateHome, onSe
           <div className="mt-4 p-4 rounded-xl bg-neutral-900/80 border border-white/10 text-center text-xs text-neutral-400 flex flex-col sm:flex-row items-center justify-between gap-3">
             <span className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-amber-300" />
-              <span>Full presentation document verified • High-resolution 3D renders & floor plans</span>
+              <span>17 pages of 3D renders</span>
             </span>
             <div className="flex items-center gap-4">
               <span>Having trouble displaying inline?</span>
@@ -182,83 +207,17 @@ export default function PortfolioPage({ onOpenConsultation, onNavigateHome, onSe
         </div>
       </section>
 
-      {/* 3. Featured Architectural Projects Showcase */}
-      <section className="py-24 sm:py-32 bg-[#0e0e0e] border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="pb-12 border-b border-white/10 space-y-4">
-            <div className="inline-flex items-center gap-2 text-xs font-mono font-semibold tracking-widest text-amber-300 bg-amber-400/10 px-3.5 py-1.5 rounded-full border border-amber-400/20 uppercase">
-              <Eye className="w-3.5 h-3.5" />
-              <span>FEATURED RESIDENTIAL CASE STUDIES</span>
-            </div>
-            <h2 className="text-3xl sm:text-5xl font-bold font-syne tracking-tight uppercase text-white">
-              Signature Project Gallery
-            </h2>
-            <p className="text-sm sm:text-base text-neutral-400 font-light max-w-2xl">
-              Click on any signature project below to explore high-resolution spatial photos and design details.
-            </p>
-          </div>
-
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <div
-                key={project.id}
-                onClick={() => onSelectProject(project)}
-                className="group cursor-pointer rounded-2xl bg-[#141414] border border-white/10 hover:border-amber-400/50 overflow-hidden transition-all duration-300 flex flex-col justify-between"
-              >
-                <div className="aspect-16/10 overflow-hidden relative bg-neutral-900">
-                  <img
-                    loading="lazy"
-                    decoding="async"
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-linear-to-t from-[#141414] via-transparent to-transparent opacity-60" />
-                </div>
-
-                <div className="p-6 space-y-4 flex-1 flex flex-col justify-between">
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between gap-2">
-                      <span className="text-xs font-mono text-amber-300 flex items-center gap-1">
-                        <Calendar className="w-3 h-3" />
-                        <span>{project.dates}</span>
-                      </span>
-                      <span className="text-[11px] font-mono uppercase bg-white/5 border border-white/10 px-2 py-0.5 rounded text-neutral-300">
-                        {project.type}
-                      </span>
-                    </div>
-
-                    <h3 className="text-2xl font-bold font-syne text-white group-hover:text-amber-200 transition-colors">
-                      {project.title}
-                    </h3>
-
-                    <p className="text-xs text-neutral-400 leading-relaxed font-light">
-                      {project.focus}
-                    </p>
-                  </div>
-
-                  <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-amber-300">
-                    <span>Explore Project</span>
-                    <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* 4. Portfolio FAQ Section */}
       <FAQSection
-        title="Portfolio & Presentation FAQ"
-        subtitle="Common questions about our digital design deck, project renders, and consultations"
+        title="Portfolio FAQ"
+        subtitle="What you're looking at, and how it relates to your own home"
         faqs={portfolioFaqs}
       />
 
       {/* 5. Call To Action Section */}
       <CTASection
-        headline="Ready to Transform Your Home Space?"
-        subtext="Book a design consultation with our principal team to discuss 2D space planning, 3D visualization, or material selections for your residence."
+        headline="Want to See Your Own Home Like This?"
+        subtext="Share your floor plan and what isn't working in your home today. We'll talk through layout options and what a mood board, 2D plan and 3D visualisation would cover for your space."
         buttonText="Book a Design Consultation"
         onOpenConsultation={onOpenConsultation}
       />

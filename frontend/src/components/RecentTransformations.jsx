@@ -1,44 +1,30 @@
 import { ArrowUpRight, Download, FileText, Eye, Sparkles } from 'lucide-react';
+import { PORTFOLIO_ROOMS } from '../content/portfolio';
 
 export default function RecentTransformations({ onSelectProject, onViewAll }) {
   const portfolioPdfItem = {
     id: 'studio-portfolio-presentation-pdf',
-    title: '2BHK Interiors Master Portfolio Presentation',
-    dates: '2026 Edition (PDF)',
-    type: 'Complete Digital Design Deck',
-    focus: 'Comprehensive collection of 2D floor plans, 3D photorealistic renderings, spatial walkthroughs, and material specification sheets.',
-    image: '/images/home_hero_bg.jpg',
+    title: '2BHK Interiors portfolio deck',
+    dates: 'PDF, 17 pages',
+    type: '3D visualisations',
+    focus: 'Every render from our portfolio in one presentation: bedrooms, living rooms, a dining room and a study.',
+    image: '/images/portfolio/p15-2.jpg',
     pdfUrl: '/pptt.pdf',
     isPdf: true,
     fileSize: '2.6 MB',
   };
 
+  // A few rooms from the portfolio page; the first sentence of each description is enough here.
+  const featured = ['walnut-cove-bedroom', 'study-window-seat', 'herringbone-living'];
   const projects = [
-    portfolioPdfItem,
-    {
-      id: 'linden-house',
-      title: 'The Linden House',
-      dates: '06.2024 – 09.2024',
-      type: 'Private Residence',
-      focus: 'Natural light, soft material layering, balanced proportions and calm',
-      image: '/images/linden-house.jpg',
-    },
-    {
-      id: 'urban-dwelling',
-      title: 'Urban Dwelling',
-      dates: '02.2024 – 05.2024',
-      type: 'Contemporary Restaurant',
-      focus: 'Dark material palettes enhancing warmth, depth, and visual.',
-      image: '/images/urban-dwelling.jpg',
-    },
-    {
-      id: 'casa-serene',
-      title: 'Casa Serene',
-      dates: '03.2024 – 07.2024',
-      type: 'Residential Renovation',
-      focus: 'Thoughtful seating layouts balancing comfort, privacy.',
-      image: '/images/casa-serene.jpg',
-    },
+    ...PORTFOLIO_ROOMS.filter((room) => featured.includes(room.id)).map((room) => ({
+      id: room.id,
+      title: room.title,
+      dates: '3D visualisation',
+      type: room.room,
+      focus: room.summary.split('. ')[0] + '.',
+      image: room.images[0].src,
+    })),
   ];
 
   return (
@@ -49,16 +35,16 @@ export default function RecentTransformations({ onSelectProject, onViewAll }) {
           <div className="md:col-span-6">
             <div className="inline-flex items-center gap-2 text-xs font-mono font-semibold tracking-widest text-amber-700 bg-amber-100/80 px-3 py-1 rounded-full mb-3 uppercase">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>STUDIO WORK & PRESENTATION DECK</span>
+              <span>RECENT WORK</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight uppercase font-syne text-neutral-900">
-              RECENT TRANSFORMATIONS
+              Rooms We've Designed
             </h2>
           </div>
 
           <div className="md:col-span-6 md:text-right">
             <p className="text-sm sm:text-base text-neutral-600 leading-relaxed font-light max-w-xl md:ml-auto">
-              A curated selection of our latest interior projects, featuring full residential design case studies, photorealistic 3D visualisations, and our complete downloadable studio portfolio presentation (PDF).
+              Bedrooms, living rooms and a study from our portfolio, shown as the 3D renders clients sign off before execution. Open any room for the full set of views, or download the complete deck.
             </p>
           </div>
         </div>
@@ -78,11 +64,11 @@ export default function RecentTransformations({ onSelectProject, onViewAll }) {
               </div>
 
               <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-syne tracking-tight text-white">
-                Download Complete Studio Portfolio & Presentation
+                Download the full portfolio deck
               </h3>
 
               <p className="text-sm text-neutral-300 font-light leading-relaxed max-w-2xl">
-                Explore our full 2026 design deck including high-resolution 3D renders, 2D floor plans, spatial transformations, and complete project specs in a single presentation document.
+                All 17 pages of 3D renders in one PDF, handy for sharing with family before you book a consultation.
               </p>
             </div>
 
@@ -200,7 +186,7 @@ export default function RecentTransformations({ onSelectProject, onViewAll }) {
             onClick={onViewAll}
             className="group inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-neutral-900 border-b border-neutral-900 pb-1 hover:text-neutral-600 hover:border-neutral-500 transition-all"
           >
-            <span>View Projects</span>
+            <span>See all rooms</span>
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </button>
 
@@ -210,7 +196,7 @@ export default function RecentTransformations({ onSelectProject, onViewAll }) {
             className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-amber-800 bg-amber-100 hover:bg-amber-200 px-5 py-2 rounded-full transition-all"
           >
             <Download className="w-4 h-4" />
-            <span>Download Portfolio PDF (pptt.pdf)</span>
+            <span>Download portfolio PDF</span>
           </a>
         </div>
       </div>

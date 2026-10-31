@@ -32,10 +32,10 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
   };
 
   const locations = [
-    { area: 'SOUTH MUMBAI', detail: 'Colaba & Worli Residences' },
-    { area: 'BANDRA & KHAR', detail: 'Apartment & Villa Interiors' },
-    { area: 'JUHU & VILE PARLE', detail: 'Private Residential Estates' },
-    { area: 'POWAI & THANE', detail: 'Modern Penthouse Redesigns' },
+    { area: 'SOUTH MUMBAI', detail: 'Colaba, Worli & Lower Parel' },
+    { area: 'WESTERN SUBURBS', detail: 'Bandra, Khar, Juhu & Vile Parle' },
+    { area: 'POWAI', detail: 'Hiranandani & nearby areas' },
+    { area: 'BEYOND THE CITY', detail: 'Thane & Navi Mumbai' },
   ];
 
   const socialLinks = [
@@ -55,11 +55,11 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
               DESIGN CONSULTATION
             </span>
             <h2 className="text-3xl sm:text-5xl font-bold font-syne tracking-tight text-white leading-tight">
-              Ready to design <br />
-              your home?
+              Design notes, <br />
+              by email
             </h2>
             <p className="text-sm text-neutral-400 font-light max-w-md">
-              Receive curated material insights, spatial walkthrough releases, and direct consultation availability.
+              Occasional notes on planning and finishing Mumbai apartments, plus new rooms from our portfolio. No spam; unsubscribe any time.
             </p>
           </div>
 
@@ -113,7 +113,7 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
               <span className="font-light tracking-[0.25em] text-neutral-200 text-2xl uppercase ml-2.5">INTERIORS</span>
             </PageLink>
             <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed font-light max-w-sm">
-              A specialized residential interior design studio in Mumbai. 2D space planning, photorealistic 3D visualization, and tactile mood boards for apartments and homes.
+              Residential interior design studio in Mumbai: mood boards, scaled 2D layouts and photorealistic 3D visualisation for apartments and homes.
             </p>
 
             <address className="not-italic space-y-2 text-xs text-neutral-300 font-syne">
@@ -222,7 +222,7 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
                   onNavigate={onNavigate}
                   className="text-xs text-neutral-300 hover:text-white transition-colors"
                 >
-                  5-Step Process
+                  Our Process
                 </PageLink>
               </li>
             </ul>

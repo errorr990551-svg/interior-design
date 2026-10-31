@@ -6,11 +6,9 @@ export default function ProjectModal({ project, imageUrl, onClose, onBookConsult
   const isPdf = project?.isPdf || project?.pdfUrl;
   const pdfPath = project?.pdfUrl || '/pptt.pdf';
   const displayImage = project ? project.image : imageUrl;
-  const displayTitle = project ? project.title : 'Signature Architectural Highlight';
-  const displayType = project ? project.type : 'Luxury Interior Space';
-  const displayFocus = project
-    ? project.focus
-    : 'A balance of natural daylight, organic timber, and spatial silence.';
+  const displayTitle = project ? project.title : 'Portfolio room';
+  const displayType = project ? project.type : '3D visualisation';
+  const displayFocus = project ? project.focus : 'A room from our portfolio, shown as the 3D render the client reviewed before execution.';
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/85 backdrop-blur-lg animate-fadeIn">
@@ -102,7 +100,7 @@ export default function ProjectModal({ project, imageUrl, onClose, onBookConsult
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-6">
               <div>
                 <span className="text-xs font-mono tracking-widest text-neutral-400 uppercase block mb-1">
-                  2BHK INTERIORS PORTFOLIO SELECTION
+                  FROM THE 2BHK INTERIORS PORTFOLIO
                 </span>
                 <h2 className="text-2xl sm:text-4xl font-bold font-syne tracking-tight">
                   {displayTitle}
@@ -130,7 +128,7 @@ export default function ProjectModal({ project, imageUrl, onClose, onBookConsult
             <div className="space-y-2">
               <span className="text-xs font-semibold uppercase tracking-wider text-neutral-400 font-syne flex items-center gap-2">
                 <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-                <span>Presentation Overview</span>
+                <span>About this image</span>
               </span>
               <p className="text-sm text-neutral-300 font-light leading-relaxed">
                 {displayFocus}

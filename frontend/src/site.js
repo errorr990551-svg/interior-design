@@ -2,6 +2,7 @@
 // Used by the React app (client-side head updates), the prerender step (static HTML per route)
 // and the sitemap generator, so they can't drift apart.
 import { homeFaqs, aboutFaqs, servicesFaqs, portfolioFaqs } from './content/faqs';
+import { PORTFOLIO_ROOMS } from './content/portfolio';
 
 export const SITE_URL = 'https://2bhkinteriors.in';
 export const SITE_NAME = '2BHK Interiors';
@@ -27,7 +28,7 @@ export const BUSINESS = {
 // The testimonials section stays hidden while this list is empty.
 export const TESTIMONIALS = [];
 
-const OG_IMAGE = { url: '/images/home_hero_bg.jpg', width: 1376, height: 768 };
+const OG_IMAGE = { url: '/images/portfolio/p15-2.jpg', width: 1344, height: 756 };
 
 export const ROUTES = [
   {
@@ -38,7 +39,7 @@ export const ROUTES = [
       'Residential interior design studio in Mumbai for apartments and homes: 2D space planning, 3D visualisation and mood boards agreed before any work begins.',
     faqs: homeFaqs,
     lastmod: '2026-10-31',
-    images: ['/images/home_hero_bg.jpg', '/images/project-highlight.jpg'],
+    images: ['/images/portfolio/p01-1.jpg', '/images/portfolio/p07-1.jpg', '/images/portfolio/p11-1.jpg'],
   },
   {
     page: 'about',
@@ -68,10 +69,10 @@ export const ROUTES = [
     name: 'Portfolio',
     title: 'Interior Design Portfolio: Homes by 2BHK Interiors, Mumbai',
     description:
-      'Residential interior design portfolio from 2BHK Interiors: apartment and home projects with 2D floor plans, 3D renders and mood boards, plus a PDF deck.',
+      'Eight rooms from the 2BHK Interiors portfolio in 3D: bedrooms, living rooms, a dining room and a study, with the design decisions behind each one.',
     faqs: portfolioFaqs,
     lastmod: '2026-10-31',
-    images: ['/images/linden-house.jpg', '/images/urban-dwelling.jpg', '/images/casa-serene.jpg'],
+    images: PORTFOLIO_ROOMS.flatMap((room) => room.images.map((i) => i.src)),
   },
 ];
 

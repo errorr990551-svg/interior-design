@@ -10,6 +10,7 @@ import FAQSection from '../components/FAQSection';
 import WhereWeWorkSection from '../components/WhereWeWorkSection';
 import FollowAlongSection from '../components/FollowAlongSection';
 import CTASection from '../components/CTASection';
+import CompactHomeSection from '../components/CompactHomeSection';
 import { homeFaqs } from '../content/faqs';
 
 export default function HomePage({
@@ -49,6 +50,9 @@ export default function HomePage({
 
       {/* 5. 5-Step Design Process */}
       <DesignProcess />
+
+      {/* Planning advice for compact apartments */}
+      <CompactHomeSection />
 
       {/* 6. Client Testimonials */}
       <Testimonials />

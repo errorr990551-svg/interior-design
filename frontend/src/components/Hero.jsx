@@ -12,7 +12,7 @@ export default function Hero({ onOpenConsultation, onNavigateToWork }) {
 
   return (
     <section className="relative min-h-screen flex flex-col justify-between pt-28 pb-12 overflow-hidden bg-[#0e0e0e]">
-      {/* Background AI Luxury Image */}
+      {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
           src="/images/home_hero_bg.jpg"
@@ -42,7 +42,7 @@ export default function Hero({ onOpenConsultation, onNavigateToWork }) {
           </p>
 
           <p className="text-base sm:text-lg md:text-xl text-neutral-200 leading-relaxed font-light max-w-3xl drop-shadow-md">
-            2BHK Interiors is a luxury residential design studio turning apartments and homes in Mumbai into spaces that feel considered, calm, and unmistakably yours. Every project moves through detailed 2D planning, immersive 3D visualization, and a curated mood board, so the look, feel and function of your home are agreed before a single wall is touched.
+            2BHK Interiors designs apartments and homes across Mumbai. We plan every room to scale in 2D, agree the look on a mood board and show you the finished space in photorealistic 3D, so the layout, storage and finishes are settled before any work starts on site.
           </p>
 
           <div className="pt-4 flex flex-wrap items-center gap-4 sm:gap-6">

@@ -2,41 +2,40 @@ import { useState } from 'react';
 import { Plus, Minus, Layers } from 'lucide-react';
 
 export default function DesignProcess() {
-  // Default active step index 0 (Consultation) or 1
   const [activeStep, setActiveStep] = useState(0);
 
   const steps = [
     {
       id: '01',
-      title: 'Consultation',
+      title: 'Consultation & brief',
       content:
-        'In-depth initial consultation to understand your vision, lifestyle rituals, architectural scope, timeline, and investment roadmap.',
+        'We start with your floor plan, photos of the space and a conversation about how you live: who uses each room, what isn\'t working today, what furniture stays, your budget range and when you need to move in. You leave with a clear scope of which rooms and services the project needs.',
       image: '/images/process-01.jpg',
-      alt: 'Executive Consultation Studio & Office Architecture',
+      alt: 'Designer and client discussing a home brief',
     },
     {
       id: '02',
-      title: 'Concepting',
+      title: 'Mood board & 2D layout',
       content:
-        'Ideas evolve into moodboards, layouts, and color directions shaping atmosphere, function, and spatial identity.',
+        'We agree the look first with a mood board of colours, finishes and references, then fix the function in a scaled 2D plan: furniture placement, walking clearances, storage, and electrical and switch points. Layout options are revised until you sign off.',
       image: '/images/process-02.jpg',
-      alt: 'Interior Design Concept Moodboard & Palette Collage',
+      alt: 'Mood board with colour and material references',
     },
     {
       id: '03',
-      title: 'Material Selection',
+      title: '3D visualisation & materials',
       content:
-        'Sourcing sustainable luxury materials, tactile stone, bespoke joinery finishes, and curated architectural lighting.',
+        'The approved plan and mood board become photorealistic 3D renders of each room, with day and evening lighting, so you can check proportions, colours and finishes before anything is built. Revision rounds happen here, on screen, where changes cost nothing on site.',
       image: '/images/process-03.jpg',
-      alt: 'Luxury Architectural Material Flatlay Sample Board',
+      alt: 'Material samples laid out for selection',
     },
     {
       id: '04',
-      title: 'Execution',
+      title: 'Handover & execution support',
       content:
-        'Turn-key project management overseeing craftsman installation, custom fabrication, interior styling, and final handover.',
+        'You receive an execution-ready package: dimensioned drawings, the render set and a material specification sheet that contractors can price and build from. We also work with execution contractors we trust so the finished home matches what you approved.',
       image: '/images/process-04.jpg',
-      alt: 'Completed Luxury Interior Spatial Execution',
+      alt: 'Finished interior after execution',
     },
   ];
 
@@ -83,7 +82,7 @@ export default function DesignProcess() {
           {/* Right Content & Accordion List */}
           <div className="lg:col-span-6 space-y-10">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight leading-snug font-syne text-neutral-900">
-              Our thoughtful design process transforms ideas into timeless spaces through clarity, craft, collaboration, and careful execution.
+              Four stages, each signed off before the next begins, so the look, the layout and the finishes are settled before money is spent on site.
             </h2>
 
             {/* Accordion List */}
@@ -98,6 +97,9 @@ export default function DesignProcess() {
                     }`}
                   >
                     <button
+                      type="button"
+                      aria-expanded={isOpen}
+                      aria-controls={`process-step-${step.id}`}
                       onClick={() => setActiveStep(index)}
                       className="w-full flex items-center justify-between text-left group focus:outline-none cursor-pointer"
                     >
@@ -127,13 +129,11 @@ export default function DesignProcess() {
                       </div>
                     </button>
 
-                    {isOpen && (
-                      <div className="pt-4 pl-12 pr-6 animate-fadeIn">
-                        <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-light">
-                          {step.content}
-                        </p>
-                      </div>
-                    )}
+                    <div id={`process-step-${step.id}`} hidden={!isOpen} className="pt-4 pl-12 pr-6 animate-fadeIn">
+                      <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-light">
+                        {step.content}
+                      </p>
+                    </div>
                   </div>
                 );
               })}

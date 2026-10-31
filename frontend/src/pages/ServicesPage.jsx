@@ -269,7 +269,7 @@ export default function ServicesPage({ onOpenConsultation, onNavigateHome }) {
               How the Three Services Work Together
             </h2>
             <p className="text-sm sm:text-base text-neutral-300 font-light">
-              Each service can stand alone, but together they remove every risk from your project.
+              Each service can stand alone, but together they take most of the guesswork out of a renovation.
             </p>
           </div>
 
@@ -366,7 +366,7 @@ export default function ServicesPage({ onOpenConsultation, onNavigateHome }) {
                   Timelines & What to Expect
                 </h3>
               </div>
-              <span className="text-xs text-neutral-400 font-mono">Honest ranges build trust</span>
+              <span className="text-xs text-neutral-400 font-mono">Typical durations</span>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

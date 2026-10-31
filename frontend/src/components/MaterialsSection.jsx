@@ -3,28 +3,36 @@ import { Layers } from 'lucide-react';
 export default function MaterialsSection() {
   const materials = [
     {
-      name: 'Rift-Sawn Oak & Walnut',
-      category: 'Natural Timber',
-      description: 'We favour honest engineered woods and natural grains that age with character rather than wearing out.',
+      name: 'The right plywood for each room',
+      category: 'Carcass & ply',
+      description:
+        "Mumbai's monsoon humidity is hard on cabinetry. We specify boiling-water-proof (BWP) grade ply where units meet water, under the kitchen sink and in bathroom vanities, and keep moisture-resistant grades for dry areas like bedroom wardrobes.",
       image: '/images/material_wood.jpg',
+      alt: 'Wood and veneer samples',
     },
     {
-      name: 'Calacatta & Travertine Stone',
-      category: 'Honed Marble',
-      description: 'Honed surfaces specified for tactile warmth, subtle organic veining, and enduring timeless elegance.',
+      name: 'Counters that handle a real kitchen',
+      category: 'Stone & surfaces',
+      description:
+        'Marble is porous and etches with lemon, tomato and turmeric, so for kitchen counters we usually steer clients towards granite or quartz, and save marble for low-mess surfaces such as consoles and vanity tops.',
       image: '/images/material_stone.jpg',
+      alt: 'Stone countertop samples',
     },
     {
-      name: 'Champagne Brushed Brass',
-      category: 'Architectural Hardware',
-      description: 'Always brushed, never high-polished, creating a quieter finish that absorbs light with subtle luxury.',
+      name: 'Hardware you use every day',
+      category: 'Hinges & fittings',
+      description:
+        'Shutters and drawers are opened thousands of times a year. Soft-close hinges, good drawer channels and corrosion-resistant finishes matter more in a humid, coastal city than the look of a handle.',
       image: '/images/material_brass.jpg',
+      alt: 'Brushed metal hardware samples',
     },
     {
-      name: 'Bouclé & Natural Linen',
-      category: 'Tactile Textiles',
-      description: 'Curated upholstery palettes chosen for comfort, breathability, and rich layered depth across rooms.',
+      name: 'Fabrics for humid months',
+      category: 'Upholstery & curtains',
+      description:
+        'Breathable cottons and linens, washable or removable covers for sofas that see daily use, and colours that forgive marks, chosen alongside the mood board rather than added at the end.',
       image: '/images/material_textile.jpg',
+      alt: 'Upholstery fabric swatches',
     },
   ];
 
@@ -35,10 +43,10 @@ export default function MaterialsSection() {
           <div className="lg:col-span-6 space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/10 border border-amber-400/20 text-xs font-semibold uppercase tracking-widest text-amber-300 font-syne">
               <Layers className="w-3.5 h-3.5" />
-              <span>MATERIAL HONESTY</span>
+              <span>MATERIAL CHOICES</span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-bold font-syne tracking-tight leading-tight">
-              Materials & Craftsmanship
+              Materials That Last in Mumbai Homes
             </h2>
           </div>
           <div className="lg:col-span-6">
@@ -60,7 +68,7 @@ export default function MaterialsSection() {
                   loading="lazy"
                   decoding="async"
                   src={mat.image}
-                  alt={mat.name}
+                  alt={mat.alt}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 filter brightness-90 group-hover:brightness-100"
                 />
                 <div className="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 text-[10px] font-mono uppercase tracking-widest text-amber-300 rounded-full border border-white/10">
