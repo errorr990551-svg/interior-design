@@ -8,7 +8,7 @@ export interface SitemapItem {
   priority?: number;
 }
 
-export const BASE_URL = 'https://2bhkinteriors.com';
+export const BASE_URL = 'https://2bhkinteriors.in';
 
 export const SITEMAP_ROUTES: SitemapItem[] = [
   {

@@ -1,0 +1,93 @@
+name: Fast ZIP CI/CD Auto-Deploy to Hostinger
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: hostinger-deploy
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: 📦 Install Frontend Dependencies
+        run: |
+          cd frontend
+          npm ci || npm install
+
+      - name: 🏗️ Build Frontend Production Assets
+        env:
+          VITE_API_BASE_URL: ${{ secrets.VITE_API_BASE_URL || 'https://interior-design.errorr990551.workers.dev' }}
+        run: |
+          cd frontend
+          npm run build
+
+      - name: 🗜️ Package Dist into deploy.zip
+        run: |
+          cd frontend/dist
+          zip -r ../../deploy.zip .
+          cd ../..
+
+      - name: 🛡️ Generate Secure deploy_extract.php
+        id: generate-extractor
+        run: |
+          TOKEN=$(node -e "console.log(require('crypto').randomBytes(16).toString('hex'))")
+          echo "deploy_token=$TOKEN" >> $GITHUB_OUTPUT
+          node -e "
+            const fs = require('fs');
+            const token = '$TOKEN';
+            const php = '<?php\n' +
+              'header(\"Content-Type: text/plain\");\n' +
+              '\\\$reqToken = isset(\\\$_GET[\"token\"]) ? \\\$_GET[\"token\"] : \"\";\n' +
+              'if (empty(\\\$reqToken) || \\\$reqToken !== \"' + token + '\") {\n' +
+              '    http_response_code(403);\n' +
+              '    die(\"ERROR: Unauthorized\");\n' +
+              '}\n' +
+              '\\\$zipPath = __DIR__ . \"/deploy.zip\";\n' +
+              'if (!file_exists(\\\$zipPath)) {\n' +
+              '    http_response_code(404);\n' +
+              '    die(\"ERROR: deploy.zip missing\");\n' +
+              '}\n' +
+              '\\\$zip = new ZipArchive;\n' +
+              'if (\\\$zip->open(\\\$zipPath) === TRUE) {\n' +
+              '    \\\$zip->extractTo(__DIR__);\n' +
+              '    \\\$zip->close();\n' +
+              '    @unlink(\\\$zipPath);\n' +
+              '    @unlink(__FILE__);\n' +
+              '    echo \"EXTRACTION_SUCCESS\";\n' +
+              '} else {\n' +
+              '    http_response_code(500);\n' +
+              '    die(\"ERROR: Failed to extract\");\n' +
+              '}\n' +
+              '?>';
+            fs.writeFileSync('deploy_extract.php', php);
+          "
+
+      - name: 📥 Install basic-ftp
+        run: npm install basic-ftp
+
+      - name: 🚀 Fast ZIP FTP Upload & Auto-Extract (< 45s)
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          DEPLOY_TOKEN: ${{ steps.generate-extractor.outputs.deploy_token }}
+          SITE_URL: ${{ secrets.SITE_URL || 'https://2bhkinteriors.in' }}
+        run: node .github/scripts/fast_deploy.mjs
+
