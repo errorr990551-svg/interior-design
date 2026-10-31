@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/content/build.mjs",
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.mjs && node scripts/content/build.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "content:build": "node scripts/content/build.mjs",
@@ -14,7 +14,6 @@
     "content:queue": "node scripts/content/queue.mjs"
   },
   "dependencies": {
-    "framer-motion": "^11.15.0",
     "lucide-react": "^0.469.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"

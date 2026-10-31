@@ -1,33 +1,12 @@
 import { useState } from 'react';
-import { ArrowUpRight, CheckCircle2, Sun, Moon, Layers, Layout, Eye, Clock, FileCheck, ShieldAlert } from 'lucide-react';
+import { CheckCircle2, Sun, Moon, Layers, Layout, Eye, Clock, FileCheck } from 'lucide-react';
 import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
+import { servicesFaqs } from '../content/faqs';
 
 export default function ServicesPage({ onOpenConsultation, onNavigateHome }) {
   const [lightingMode, setLightingMode] = useState('day'); // 'day' | 'evening'
 
-  const servicesFaqs = [
-    {
-      q: 'What is a mood board in interior design?',
-      a: 'A mood board is a curated collection of colours, textures, materials and reference images that defines the visual direction of a space before detailed design work begins. It helps you agree on style early, avoiding costly changes later.',
-    },
-    {
-      q: 'How long does 3D interior design take?',
-      a: 'For a single room, 3D visualization typically takes about a week. A full home can take a few weeks depending on the number of rooms and revision rounds. Exact timelines are confirmed during consultation.',
-    },
-    {
-      q: 'Do I need a 2D plan before 3D visualization?',
-      a: 'Yes. The 2D layout locks in furniture placement, flow and electrical points. This is what the 3D visualization is built on, so getting the plan right first avoids rework at the render stage.',
-    },
-    {
-      q: 'Do you design only residential spaces?',
-      a: 'Yes, 2BHK Interiors works exclusively on residential interiors, apartments, villas and independent homes, and does not take on commercial or retail projects.',
-    },
-    {
-      q: 'Can I book just one service, like only a mood board?',
-      a: 'Yes. Each service can be booked on its own, though most clients move through mood board, 2D layout, and 3D visualization together for the most complete result.',
-    },
-  ];
 
   return (
     <div className="space-y-0 pt-24 bg-[#0e0e0e] text-white">
@@ -35,6 +14,7 @@ export default function ServicesPage({ onOpenConsultation, onNavigateHome }) {
       <section className="relative min-h-[60vh] flex flex-col justify-center py-20 bg-[#0e0e0e] overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 z-0">
           <img
+            fetchpriority="high"
             src="/images/service_3d_render.jpg"
             alt="2BHK Interiors Services Showcase"
             className="w-full h-full object-cover filter brightness-[0.65] contrast-[1.1]"
@@ -43,16 +23,16 @@ export default function ServicesPage({ onOpenConsultation, onNavigateHome }) {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 space-y-6">
-          <div className="flex items-center gap-2 text-xs font-mono tracking-widest text-amber-300 uppercase">
-            <button onClick={onNavigateHome} className="hover:underline cursor-pointer">
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs font-mono tracking-widest text-amber-300 uppercase">
+            <a href="/" onClick={(e) => { e.preventDefault(); onNavigateHome(); }} className="hover:underline cursor-pointer">
               HOME
-            </button>
+            </a>
             <span>/</span>
             <span className="text-white font-bold">OUR SERVICES</span>
-          </div>
+          </nav>
 
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold font-syne tracking-tight uppercase max-w-4xl leading-tight">
-            Our Services
+            Interior Design Services in Mumbai
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-neutral-200 font-light max-w-3xl leading-relaxed">
@@ -113,6 +93,8 @@ export default function ServicesPage({ onOpenConsultation, onNavigateHome }) {
             <div className="lg:col-span-6">
               <div className="rounded-3xl overflow-hidden border border-white/15 shadow-2xl bg-[#141414] p-4">
                 <img
+                  loading="lazy"
+                  decoding="async"
                   src="/images/service_2d_plan.jpg"
                   alt="Scaled Architectural 2D Floor Plan Layout"
                   className="w-full h-auto rounded-2xl object-cover"
@@ -131,6 +113,8 @@ export default function ServicesPage({ onOpenConsultation, onNavigateHome }) {
               <div className="rounded-3xl overflow-hidden border border-white/15 shadow-2xl bg-[#0e0e0e] p-4 space-y-4">
                 <div className="relative aspect-video rounded-2xl overflow-hidden">
                   <img
+                    loading="lazy"
+                    decoding="async"
                     src="/images/service_3d_render.jpg"
                     alt="Photorealistic 3D Master Bedroom Visualization"
                     className={`w-full h-full object-cover transition-all duration-700 ${
@@ -262,6 +246,8 @@ export default function ServicesPage({ onOpenConsultation, onNavigateHome }) {
             <div className="lg:col-span-6">
               <div className="rounded-3xl overflow-hidden border border-white/15 shadow-2xl bg-[#141414] p-4">
                 <img
+                  loading="lazy"
+                  decoding="async"
                   src="/images/service_moodboard.jpg"
                   alt="Tactile Physical Mood Board Flat-Lay"
                   className="w-full h-auto rounded-2xl object-cover"

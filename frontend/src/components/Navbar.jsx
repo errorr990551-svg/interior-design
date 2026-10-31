@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
+import PageLink from './PageLink';
 
 export default function Navbar({ currentPage = 'home', onNavigate, onOpenConsultation }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,17 +20,7 @@ export default function Navbar({ currentPage = 'home', onNavigate, onOpenConsult
 
   const handleNavClick = (page, sectionId = null) => {
     setMobileMenuOpen(false);
-    if (onNavigate) {
-      onNavigate(page);
-    }
-    if (sectionId) {
-      setTimeout(() => {
-        const el = document.getElementById(sectionId);
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+    onNavigate?.(page, sectionId);
   };
 
   const navLinks = [
@@ -49,23 +40,28 @@ export default function Navbar({ currentPage = 'home', onNavigate, onOpenConsult
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
-        <button
-          onClick={() => handleNavClick('home')}
-          className="text-2xl font-syne text-white hover:opacity-80 transition-opacity flex items-center gap-2 cursor-pointer bg-transparent border-0"
+        <PageLink
+          page="home"
+          onNavigate={handleNavClick}
+          aria-label="2BHK Interiors home"
+          className="text-2xl font-syne text-white hover:opacity-80 transition-opacity flex items-center gap-2 cursor-pointer"
         >
           <span className="font-extrabold tracking-tight text-amber-300">2BHK</span>
           <span className="font-light tracking-[0.25em] text-neutral-200 text-lg uppercase">INTERIORS</span>
-        </button>
+        </PageLink>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide text-neutral-300">
           {navLinks.map((link) => {
             const isActive = currentPage === link.page && !link.sectionId;
             return (
-              <button
+              <PageLink
                 key={link.name}
-                onClick={() => handleNavClick(link.page, link.sectionId)}
-                className={`transition-colors duration-200 py-1 relative group cursor-pointer border-0 bg-transparent text-sm font-medium ${
+                page={link.page}
+                hash={link.sectionId}
+                onNavigate={handleNavClick}
+                aria-current={isActive ? 'page' : undefined}
+                className={`transition-colors duration-200 py-1 relative group cursor-pointer text-sm font-medium ${
                   isActive ? 'text-amber-300 font-bold' : 'hover:text-white text-neutral-300'
                 }`}
               >
@@ -75,7 +71,7 @@ export default function Navbar({ currentPage = 'home', onNavigate, onOpenConsult
                     isActive ? 'w-full' : 'w-0 group-hover:w-full'
                   }`}
                 ></span>
-              </button>
+              </PageLink>
             );
           })}
         </nav>
@@ -95,7 +91,8 @@ export default function Navbar({ currentPage = 'home', onNavigate, onOpenConsult
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className="md:hidden text-neutral-200 hover:text-white focus:outline-none p-2"
-          aria-label="Toggle Navigation"
+          aria-label="Toggle navigation"
+          aria-expanded={mobileMenuOpen}
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
@@ -106,15 +103,17 @@ export default function Navbar({ currentPage = 'home', onNavigate, onOpenConsult
         <div className="md:hidden fixed inset-x-0 top-18 bg-[#0e0e0e]/95 backdrop-blur-xl border-b border-white/10 px-6 py-8 shadow-2xl animate-fadeIn">
           <div className="flex flex-col space-y-6">
             {navLinks.map((link) => (
-              <button
+              <PageLink
                 key={link.name}
-                onClick={() => handleNavClick(link.page, link.sectionId)}
-                className={`text-left text-lg font-medium transition-colors border-0 bg-transparent ${
+                page={link.page}
+                hash={link.sectionId}
+                onNavigate={handleNavClick}
+                className={`text-left text-lg font-medium transition-colors ${
                   currentPage === link.page && !link.sectionId ? 'text-amber-300 font-bold' : 'text-neutral-200 hover:text-white'
                 }`}
               >
                 {link.name}
-              </button>
+              </PageLink>
             ))}
             <div className="pt-4 border-t border-white/10">
               <button

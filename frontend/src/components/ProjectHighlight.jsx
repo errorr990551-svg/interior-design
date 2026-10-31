@@ -35,8 +35,10 @@ export default function ProjectHighlight({ onOpenGallery }) {
       {/* Background Dimmed Image Container */}
       <div className="absolute inset-0 z-0">
         <img
+          loading="lazy"
+          decoding="async"
           src={slides[currentSlide].image}
-          alt="Project Background"
+          alt=""
           className="w-full h-full object-cover filter brightness-[0.25] blur-sm transition-all duration-700"
         />
         <div className="absolute inset-0 bg-linear-to-t from-[#0e0e0e] via-black/60 to-[#0e0e0e]" />
@@ -100,6 +102,8 @@ export default function ProjectHighlight({ onOpenGallery }) {
           <div className="lg:col-span-8">
             <div className="relative group overflow-hidden rounded-sm border border-white/15 shadow-2xl bg-neutral-900 aspect-16/10">
               <img
+                loading="lazy"
+                decoding="async"
                 src={slides[currentSlide].image}
                 alt={slides[currentSlide].title}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"

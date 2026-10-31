@@ -1,8 +1,30 @@
 const { sendMail } = require("../services/emailService");
 
+// Form values are interpolated into the notification email's HTML, so escape them.
+const escapeHtml = (value) =>
+  String(value ?? "")
+    .slice(0, 5000)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+
+
 exports.submitContactForm = async (req, res) => {
   try {
-    const { name, email, phone, company, projectType, budget, message } = req.body;
+    const name = escapeHtml(req.body.name).trim();
+    const email = escapeHtml(req.body.email).trim();
+    const phone = escapeHtml(req.body.phone).trim();
+    const company = escapeHtml(req.body.company).trim();
+    const projectType = escapeHtml(req.body.projectType).trim();
+    const budget = escapeHtml(req.body.budget).trim();
+    const message = escapeHtml(req.body.message);
+
+    // Honeypot field is hidden from people; bots that fill it get a success response and no email.
+    if (req.body.website) {
+      return res.status(200).json({ success: true, message: "Consultation request sent successfully" });
+    }
 
     if (!name || !email) {
       return res.status(400).json({
@@ -43,7 +65,7 @@ exports.submitContactForm = async (req, res) => {
             </tr>
             <tr>
               <td style="padding: 10px 0; border-bottom: 1px solid #eeeeee; color: #666666;"><strong>Estimated Budget:</strong></td>
-              <td style="padding: 10px 0; border-bottom: 1px solid #eeeeee; color: #111111;">${budget || "$50,000 - $100,000"}</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #eeeeee; color: #111111;">${budget || "Not provided"}</td>
             </tr>
           </table>
 

@@ -1,4 +1,4 @@
-import { ArrowUpRight, ChevronDown, Download } from 'lucide-react';
+import { ArrowUpRight, ChevronDown } from 'lucide-react';
 
 export default function Hero({ onOpenConsultation, onNavigateToWork }) {
   const scrollToExplore = () => {
@@ -16,7 +16,10 @@ export default function Hero({ onOpenConsultation, onNavigateToWork }) {
       <div className="absolute inset-0 z-0">
         <img
           src="/images/home_hero_bg.jpg"
-          alt="2BHK Interiors Luxury Living Room Architecture"
+          alt="Living room interior"
+          width="1376"
+          height="768"
+          fetchpriority="high"
           className="w-full h-full object-cover object-center hd-image filter brightness-[0.85] contrast-[1.08]"
         />
         {/* Dark contrast gradient overlays for legibility */}
@@ -27,16 +30,16 @@ export default function Hero({ onOpenConsultation, onNavigateToWork }) {
       {/* Main Content Area */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full my-auto py-12 sm:py-16">
         <div className="max-w-4xl text-left space-y-6">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs sm:text-sm font-medium tracking-widest text-amber-200 uppercase font-syne">
-            <span>Residential design, exclusively. Three years, one focus.</span>
-          </div>
+          <h1 className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs sm:text-sm font-medium tracking-widest text-amber-200 uppercase font-syne">
+            Residential Interior Designer in Mumbai
+          </h1>
 
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-white uppercase font-syne leading-[1.02] drop-shadow-2xl">
+          <p className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-white uppercase font-syne leading-[1.02] drop-shadow-2xl">
             TIMELESS INTERIORS, <br />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-amber-100 via-white to-amber-200">
               DESIGNED AROUND YOU
             </span>
-          </h1>
+          </p>
 
           <p className="text-base sm:text-lg md:text-xl text-neutral-200 leading-relaxed font-light max-w-3xl drop-shadow-md">
             2BHK Interiors is a luxury residential design studio turning apartments and homes in Mumbai into spaces that feel considered, calm, and unmistakably yours. Every project moves through detailed 2D planning, immersive 3D visualization, and a curated mood board, so the look, feel and function of your home are agreed before a single wall is touched.

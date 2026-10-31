@@ -1,4 +1,5 @@
 import { Instagram, ArrowUpRight } from 'lucide-react';
+import { BUSINESS } from '../site';
 
 export default function FollowAlongSection() {
   const posts = [
@@ -9,6 +10,10 @@ export default function FollowAlongSection() {
     { image: '/images/about_banner.jpg', tag: 'Minimalist Studio' },
     { image: '/images/home_studio_desk.jpg', tag: 'Design Desk' },
   ];
+
+  const profile = BUSINESS.social.instagram;
+  if (!profile) return null;
+  const handle = profile.replace(/\/+$/, '').split('/').pop();
 
   return (
     <section className="bg-[#0e0e0e] text-white py-24 sm:py-32 border-t border-white/10">
@@ -28,12 +33,12 @@ export default function FollowAlongSection() {
           </p>
 
           <a
-            href="https://instagram.com"
+            href={profile}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white/10 hover:bg-amber-400 hover:text-black border border-white/20 text-white px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest transition-all duration-300"
           >
-            <span>@2bhkinteriors • Follow Us</span>
+            <span>@{handle} • Follow Us</span>
             <ArrowUpRight className="w-4 h-4" />
           </a>
         </div>
@@ -48,6 +53,8 @@ export default function FollowAlongSection() {
               <img
                 src={post.image}
                 alt={post.tag}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 filter brightness-90 group-hover:brightness-100"
               />
               <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col items-center justify-center text-center">

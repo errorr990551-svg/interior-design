@@ -53,6 +53,8 @@ export default function BehindRenova({ onLearnMore, onSelectService }) {
             </span>
             <div className="overflow-hidden rounded-2xl shadow-2xl bg-neutral-900 aspect-4/3 relative group border border-white/15">
               <img
+                loading="lazy"
+                decoding="async"
                 src="/images/home_studio_desk.jpg"
                 alt="2BHK Interiors Design Studio Workspace"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-95"
@@ -150,6 +152,8 @@ export default function BehindRenova({ onLearnMore, onSelectService }) {
                 {/* Image Container */}
                 <div className="relative aspect-4/3 w-full overflow-hidden bg-neutral-900">
                   <img
+                    loading="lazy"
+                    decoding="async"
                     src={item.image}
                     alt={item.alt}
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter brightness-90 group-hover:brightness-100"

@@ -57,7 +57,7 @@ export default function ProjectModal({ project, imageUrl, onClose, onBookConsult
                     className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider bg-amber-400 hover:bg-amber-300 text-black px-5 py-2.5 rounded-full transition-all shadow-md"
                   >
                     <Download className="w-4 h-4" />
-                    <span>Download PDF (34.8 MB)</span>
+                    <span>Download PDF (2.6 MB)</span>
                   </a>
                 </div>
               </div>
@@ -86,6 +86,8 @@ export default function ProjectModal({ project, imageUrl, onClose, onBookConsult
           /* Standard Image Preview Mode */
           <div className="relative aspect-16/10 w-full bg-neutral-900 overflow-hidden">
             <img
+              loading="lazy"
+              decoding="async"
               src={displayImage}
               alt={displayTitle}
               className="w-full h-full object-cover"

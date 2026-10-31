@@ -57,6 +57,8 @@ export default function MaterialsSection() {
             >
               <div className="aspect-square relative overflow-hidden bg-neutral-900">
                 <img
+                  loading="lazy"
+                  decoding="async"
                   src={mat.image}
                   alt={mat.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 filter brightness-90 group-hover:brightness-100"

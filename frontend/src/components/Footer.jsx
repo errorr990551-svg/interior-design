@@ -1,35 +1,34 @@
 import { useState } from 'react';
-import { ArrowUpRight, ArrowUp, Send, CheckCircle2, MapPin, Phone, Mail } from 'lucide-react';
+import { ArrowUpRight, ArrowUp, Send, CheckCircle2, MapPin, Phone, Mail, Loader2 } from 'lucide-react';
+import PageLink from './PageLink';
+import { BUSINESS } from '../site';
+import { submitContact } from '../lib/contact';
 
 export default function Footer({ onNavigate, onOpenConsultation }) {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState(null);
 
-  const handleSubscribe = (e) => {
+  // Sends the address to the same inbox as consultation requests, so sign-ups aren't silently dropped.
+  const handleSubscribe = async (e) => {
     e.preventDefault();
-    if (email.trim()) {
+    if (!email.trim()) return;
+    setSending(true);
+    setError(null);
+    try {
+      await submitContact({ name: 'Newsletter sign-up', email: email.trim(), message: 'Footer newsletter sign-up' });
       setSubscribed(true);
-      setTimeout(() => {
-        setSubscribed(false);
-        setEmail('');
-      }, 4000);
+      setEmail('');
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setSending(false);
     }
   };
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  const handleNavClick = (page, sectionId = null) => {
-    if (onNavigate) onNavigate(page);
-    if (sectionId) {
-      setTimeout(() => {
-        const el = document.getElementById(sectionId);
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
   };
 
   const locations = [
@@ -40,11 +39,11 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
   ];
 
   const socialLinks = [
-    { name: 'Instagram (@2bhkinteriors)', href: 'https://instagram.com' },
-    { name: 'Pinterest Journal', href: 'https://pinterest.com' },
-    { name: 'LinkedIn Professional', href: 'https://linkedin.com' },
-    { name: 'Houzz Portfolio', href: 'https://houzz.com' },
-  ];
+    { name: 'Instagram', href: BUSINESS.social.instagram },
+    { name: 'Pinterest', href: BUSINESS.social.pinterest },
+    { name: 'LinkedIn', href: BUSINESS.social.linkedin },
+    { name: 'Houzz', href: BUSINESS.social.houzz },
+  ].filter((link) => link.href);
 
   return (
     <footer id="contact" className="bg-[#080808] text-white pt-24 pb-12 border-t border-white/15 relative overflow-hidden">
@@ -69,15 +68,18 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
               <div className="bg-neutral-900 border border-amber-400/40 rounded-2xl p-6 flex items-center gap-4 text-amber-300 animate-fadeIn">
                 <CheckCircle2 className="w-6 h-6 shrink-0 text-amber-400" />
                 <div>
-                  <p className="font-semibold text-sm">Welcome to 2BHK Interiors Studio Journal</p>
-                  <p className="text-xs text-neutral-400">We've reserved your priority consultation access.</p>
+                  <p className="font-semibold text-sm">Thanks for signing up</p>
+                  <p className="text-xs text-neutral-400">We'll be in touch at the address you gave us.</p>
                 </div>
               </div>
             ) : (
               <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3">
+                <label htmlFor="footer-email" className="sr-only">Email address</label>
                 <input
+                  id="footer-email"
                   type="email"
                   required
+                  autoComplete="email"
                   placeholder="Enter your email address..."
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -85,13 +87,15 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
                 />
                 <button
                   type="submit"
-                  className="bg-amber-400 text-black font-semibold text-xs uppercase tracking-widest px-8 py-4 rounded-full hover:bg-amber-300 transition-all flex items-center justify-center gap-2 cursor-pointer"
+                  disabled={sending}
+                  className="bg-amber-400 text-black font-semibold text-xs uppercase tracking-widest px-8 py-4 rounded-full hover:bg-amber-300 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60"
                 >
-                  <span>Subscribe</span>
-                  <Send className="w-3.5 h-3.5" />
+                  <span>{sending ? 'Sending' : 'Subscribe'}</span>
+                  {sending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Send className="w-3.5 h-3.5" />}
                 </button>
               </form>
             )}
+            {error && <p className="text-xs text-red-300 mt-3" role="alert">{error}</p>}
           </div>
         </div>
 
@@ -99,31 +103,37 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
         <div className="py-20 grid grid-cols-1 md:grid-cols-12 gap-12 border-b border-white/10">
           {/* Brand Logo & Statement */}
           <div className="md:col-span-4 space-y-6">
-            <button
-              onClick={() => handleNavClick('home')}
-              className="text-3xl font-syne text-white block hover:opacity-80 transition-opacity bg-transparent border-0 text-left cursor-pointer"
+            <PageLink
+              page="home"
+              onNavigate={onNavigate}
+              aria-label="2BHK Interiors home"
+              className="text-3xl font-syne text-white block hover:opacity-80 transition-opacity text-left cursor-pointer"
             >
               <span className="font-extrabold tracking-tight text-amber-300">2BHK</span>
               <span className="font-light tracking-[0.25em] text-neutral-200 text-2xl uppercase ml-2.5">INTERIORS</span>
-            </button>
+            </PageLink>
             <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed font-light max-w-sm">
               A specialized residential interior design studio in Mumbai. 2D space planning, photorealistic 3D visualization, and tactile mood boards for apartments and homes.
             </p>
 
-            <div className="space-y-2 text-xs text-neutral-300 font-syne">
-              <div className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-amber-400" />
-                <span>+91 98200 12345</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail className="w-3.5 h-3.5 text-amber-400" />
-                <span>hello@2bhkinteriors.com</span>
-              </div>
+            <address className="not-italic space-y-2 text-xs text-neutral-300 font-syne">
+              {BUSINESS.phone && (
+                <a href={`tel:${BUSINESS.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 hover:text-white">
+                  <Phone className="w-3.5 h-3.5 text-amber-400" />
+                  <span>{BUSINESS.phone}</span>
+                </a>
+              )}
+              {BUSINESS.email && (
+                <a href={`mailto:${BUSINESS.email}`} className="flex items-center gap-2 hover:text-white">
+                  <Mail className="w-3.5 h-3.5 text-amber-400" />
+                  <span>{BUSINESS.email}</span>
+                </a>
+              )}
               <div className="flex items-center gap-2">
                 <MapPin className="w-3.5 h-3.5 text-amber-400" />
-                <span>Mumbai, Maharashtra, India</span>
+                <span>{BUSINESS.city}, {BUSINESS.region}, India</span>
               </div>
-            </div>
+            </address>
 
             <div className="pt-2">
               <button
@@ -162,36 +172,40 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
             </span>
             <ul className="space-y-3 pt-2">
               <li>
-                <button
-                  onClick={() => handleNavClick('home')}
-                  className="text-xs text-neutral-300 hover:text-white transition-colors bg-transparent border-0 p-0 cursor-pointer"
+                <PageLink
+                  page="home"
+                  onNavigate={onNavigate}
+                  className="text-xs text-neutral-300 hover:text-white transition-colors"
                 >
-                  Home Page
-                </button>
+                  Home
+                </PageLink>
               </li>
               <li>
-                <button
-                  onClick={() => handleNavClick('about')}
-                  className="text-xs text-neutral-300 hover:text-white transition-colors bg-transparent border-0 p-0 cursor-pointer"
+                <PageLink
+                  page="about"
+                  onNavigate={onNavigate}
+                  className="text-xs text-neutral-300 hover:text-white transition-colors"
                 >
                   About Studio
-                </button>
+                </PageLink>
               </li>
               <li>
-                <button
-                  onClick={() => handleNavClick('services')}
-                  className="text-xs text-neutral-300 hover:text-white transition-colors bg-transparent border-0 p-0 cursor-pointer"
+                <PageLink
+                  page="services"
+                  onNavigate={onNavigate}
+                  className="text-xs text-neutral-300 hover:text-white transition-colors"
                 >
-                  Our 3 Services
-                </button>
+                  Services
+                </PageLink>
               </li>
               <li>
-                <button
-                  onClick={() => handleNavClick('portfolio')}
-                  className="text-xs text-neutral-300 hover:text-white transition-colors bg-transparent border-0 p-0 cursor-pointer"
+                <PageLink
+                  page="portfolio"
+                  onNavigate={onNavigate}
+                  className="text-xs text-neutral-300 hover:text-white transition-colors"
                 >
-                  Master Portfolio Deck
-                </button>
+                  Portfolio
+                </PageLink>
               </li>
               <li>
                 <a
@@ -203,17 +217,19 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
                 </a>
               </li>
               <li>
-                <button
-                  onClick={() => handleNavClick('home', 'process')}
-                  className="text-xs text-neutral-300 hover:text-white transition-colors bg-transparent border-0 p-0 cursor-pointer"
+                <PageLink
+                  page="home" hash="process"
+                  onNavigate={onNavigate}
+                  className="text-xs text-neutral-300 hover:text-white transition-colors"
                 >
                   5-Step Process
-                </button>
+                </PageLink>
               </li>
             </ul>
           </div>
 
           {/* Social Links */}
+          {socialLinks.length > 0 && (
           <div className="md:col-span-2 space-y-4">
             <span className="text-xs font-semibold tracking-widest uppercase text-amber-300 font-syne block">
               CONNECT
@@ -234,11 +250,12 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
               ))}
             </ul>
           </div>
+          )}
         </div>
 
         {/* Bottom Copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
-          <p>© 2026 2BHK Interiors Studio. All rights reserved. Exclusively Residential Design.</p>
+          <p>© 2026 2BHK Interiors. All rights reserved. Exclusively residential design.</p>
 
           <button
             onClick={scrollToTop}

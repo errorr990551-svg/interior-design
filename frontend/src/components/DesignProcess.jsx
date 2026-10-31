@@ -59,6 +59,8 @@ export default function DesignProcess() {
                   }`}
                 >
                   <img
+                    loading="lazy"
+                    decoding="async"
                     src={step.image}
                     alt={step.alt}
                     className="w-full h-full object-cover hd-image"

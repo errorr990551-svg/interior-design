@@ -1,9 +1,0 @@
-# Robots.txt for 2BHK Interiors Studio (https://2bhkinteriors.in)
-
-User-agent: *
-Allow: /
-Allow: /images/
-Allow: /pptt.pdf
-
-# XML Sitemap Location
-Sitemap: https://2bhkinteriors.in/sitemap.xml

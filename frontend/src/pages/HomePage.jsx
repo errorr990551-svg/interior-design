@@ -10,6 +10,7 @@ import FAQSection from '../components/FAQSection';
 import WhereWeWorkSection from '../components/WhereWeWorkSection';
 import FollowAlongSection from '../components/FollowAlongSection';
 import CTASection from '../components/CTASection';
+import { homeFaqs } from '../content/faqs';
 
 export default function HomePage({
   onOpenConsultation,
@@ -19,24 +20,6 @@ export default function HomePage({
   onNavigateToServices,
   onNavigateToPortfolio,
 }) {
-  const homeFaqs = [
-    {
-      q: 'What does 2BHK Interiors do?',
-      a: "We're a residential interior design studio offering 2D layout design, 3D visualization, and mood board styling for homes and apartments in Mumbai.",
-    },
-    {
-      q: 'Do you only design residential spaces?',
-      a: 'Yes. We work exclusively on residential interiors, apartments, villas and independent homes, so our process and pricing are built specifically around home design.',
-    },
-    {
-      q: 'How do I start a project with 2BHK Interiors?',
-      a: "Book a design consultation through our website or contact us directly. We'll discuss your space, budget and style before moving into 2D layouts and mood boards.",
-    },
-    {
-      q: 'How long does a typical project take?',
-      a: 'A single room visualization typically takes 1 to 2 weeks, while a comprehensive full-home project (mood board, 2D plan, and 3D renders) ranges from 4 to 8 weeks depending on scope and revision rounds.',
-    },
-  ];
 
   return (
     <div className="space-y-0">

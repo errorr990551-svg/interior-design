@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { X, CheckCircle2, ArrowRight, Loader2, AlertCircle } from 'lucide-react';
+import { submitContact } from '../lib/contact';
 
 export default function ConsultationModal({ isOpen, onClose }) {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -12,6 +13,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
     phone: '',
     company: '',
     message: '',
+    website: '', // honeypot: hidden from people, filled in by spam bots
   });
 
   if (!isOpen) return null;
@@ -21,27 +23,12 @@ export default function ConsultationModal({ isOpen, onClose }) {
     setLoading(true);
     setError(null);
 
-    const apiBase = (import.meta.env.VITE_API_BASE_URL || '').trim().replace(/\/$/, '') || 'http://localhost:5000';
-
     try {
-      const response = await fetch(`${apiBase}/api/contact`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (!response.ok || !data.success) {
-        throw new Error(data.message || 'Failed to submit consultation request. Please try again.');
-      }
-
+      await submitContact(formData);
       setFormSubmitted(true);
     } catch (err) {
       console.error('Consultation form submission error:', err);
-      setError(err.message || 'Unable to connect to server. Please verify your connection.');
+      setError(err.message);
     } finally {
       setLoading(false);
     }
@@ -56,13 +43,19 @@ export default function ConsultationModal({ isOpen, onClose }) {
       phone: '',
       company: '',
       message: '',
+      website: '',
     });
     onClose();
   };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-md animate-fadeIn">
-      <div className="relative w-full max-w-2xl bg-[#121212] border border-white/15 text-white rounded-none shadow-2xl p-8 sm:p-10 overflow-hidden max-h-[90vh] overflow-y-auto">
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="consultation-title"
+        className="relative w-full max-w-2xl bg-[#121212] border border-white/15 text-white rounded-none shadow-2xl p-8 sm:p-10 overflow-hidden max-h-[90vh] overflow-y-auto"
+      >
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -95,7 +88,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
               <span className="text-xs font-semibold tracking-widest text-neutral-400 uppercase font-syne block mb-1">
                 PRIVATE CONSULTATION
               </span>
-              <h2 className="text-2xl sm:text-3xl font-bold font-syne tracking-tight">
+              <h2 id="consultation-title" className="text-2xl sm:text-3xl font-bold font-syne tracking-tight">
                 Design Your Space With Us
               </h2>
               <p className="text-xs text-neutral-400 mt-1.5 leading-relaxed">
@@ -114,29 +107,35 @@ export default function ConsultationModal({ isOpen, onClose }) {
               {/* Row 1: Full Name & Email */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">
+                  <label htmlFor="consult-name" className="block text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">
                     Full Name *
                   </label>
                   <input
                     type="text"
                     required
+                    id="consult-name"
+                    name="name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    placeholder="e.g. Eleanor Vance"
+                    placeholder="Your name"
+                    autoComplete="name"
                     className="w-full bg-neutral-900 border border-white/15 px-4 py-3 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-white transition-colors"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">
+                  <label htmlFor="consult-email" className="block text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">
                     Email Address *
                   </label>
                   <input
                     type="email"
                     required
+                    id="consult-email"
+                    name="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    placeholder="eleanor@example.com"
+                    placeholder="you@example.com"
+                    autoComplete="email"
                     className="w-full bg-neutral-900 border border-white/15 px-4 py-3 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-white transition-colors"
                   />
                 </div>
@@ -145,28 +144,33 @@ export default function ConsultationModal({ isOpen, onClose }) {
               {/* Row 2: Phone Number & Company/City */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">
+                  <label htmlFor="consult-phone" className="block text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">
                     Phone Number *
                   </label>
                   <input
                     type="tel"
                     required
+                    id="consult-phone"
+                    name="phone"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="+91 98765 43210"
+                    placeholder="Your mobile number"
+                    autoComplete="tel"
                     className="w-full bg-neutral-900 border border-white/15 px-4 py-3 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-white transition-colors"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">
-                    Company / Location (Optional)
+                  <label htmlFor="consult-company" className="block text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">
+                    Locality / City (Optional)
                   </label>
                   <input
                     type="text"
+                    id="consult-company"
+                    name="company"
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                    placeholder="e.g. Acme Corp / South Delhi"
+                    placeholder="e.g. Andheri West, Mumbai"
                     className="w-full bg-neutral-900 border border-white/15 px-4 py-3 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-white transition-colors"
                   />
                 </div>
@@ -174,15 +178,30 @@ export default function ConsultationModal({ isOpen, onClose }) {
 
               {/* Row 3: Project Notes / Vision */}
               <div>
-                <label className="block text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">
+                <label htmlFor="consult-message" className="block text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">
                   Project Notes / Vision
                 </label>
                 <textarea
                   rows={4}
+                  id="consult-message"
+                  name="message"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   placeholder="Tell us about your space, preferred materials, or timeline requirements..."
                   className="w-full bg-neutral-900 border border-white/15 px-4 py-3 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-white transition-colors resize-none"
+                />
+              </div>
+
+              <div className="hidden" aria-hidden="true">
+                <label htmlFor="consult-website">Leave this field empty</label>
+                <input
+                  id="consult-website"
+                  name="website"
+                  type="text"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  value={formData.website}
+                  onChange={(e) => setFormData({ ...formData, website: e.target.value })}
                 />
               </div>
 

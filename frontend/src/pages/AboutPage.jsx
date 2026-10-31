@@ -4,6 +4,7 @@ import MaterialsSection from '../components/MaterialsSection';
 import FAQSection from '../components/FAQSection';
 import WhereWeWorkSection from '../components/WhereWeWorkSection';
 import CTASection from '../components/CTASection';
+import { aboutFaqs } from '../content/faqs';
 
 export default function AboutPage({ onOpenConsultation, onNavigateHome }) {
   const philosophies = [
@@ -29,24 +30,6 @@ export default function AboutPage({ onOpenConsultation, onNavigateHome }) {
     },
   ];
 
-  const aboutFaqs = [
-    {
-      q: 'How long has 2BHK Interiors been in business?',
-      a: '2BHK Interiors was founded three years ago and has worked exclusively on residential interior design projects since.',
-    },
-    {
-      q: 'What areas does 2BHK Interiors serve?',
-      a: 'We currently design homes in Mumbai and surrounding areas. We also offer remote design services for clients outside our immediate region.',
-    },
-    {
-      q: 'What makes 2BHK Interiors different from other design studios?',
-      a: 'We work only on residential projects, and every design goes through 2D planning, mood boarding and 3D visualization before execution, so clients see their finished home before committing to it.',
-    },
-    {
-      q: 'Does 2BHK Interiors handle execution, or only design?',
-      a: 'We provide execution-ready design files, floor plans, material spec sheets, and full 3D renders. We also collaborate with trusted execution contractors to ensure the final build matches sign-off exactly.',
-    },
-  ];
 
   return (
     <div className="space-y-0 pt-24 bg-[#0e0e0e] text-white">
@@ -54,6 +37,7 @@ export default function AboutPage({ onOpenConsultation, onNavigateHome }) {
       <section className="relative min-h-[70vh] flex flex-col justify-center py-20 bg-[#0e0e0e] overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 z-0">
           <img
+            fetchpriority="high"
             src="/images/about_banner.jpg"
             alt="2BHK Interiors Studio Interior"
             className="w-full h-full object-cover filter brightness-[0.7] contrast-[1.1]"
@@ -62,13 +46,13 @@ export default function AboutPage({ onOpenConsultation, onNavigateHome }) {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 space-y-6">
-          <div className="flex items-center gap-2 text-xs font-mono tracking-widest text-amber-300 uppercase">
-            <button onClick={onNavigateHome} className="hover:underline cursor-pointer">
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs font-mono tracking-widest text-amber-300 uppercase">
+            <a href="/" onClick={(e) => { e.preventDefault(); onNavigateHome(); }} className="hover:underline cursor-pointer">
               HOME
-            </button>
+            </a>
             <span>/</span>
             <span className="text-white font-bold">ABOUT THE STUDIO</span>
-          </div>
+          </nav>
 
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold font-syne tracking-tight uppercase max-w-4xl leading-tight">
             Designed Around How You Live
@@ -102,6 +86,8 @@ export default function AboutPage({ onOpenConsultation, onNavigateHome }) {
             <div className="lg:col-span-6">
               <div className="relative rounded-3xl overflow-hidden border border-white/15 shadow-2xl group">
                 <img
+                  loading="lazy"
+                  decoding="async"
                   src="/images/about_story.jpg"
                   alt="Designer reviewing floor plans at 2BHK Interiors studio"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-95"
@@ -221,6 +207,8 @@ export default function AboutPage({ onOpenConsultation, onNavigateHome }) {
             <div className="lg:col-span-5">
               <div className="aspect-square relative rounded-3xl overflow-hidden border border-white/15 shadow-2xl">
                 <img
+                  loading="lazy"
+                  decoding="async"
                   src="/images/about_founder.jpg"
                   alt="2BHK Interiors Lead Designer Portrait"
                   className="w-full h-full object-cover filter brightness-95"

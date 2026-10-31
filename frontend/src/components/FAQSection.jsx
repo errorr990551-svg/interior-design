@@ -37,23 +37,33 @@ export default function FAQSection({ title = "Frequently Asked Questions", subti
                     : 'bg-[#111111] border-white/10 hover:border-white/20'
                 }`}
               >
-                <button
-                  onClick={() => toggleAccordion(idx)}
-                  className="w-full p-6 sm:p-8 flex items-center justify-between text-left gap-4 cursor-pointer focus:outline-none"
-                >
-                  <span className="text-base sm:text-lg font-bold font-syne text-white tracking-tight">
-                    {faq.q}
-                  </span>
-                  <span className="p-2 rounded-full bg-white/5 border border-white/10 text-amber-300 shrink-0">
-                    {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
-                  </span>
-                </button>
+                <h3>
+                  <button
+                    type="button"
+                    id={`faq-q-${idx}`}
+                    aria-expanded={isOpen}
+                    aria-controls={`faq-a-${idx}`}
+                    onClick={() => toggleAccordion(idx)}
+                    className="w-full p-6 sm:p-8 flex items-center justify-between text-left gap-4 cursor-pointer focus:outline-none"
+                  >
+                    <span className="text-base sm:text-lg font-bold font-syne text-white tracking-tight">
+                      {faq.q}
+                    </span>
+                    <span className="p-2 rounded-full bg-white/5 border border-white/10 text-amber-300 shrink-0">
+                      {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
+                    </span>
+                  </button>
+                </h3>
 
-                {isOpen && (
-                  <div className="px-6 pb-6 sm:px-8 sm:pb-8 text-xs sm:text-sm text-neutral-300 leading-relaxed font-light border-t border-white/5 mt-2 pt-4">
-                    {faq.a}
-                  </div>
-                )}
+                <div
+                  id={`faq-a-${idx}`}
+                  role="region"
+                  aria-labelledby={`faq-q-${idx}`}
+                  hidden={!isOpen}
+                  className="px-6 pb-6 sm:px-8 sm:pb-8 text-xs sm:text-sm text-neutral-300 leading-relaxed font-light border-t border-white/5 mt-2 pt-4"
+                >
+                  {faq.a}
+                </div>
               </div>
             );
           })}

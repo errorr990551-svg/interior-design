@@ -1,41 +1,11 @@
 import { useState } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { TESTIMONIALS } from '../site';
 
 export default function Testimonials() {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
 
-  const testimonials = [
-    {
-      quote:
-        '“2BHK Interiors completely changed the atmosphere of our home, blending beauty and function effortlessly.”',
-      author: 'SARAH',
-      role: 'RESIDENTIAL CLIENT',
-    },
-    {
-      quote:
-        '“Their architectural approach to natural lighting and custom joinery turned our penthouse into a serene sanctuary.”',
-      author: 'MARCUS VANCE',
-      role: 'CREATIVE DIRECTOR',
-    },
-    {
-      quote:
-        '“The team’s meticulous material selection and execution exceeded every expectation we had for our Flagship space.”',
-      author: 'ELENA ROSTOVA',
-      role: 'BOUTIQUE HOTEL OWNER',
-    },
-    {
-      quote:
-        '“Working with 2BHK Interiors felt like a true partnership. Every detail was crafted with spatial intelligence and warmth.”',
-      author: 'DAVID K.',
-      role: 'ARCHITECT & RESIDENT',
-    },
-    {
-      quote:
-        '“Timeless, functional, and deeply inspiring. 2BHK Interiors delivered a home that reflects exactly how we love to live.”',
-      author: 'CLARA & HANS',
-      role: 'PRIVATE VILLA CLIENT',
-    },
-  ];
+  const testimonials = TESTIMONIALS;
 
   const handlePrev = () => {
     setActiveTestimonial((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
@@ -45,13 +15,18 @@ export default function Testimonials() {
     setActiveTestimonial((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
   };
 
+  // Only real, attributable client quotes belong here; hide the section until there are some.
+  if (testimonials.length === 0) return null;
+
   return (
     <section className="relative bg-neutral-950 text-white py-28 lg:py-36 overflow-hidden border-t border-white/10">
       {/* Dark warm wood texture background overlay */}
       <div className="absolute inset-0 z-0">
         <img
           src="/images/process-desk.jpg"
-          alt="Testimonial Atmosphere"
+          alt=""
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover filter brightness-[0.18] contrast-125"
         />
         <div className="absolute inset-0 bg-linear-to-r from-black/90 via-black/80 to-black/90" />
@@ -66,14 +41,14 @@ export default function Testimonials() {
             </span>
 
             <div className="text-3xl font-light font-mono text-neutral-300">
-              0{activeTestimonial + 1}/0{testimonials.length}
+              {String(activeTestimonial + 1).padStart(2, '0')}/{String(testimonials.length).padStart(2, '0')}
             </div>
           </div>
 
           {/* Right Column: Quote & Author & Slider Arrows */}
           <div className="md:col-span-9 space-y-12">
             <blockquote className="text-2xl sm:text-4xl md:text-5xl font-light font-syne leading-tight text-neutral-100 max-w-4xl">
-              {testimonials[activeTestimonial].quote}
+              “{testimonials[activeTestimonial].quote}”
             </blockquote>
 
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 pt-6 border-t border-white/15">
@@ -82,11 +57,11 @@ export default function Testimonials() {
                   {testimonials[activeTestimonial].author}
                 </span>
                 <span className="text-xs tracking-wider uppercase text-neutral-400">
-                  {testimonials[activeTestimonial].role}
+                  {testimonials[activeTestimonial].detail}
                 </span>
               </div>
 
-              {/* Prev / Next arrows matching Screenshot 3 (Prompt 2) */}
+              {/* Prev / Next arrows */}
               <div className="flex items-center space-x-3">
                 <button
                   onClick={handlePrev}

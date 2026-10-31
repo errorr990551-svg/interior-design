@@ -150,7 +150,7 @@ for (const c of built) {
     {
       '@context': 'https://schema.org', '@type': 'Article', headline: m.h1, description: m.description,
       author: { '@type': 'Person', name: author.name, ...(author.url ? { url: author.url } : {}) },
-      publisher: { '@type': 'Organization', name: config.siteName, url: SITE + '/' },
+      publisher: { '@type': 'Organization', '@id': SITE + '/#organization', name: config.siteName, url: SITE + '/' },
       datePublished: published, dateModified: updated, mainEntityOfPage: SITE + c.url, inLanguage: 'en-IN',
     },
     bc.ld,

@@ -7,37 +7,77 @@ import ServicesPage from './pages/ServicesPage';
 import PortfolioPage from './pages/PortfolioPage';
 import ConsultationModal from './components/ConsultationModal';
 import ProjectModal from './components/ProjectModal';
-import { RobotsMeta } from './robot';
+import NotFoundPage from './pages/NotFoundPage';
+import { routeForPath, routeForPage, applyHead } from './site';
 
-export default function App() {
-  const [currentPage, setCurrentPage] = useState('home'); // 'home' | 'about' | 'services' | 'portfolio'
+const currentPath = () => (typeof window === 'undefined' ? '/' : window.location.pathname);
+
+export default function App({ initialPath }) {
+  // 'home' | 'about' | 'services' | 'portfolio' | 'notfound', derived from the URL
+  const [currentPage, setCurrentPage] = useState(() => routeForPath(initialPath ?? currentPath()).page);
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
   const [modalImageUrl, setModalImageUrl] = useState(null);
 
-  // Trigger consultation popup on first visit on any page
+  // Consultation popup for first-time visitors, shown only once they've engaged with the page
+  // (scrolled 40% of it or stayed 30 seconds), not as an interstitial on arrival.
   useEffect(() => {
+    if (currentPage === 'notfound') return;
     try {
       const searchParams = new URLSearchParams(window.location.search);
       const forcePopup = searchParams.get('popup') === 'true' || searchParams.get('test') === 'true';
+      if (localStorage.getItem('twobhk_seen_consultation_popup') && !forcePopup) return;
 
-      const hasSeen = localStorage.getItem('twobhk_seen_consultation_popup');
-      if (!hasSeen || forcePopup) {
-        const timer = setTimeout(() => {
-          setIsConsultationOpen(true);
+      let done = false;
+      const open = () => {
+        if (done) return;
+        done = true;
+        setIsConsultationOpen(true);
+        try {
           localStorage.setItem('twobhk_seen_consultation_popup', 'true');
-        }, 1500);
-
-        return () => clearTimeout(timer);
-      }
+        } catch (_) {}
+        cleanup();
+      };
+      const onScroll = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        if (scrollable > 0 && window.scrollY / scrollable >= 0.4) open();
+      };
+      const timer = setTimeout(open, forcePopup ? 1500 : 30000);
+      const cleanup = () => {
+        clearTimeout(timer);
+        window.removeEventListener('scroll', onScroll);
+      };
+      if (!forcePopup) window.addEventListener('scroll', onScroll, { passive: true });
+      return cleanup;
     } catch (e) {
       console.warn('LocalStorage access warning:', e);
     }
   }, []);
 
-  const handleNavigate = (page) => {
-    setCurrentPage(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Back/forward buttons
+  useEffect(() => {
+    const onPopState = () => {
+      const route = routeForPath(currentPath());
+      setCurrentPage(route.page);
+      applyHead(route);
+    };
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
+
+  const handleNavigate = (page, hash) => {
+    const route = routeForPage(page);
+    const url = route.path + (hash ? `#${hash}` : '');
+    if (window.location.pathname + window.location.hash !== url) {
+      window.history.pushState({}, '', url);
+    }
+    setCurrentPage(route.page);
+    applyHead(route);
+    if (hash) {
+      setTimeout(() => document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth' }), 100);
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   const handleOpenConsultation = () => setIsConsultationOpen(true);
@@ -69,9 +109,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#0e0e0e] text-[#f5f5f5] selection:bg-amber-400 selection:text-black">
-      {/* Search Engine Robots & Sitemap Metadata Sync */}
-      <RobotsMeta index={true} follow={true} maxImagePreview="large" />
-
       {/* 1. Global Navigation Bar */}
       <Navbar
         currentPage={currentPage}
@@ -89,6 +126,7 @@ export default function App() {
             onNavigateToAbout={() => handleNavigate('about')}
             onNavigateToServices={() => handleNavigate('services')}
             onNavigateToPortfolio={() => handleNavigate('portfolio')}
+            onNavigate={handleNavigate}
           />
         )}
 
@@ -113,6 +151,8 @@ export default function App() {
             onSelectProject={handleSelectProject}
           />
         )}
+
+        {currentPage === 'notfound' && <NotFoundPage onNavigate={handleNavigate} />}
       </main>
 
       {/* 3. Global Footer */}

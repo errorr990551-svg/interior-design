@@ -1,4 +1,5 @@
 import { ArrowUpRight, Phone, Mail, MapPin } from 'lucide-react';
+import { BUSINESS } from '../site';
 
 export default function CTASection({
   headline = "Ready to Design Your Home?",
@@ -12,7 +13,9 @@ export default function CTASection({
       <div className="absolute inset-0 z-0">
         <img
           src="/images/about_banner.jpg"
-          alt="CTA Background Vignette"
+          alt=""
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover opacity-15 filter brightness-50 contrast-125"
         />
         <div className="absolute inset-0 bg-linear-to-b from-[#090909] via-transparent to-[#090909]" />
@@ -43,17 +46,21 @@ export default function CTASection({
 
         {/* Contact Snapshot line */}
         <div className="pt-12 border-t border-white/10 flex flex-wrap items-center justify-center gap-8 text-xs sm:text-sm font-syne tracking-wider text-neutral-400 uppercase">
-          <div className="flex items-center gap-2">
-            <Phone className="w-4 h-4 text-amber-400" />
-            <span>+91 98200 12345</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Mail className="w-4 h-4 text-amber-400" />
-            <span>hello@2bhkinteriors.com</span>
-          </div>
+          {BUSINESS.phone && (
+            <a href={`tel:${BUSINESS.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 hover:text-white">
+              <Phone className="w-4 h-4 text-amber-400" />
+              <span>{BUSINESS.phone}</span>
+            </a>
+          )}
+          {BUSINESS.email && (
+            <a href={`mailto:${BUSINESS.email}`} className="flex items-center gap-2 hover:text-white normal-case">
+              <Mail className="w-4 h-4 text-amber-400" />
+              <span>{BUSINESS.email}</span>
+            </a>
+          )}
           <div className="flex items-center gap-2">
             <MapPin className="w-4 h-4 text-amber-400" />
-            <span>Mumbai, India</span>
+            <span>{BUSINESS.city}, India</span>
           </div>
         </div>
       </div>

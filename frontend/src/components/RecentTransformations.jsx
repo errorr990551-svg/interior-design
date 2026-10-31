@@ -1,4 +1,4 @@
-import { ArrowUpRight, Download, FileText, Eye, Sparkles, ExternalLink } from 'lucide-react';
+import { ArrowUpRight, Download, FileText, Eye, Sparkles } from 'lucide-react';
 
 export default function RecentTransformations({ onSelectProject, onViewAll }) {
   const portfolioPdfItem = {
@@ -10,7 +10,7 @@ export default function RecentTransformations({ onSelectProject, onViewAll }) {
     image: '/images/home_hero_bg.jpg',
     pdfUrl: '/pptt.pdf',
     isPdf: true,
-    fileSize: '34.8 MB',
+    fileSize: '2.6 MB',
   };
 
   const projects = [
@@ -72,7 +72,7 @@ export default function RecentTransformations({ onSelectProject, onViewAll }) {
               <div className="flex items-center gap-3">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/20 text-amber-300 border border-amber-400/30 text-xs font-mono font-semibold">
                   <FileText className="w-3.5 h-3.5" />
-                  PDF PORTFOLIO DECK (34.8 MB)
+                  PDF PORTFOLIO DECK (2.6 MB)
                 </span>
                 <span className="text-xs font-mono text-neutral-400">pptt.pdf</span>
               </div>
@@ -118,6 +118,8 @@ export default function RecentTransformations({ onSelectProject, onViewAll }) {
               {/* Project Image */}
               <div className="lg:col-span-6 overflow-hidden rounded-sm bg-neutral-200 aspect-16/10 relative">
                 <img
+                  loading="lazy"
+                  decoding="async"
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"

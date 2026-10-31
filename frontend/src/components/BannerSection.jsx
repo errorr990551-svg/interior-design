@@ -8,6 +8,8 @@ export default function BannerSection({ onExpandBanner }) {
           {/* Main Full-width Banner Image using light Image 2 */}
           <div className="relative aspect-4/3 sm:aspect-video md:aspect-21/10 w-full overflow-hidden bg-neutral-100">
             <img
+              loading="lazy"
+              decoding="async"
               src="/images/banner.jpg"
               alt="2BHK Interiors Japanese Wabi-Sabi Sanctuary Living Architecture"
               className="w-full h-full object-cover object-center hd-image filter brightness-[1.04] contrast-[1.08] saturate-[1.04] transition-transform duration-1000 group-hover:scale-105"

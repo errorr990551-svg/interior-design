@@ -2,9 +2,11 @@ import { useState } from 'react';
 import { Download, ExternalLink, FileText, Sparkles, ArrowUpRight, Eye, Calendar, Maximize2, ShieldCheck } from 'lucide-react';
 import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
+import { portfolioFaqs } from '../content/faqs';
 
 export default function PortfolioPage({ onOpenConsultation, onNavigateHome, onSelectProject }) {
   const [fullscreenMode, setFullscreenMode] = useState(false);
+  const [showDeck, setShowDeck] = useState(false);
 
   const projects = [
     {
@@ -33,20 +35,6 @@ export default function PortfolioPage({ onOpenConsultation, onNavigateHome, onSe
     },
   ];
 
-  const portfolioFaqs = [
-    {
-      q: 'What is included in the Master Portfolio Presentation PDF?',
-      a: 'Our digital portfolio deck contains 17 high-resolution pages of completed 2BHK Interiors projects, detailed 2D CAD floor plans, photorealistic 3D visualisations, mood boards, and material specifications.',
-    },
-    {
-      q: 'Can I download the presentation deck for offline viewing?',
-      a: 'Yes! You can download the complete 34.8 MB presentation PDF directly to your desktop or mobile device using the "Download PDF" button above.',
-    },
-    {
-      q: 'Do you offer custom walkthrough presentations for specific home layouts?',
-      a: 'Absolutely. During your initial design consultation, we prepare a personalized 2D spatial layout and mood board tailored specifically to your home floor plan.',
-    },
-  ];
 
   return (
     <div className="space-y-0 pt-24 bg-[#0e0e0e] text-white selection:bg-amber-400 selection:text-black">
@@ -57,13 +45,13 @@ export default function PortfolioPage({ onOpenConsultation, onNavigateHome, onSe
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 space-y-6">
-          <div className="flex items-center gap-2 text-xs font-mono tracking-widest text-amber-300 uppercase">
-            <button onClick={onNavigateHome} className="hover:underline cursor-pointer bg-transparent border-0 text-amber-300">
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs font-mono tracking-widest text-amber-300 uppercase">
+            <a href="/" onClick={(e) => { e.preventDefault(); onNavigateHome(); }} className="hover:underline cursor-pointer text-amber-300">
               HOME
-            </button>
+            </a>
             <span>/</span>
             <span className="text-white font-bold">FULL PORTFOLIO DECK & PROJECTS</span>
-          </div>
+          </nav>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end justify-between">
             <div className="lg:col-span-8 space-y-4">
@@ -73,7 +61,7 @@ export default function PortfolioPage({ onOpenConsultation, onNavigateHome, onSe
               </div>
 
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-syne tracking-tight uppercase leading-tight text-white">
-                2BHK Interiors Master Portfolio Presentation
+                Residential Interior Design Portfolio
               </h1>
 
               <p className="text-sm sm:text-base md:text-lg text-neutral-300 font-light max-w-3xl leading-relaxed">
@@ -88,7 +76,7 @@ export default function PortfolioPage({ onOpenConsultation, onNavigateHome, onSe
                 className="w-full inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-black font-bold text-xs uppercase tracking-widest px-6 py-4 rounded-full transition-all shadow-lg cursor-pointer"
               >
                 <Download className="w-4 h-4" />
-                <span>Download PDF Deck (34.8 MB)</span>
+                <span>Download PDF Deck (2.6 MB)</span>
               </a>
 
               <a
@@ -149,11 +137,29 @@ export default function PortfolioPage({ onOpenConsultation, onNavigateHome, onSe
               fullscreenMode ? 'h-[92vh]' : 'h-[75vh] sm:h-[85vh]'
             }`}
           >
-            <iframe
-              src="/pptt.pdf#toolbar=1&navpanes=0&view=FitH"
-              title="2BHK Interiors Master Portfolio Presentation"
-              className="w-full h-full border-0 bg-neutral-900"
-            />
+            {/* The deck is a large PDF, so it only loads when the visitor asks for it. */}
+            {showDeck ? (
+              <iframe
+                src="/pptt.pdf#toolbar=1&navpanes=0&view=FitH"
+                title="2BHK Interiors portfolio presentation"
+                className="w-full h-full border-0 bg-neutral-900"
+              />
+            ) : (
+              <div className="w-full h-full flex flex-col items-center justify-center gap-5 text-center px-6">
+                <FileText className="w-12 h-12 text-amber-300" />
+                <p className="text-sm text-neutral-300 max-w-md">
+                  View the full portfolio deck here, or download the PDF to read it offline.
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setShowDeck(true)}
+                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider bg-amber-400 hover:bg-amber-300 text-black px-6 py-3 rounded-full transition-all cursor-pointer"
+                >
+                  <Eye className="w-4 h-4" />
+                  <span>Load presentation</span>
+                </button>
+              </div>
+            )}
           </div>
 
           {/* Direct Download & Help Strip */}
@@ -201,6 +207,8 @@ export default function PortfolioPage({ onOpenConsultation, onNavigateHome, onSe
               >
                 <div className="aspect-16/10 overflow-hidden relative bg-neutral-900">
                   <img
+                    loading="lazy"
+                    decoding="async"
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"

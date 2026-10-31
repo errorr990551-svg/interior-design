@@ -1,5 +1,16 @@
 import { Resend } from "resend";
 
+// Form values are interpolated into the notification email's HTML, so escape them.
+const escapeHtml = (value) =>
+  String(value ?? "")
+    .slice(0, 5000)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+
+
 export default {
   async fetch(request, env, ctx) {
     const corsHeaders = {
@@ -32,7 +43,20 @@ export default {
     if (url.pathname === "/api/contact" && request.method === "POST") {
       try {
         const body = await request.json();
-        const { name, email, phone, company, message } = body;
+        const { website } = body;
+        const name = escapeHtml(body.name).trim();
+        const email = escapeHtml(body.email).trim();
+        const phone = escapeHtml(body.phone).trim();
+        const company = escapeHtml(body.company).trim();
+        const message = escapeHtml(body.message);
+
+        // Honeypot field is hidden from people; bots that fill it get a success response and no email.
+        if (website) {
+          return new Response(JSON.stringify({ success: true, message: "Consultation request sent successfully" }), {
+            status: 200,
+            headers: { ...corsHeaders, "Content-Type": "application/json" },
+          });
+        }
 
         if (!name || !email) {
           return new Response(
@@ -50,12 +74,14 @@ export default {
           );
         }
 
-        // Resolves key from Cloudflare env secret, with safe fallback
-        const fallbackKey = typeof atob === "function" ? atob("cmVfWnpuTDVRekFfR0NMTUpyTlpnSHNiRDhKNXU3NFR2eThM") : "";
-        const apiKey = env?.RESEND_API_KEY || fallbackKey;
-
+        // Set with: npx wrangler secret put RESEND_API_KEY  (never commit the key)
+        const apiKey = env?.RESEND_API_KEY;
         if (!apiKey) {
-          console.error("RESEND_API_KEY is missing!");
+          console.error("RESEND_API_KEY secret is not set on the worker");
+          return new Response(
+            JSON.stringify({ success: false, message: "Failed to send consultation request" }),
+            { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+          );
         }
 
         const resend = new Resend(apiKey);
