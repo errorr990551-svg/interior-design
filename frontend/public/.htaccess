@@ -14,6 +14,9 @@ ErrorDocument 404 /404.html
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
+  # The city guides used to have their own sitemap; everything is in sitemap.xml now
+  RewriteRule ^sitemap-interior-design\.xml$ /sitemap.xml [R=301,L]
+
   # /index.html -> / (and /about/index.html -> /about/) so each page has a single URL
   RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
   RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L]

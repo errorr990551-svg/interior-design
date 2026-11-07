@@ -38,4 +38,4 @@ npm run content:preview                     # noindex preview into .content-prev
 npm run build                               # Vite site + published city pages into dist/
 ```
 
-Statuses: `queued → researching → drafted → (qa_failed ↔ drafted) → ready → published`. Only `published` pages reach `dist/`, the hubs and the sitemap (`sitemap-interior-design.xml`, also added to `robots.txt`).
+Statuses: `queued → researching → drafted → (qa_failed ↔ drafted) → ready → published`. Only `published` pages reach `dist/`, the hubs and the site's single `sitemap.xml` (the build appends them to the sitemap that prerender writes).
