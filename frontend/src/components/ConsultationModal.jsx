@@ -170,7 +170,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
                     name="company"
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                    placeholder="e.g. Andheri West, Mumbai"
+                    placeholder="e.g. Whitefield, Bangalore"
                     className="w-full bg-neutral-900 border border-white/15 px-4 py-3 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-white transition-colors"
                   />
                 </div>

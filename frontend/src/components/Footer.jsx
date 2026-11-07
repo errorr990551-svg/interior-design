@@ -32,10 +32,10 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
   };
 
   const locations = [
-    { area: 'SOUTH MUMBAI', detail: 'Colaba, Worli & Lower Parel' },
-    { area: 'WESTERN SUBURBS', detail: 'Bandra, Khar, Juhu & Vile Parle' },
-    { area: 'POWAI', detail: 'Hiranandani & nearby areas' },
-    { area: 'BEYOND THE CITY', detail: 'Thane & Navi Mumbai' },
+    { area: 'CENTRAL BANGALORE', detail: 'Indiranagar, Domlur & CBD' },
+    { area: 'SOUTH BANGALORE', detail: 'Koramangala, HSR Layout & JP Nagar' },
+    { area: 'EAST BANGALORE', detail: 'Whitefield, Marathahalli & Bellandur' },
+    { area: 'NORTH BANGALORE', detail: 'Hebbal, Yelahanka & Thanisandra' },
   ];
 
   const socialLinks = [
@@ -59,7 +59,7 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
               by email
             </h2>
             <p className="text-sm text-neutral-400 font-light max-w-md">
-              Occasional notes on planning and finishing Mumbai apartments, plus new rooms from our portfolio. No spam; unsubscribe any time.
+              Occasional notes on planning and finishing Bangalore apartments, plus new rooms from our portfolio. No spam; unsubscribe any time.
             </p>
           </div>
 
@@ -113,7 +113,7 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
               <span className="font-light tracking-[0.25em] text-neutral-200 text-2xl uppercase ml-2.5">INTERIORS</span>
             </PageLink>
             <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed font-light max-w-sm">
-              Residential interior design studio in Mumbai: mood boards, scaled 2D layouts and photorealistic 3D visualisation for apartments and homes.
+              Residential interior design studio in Bangalore: mood boards, scaled 2D layouts and photorealistic 3D visualisation for apartments and homes.
             </p>
 
             <address className="not-italic space-y-2 text-xs text-neutral-300 font-syne">

@@ -9,19 +9,23 @@ export default function BehindRenova({ onLearnMore, onSelectService }) {
       id: '01',
       title: '2D Interior Design & Space Planning',
       description:
-        'Precise, scaled floor plans and layouts that solve for flow, storage, and function first. This is the foundation every good interior is built on, ensuring clearance and lighting work seamlessly before any styling.',
+        'Precise, scaled floor plans and furniture layouts that solve for movement, storage and function first, including every switch and socket point. This is the foundation every good interior is built on, so clearances and lighting work before any styling begins.',
       image: '/images/service_2d_plan.jpg',
-      alt: '2D Scaled Floor Plan Blueprint',
+      alt: 'Scaled 2D interior design floor plan layout',
       tag: 'Layout & Function',
+      linkText: 'Explore 2D space planning',
+      hash: '2d-space-planning',
     },
     {
       id: '02',
-      title: '3D Interior Design & Visualization',
+      title: '3D Interior Design & Visualisation',
       description:
-        'Photorealistic 3D renders and walkthroughs of your space, so you can see your home before it is built. Lighting, materials, furniture placement, all visualized room by room with revision rounds.',
+        'Photorealistic 3D renders and walkthroughs of your space, so you can see your home before it is built. Lighting, materials and furniture placement are visualised room by room, with revision rounds included.',
       image: '/images/service_3d_render.jpg',
-      alt: 'Photorealistic 3D Master Bedroom Render',
+      alt: 'Photorealistic 3D master bedroom visualisation',
       tag: 'Immersive Renders',
+      linkText: 'Explore 3D visualisation',
+      hash: '3d-visualisation',
     },
     {
       id: '03',
@@ -29,8 +33,10 @@ export default function BehindRenova({ onLearnMore, onSelectService }) {
       description:
         'A curated visual language for your home: palette, textures, materials and references, collated and agreed before design work begins. The fastest, most affordable way to lock direction.',
       image: '/images/service_moodboard.jpg',
-      alt: 'Tactile Physical Mood Board Flat-Lay',
+      alt: 'Curated interior mood board with materials and swatches',
       tag: 'Palette & Textures',
+      linkText: 'Explore mood boards',
+      hash: 'mood-boards',
     },
   ];
 
@@ -56,7 +62,7 @@ export default function BehindRenova({ onLearnMore, onSelectService }) {
                 loading="lazy"
                 decoding="async"
                 src="/images/home_studio_desk.jpg"
-                alt="2BHK Interiors Design Studio Workspace"
+                alt="Floor plan, fabric swatches and a 3D render on a designer's desk at 2BHK Interiors"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-95"
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
@@ -73,7 +79,7 @@ export default function BehindRenova({ onLearnMore, onSelectService }) {
             </h2>
 
             <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
-              For three years, we've worked exclusively on residential interiors, which means every layout we draw, every material we suggest, and every mood board we build is built around how people actually live at home, not how a showroom looks for a day.
+              2BHK Interiors is a residential interior design studio in Bengaluru. For three years, we've worked only on homes, which means every layout we draw, every material we suggest and every mood board we build is planned around how people actually live, not how a showroom looks for a day.
             </p>
 
             <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
@@ -87,9 +93,18 @@ export default function BehindRenova({ onLearnMore, onSelectService }) {
                 <p className="text-lg text-amber-100 italic font-cormorant">
                   "Restraint and proportion over trend chasing — every home should be designed for how a family lives at 7am as much as how it looks at golden hour."
                 </p>
-                <span className="text-xs uppercase tracking-widest text-neutral-400 font-syne font-semibold mt-2 block">
+                <a
+                  href="/about/"
+                  onClick={(e) => {
+                    if (onLearnMore) {
+                      e.preventDefault();
+                      onLearnMore();
+                    }
+                  }}
+                  className="text-xs uppercase tracking-widest text-neutral-400 hover:text-amber-300 font-syne font-semibold mt-2 block transition-colors underline decoration-white/20 hover:decoration-amber-300"
+                >
                   — Founder & Principal Designer, 2BHK Interiors
-                </span>
+                </a>
               </div>
             </div>
 
@@ -111,9 +126,9 @@ export default function BehindRenova({ onLearnMore, onSelectService }) {
             <span className="text-xs font-semibold tracking-[0.25em] uppercase text-amber-300 font-syne block mb-1">
               CORE OFFERINGS
             </span>
-            <h3 className="text-lg sm:text-2xl font-bold tracking-tight uppercase font-syne text-white">
-              Our 3-Stage Design System
-            </h3>
+            <h2 className="text-lg sm:text-2xl font-bold tracking-tight uppercase font-syne text-white">
+              Our 3-Stage Interior Design Services in Bangalore
+            </h2>
           </div>
 
           <div className="flex items-center space-x-3">
@@ -175,7 +190,7 @@ export default function BehindRenova({ onLearnMore, onSelectService }) {
                   </div>
 
                   <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-amber-300 group-hover:text-amber-200">
-                    <span>View Service Details</span>
+                    <span>{item.linkText || 'View Service Details'}</span>
                     <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                   </div>
                 </div>
@@ -185,7 +200,7 @@ export default function BehindRenova({ onLearnMore, onSelectService }) {
         </div>
 
         <p className="text-center text-xs text-neutral-400 mt-10 tracking-wider">
-          Each service can stand alone or come together as one connected process; most clients move through all three, in that order.
+          Each service can stand alone or come together as one connected process; most clients start with a mood board and 2D layout, then move to 3D.
         </p>
       </div>
     </section>

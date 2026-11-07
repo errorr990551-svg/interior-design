@@ -2,12 +2,12 @@ import { MapPin, Globe } from 'lucide-react';
 
 export default function WhereWeWorkSection({ onOpenConsultation }) {
   const localities = [
-    'South Mumbai',
-    'Bandra & Khar',
-    'Juhu & Vile Parle',
-    'Worli & Lower Parel',
-    'Powai & Hiranandani',
-    'Thane & Navi Mumbai',
+    'Indiranagar & Domlur',
+    'Koramangala & HSR Layout',
+    'Whitefield & Marathahalli',
+    'Sarjapur Road & Bellandur',
+    'Jayanagar & JP Nagar',
+    'Hebbal & Yelahanka',
   ];
 
   return (
@@ -21,15 +21,15 @@ export default function WhereWeWorkSection({ onOpenConsultation }) {
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-bold font-syne tracking-tight leading-tight">
-              Where We Work
+              Where We Work in Bangalore
             </h2>
 
             <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
-              2BHK Interiors currently designs homes in <strong className="text-white font-semibold">Mumbai and surrounding areas</strong>, working with apartment owners, villa owners and independent homeowners who want a design-first approach to their space.
+              2BHK Interiors currently designs homes across <strong className="text-white font-semibold">Bangalore and surrounding areas</strong>, working with apartment owners, villa owners and independent homeowners who want a design-first approach to their space.
             </p>
 
             <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
-              If you're outside our immediate service area, get in touch anyway. A good portion of our process (consultation, mood boards, 2D layouts, and 3D visualization) can be run remotely, with only final execution needing to be local.
+              If you're outside our immediate Bangalore service area, get in touch anyway. Our core process (consultation, mood boards, 2D layouts, and photorealistic 3D visualisation) is delivered seamlessly online across India, with only final execution needing to be local.
             </p>
 
             <div className="pt-4 flex items-center gap-3">
@@ -56,7 +56,7 @@ export default function WhereWeWorkSection({ onOpenConsultation }) {
               </div>
 
               <div className="pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <span className="text-xs text-neutral-400">Planning a project outside Mumbai?</span>
+                <span className="text-xs text-neutral-400">Planning a project outside Bangalore?</span>
                 <button
                   onClick={onOpenConsultation}
                   className="w-full sm:w-auto px-6 py-3 rounded-full bg-amber-400 text-black text-xs font-bold uppercase tracking-widest hover:bg-amber-300 transition-all cursor-pointer"

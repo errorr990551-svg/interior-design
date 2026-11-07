@@ -1,6 +1,5 @@
 import { ArrowUpRight, ShieldCheck, Clock, Home, Compass, Leaf, Award } from 'lucide-react';
 import StatsSection from '../components/StatsSection';
-import MaterialsSection from '../components/MaterialsSection';
 import FAQSection from '../components/FAQSection';
 import WhereWeWorkSection from '../components/WhereWeWorkSection';
 import CTASection from '../components/CTASection';
@@ -21,7 +20,7 @@ export default function AboutPage({ onOpenConsultation, onNavigateHome }) {
     {
       icon: ShieldCheck,
       title: 'See it before you build it',
-      desc: '3D visualization exists so nothing is a surprise once execution starts. You approve the design on screen with real materials and lighting before site execution begins.',
+      desc: '3D visualisation exists so nothing is a surprise once execution starts. You approve the design on screen with real materials and lighting before site execution begins.',
     },
     {
       icon: Home,
@@ -59,7 +58,7 @@ export default function AboutPage({ onOpenConsultation, onNavigateHome }) {
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-neutral-200 font-light max-w-3xl leading-relaxed">
-            2BHK Interiors is a residential interior design studio built on a simple idea: good design should feel considered, not decorated. For three years, we've worked exclusively on homes, bringing detailed 2D planning, honest 3D visualization, and thoughtful mood boards to every project we take on.
+            2BHK Interiors is a residential interior design studio in Bangalore built on a simple idea: good design should feel considered, not decorated. For three years, we've worked exclusively on homes, bringing detailed 2D planning, honest 3D visualisation, and thoughtful mood boards to every project we take on.
           </p>
         </div>
       </section>
@@ -76,7 +75,7 @@ export default function AboutPage({ onOpenConsultation, onNavigateHome }) {
                 Our Story
               </h2>
               <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
-                2BHK Interiors was founded three years ago on a simple idea: that residential design deserves the same rigor as any other design discipline. Detailed planning, honest visualization, and a point of view that doesn't chase trends. What started as a small studio focused purely on homes has stayed exactly that. We design apartments, villas, and independent houses, and nothing else.
+                2BHK Interiors was founded in Bangalore three years ago on a simple idea: that residential design deserves the same rigor as any other design discipline. Detailed planning, honest visualisation, and a point of view that doesn't chase trends. What started as a small studio focused purely on homes has stayed exactly that. We design apartments, villas, and independent houses across Bengaluru and beyond, and nothing else.
               </p>
               <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
                 That focus is deliberate. Residential spaces have their own logic: how a family moves through a kitchen at 8am, where the light falls in a living room by evening, how much storage a home actually needs versus how much a brief says it needs. Staying specialized lets us get that logic right, every time.
@@ -114,7 +113,7 @@ export default function AboutPage({ onOpenConsultation, onNavigateHome }) {
               Our Philosophy
             </h2>
             <p className="text-sm text-neutral-400 font-light">
-              Four guiding principles that govern every layout, material selection, and 3D visualization we create.
+              Four guiding principles that govern every layout, material selection, and 3D visualisation we create.
             </p>
           </div>
 
@@ -200,7 +199,7 @@ export default function AboutPage({ onOpenConsultation, onNavigateHome }) {
         </div>
       </section>
 
-      {/* 5. Meet the Team / Leadership */}
+      {/* 5. Who Designs Your Home */}
       <section className="py-24 sm:py-32 border-b border-white/10 bg-[#0b0b0b]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -209,26 +208,26 @@ export default function AboutPage({ onOpenConsultation, onNavigateHome }) {
                 <img
                   loading="lazy"
                   decoding="async"
-                  src="/images/about_founder.jpg"
-                  alt="2BHK Interiors Lead Designer Portrait"
+                  src="/images/home_studio_desk.jpg"
+                  alt="2BHK Interiors design studio in Bangalore"
                   className="w-full h-full object-cover filter brightness-95"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent p-6 flex flex-col justify-end">
-                  <span className="text-lg font-bold font-syne text-white">Ananya Sharma</span>
-                  <span className="text-xs text-amber-300 font-mono uppercase tracking-widest">Founder & Principal Designer</span>
+                  <span className="text-lg font-bold font-syne text-white">Residential Design Team</span>
+                  <span className="text-xs text-amber-300 font-mono uppercase tracking-widest">2BHK Interiors · Bangalore</span>
                 </div>
               </div>
             </div>
 
             <div className="lg:col-span-7 space-y-6">
               <span className="text-xs font-semibold tracking-[0.25em] uppercase text-amber-300 font-syne block">
-                STUDIO LEADERSHIP
+                STUDIO PRACTICE
               </span>
               <h2 className="text-3xl sm:text-5xl font-bold font-syne tracking-tight">
-                Meet the Team
+                Who Designs Your Home
               </h2>
               <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
-                With over a decade of architectural and interior experience across premium residential developments, Ananya founded 2BHK Interiors to give homeowners an intentional, transparent design practice where nothing is left to chance.
+                Every project at 2BHK Interiors is led directly by an experienced residential interior designer — not handed off to junior draughtspeople or sales coordinators. From the first briefing conversation to the 2D spatial layouts, material boards, and photorealistic 3D visualisations, you collaborate directly with the designer shaping your home.
               </p>
               <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
                 "Our promise to every client is simplicity and precision. You sign off on exact 2D floor plans, exact material boards, and photorealistic 3D renders so you can step into your finished home with total confidence."
@@ -238,7 +237,7 @@ export default function AboutPage({ onOpenConsultation, onNavigateHome }) {
                   onClick={onOpenConsultation}
                   className="inline-flex items-center gap-3 bg-amber-400 text-black px-7 py-3.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-amber-300 transition-all cursor-pointer"
                 >
-                  <span>Book Consultation With Designer</span>
+                  <span>Book a Design Consultation</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </button>
               </div>
@@ -259,7 +258,7 @@ export default function AboutPage({ onOpenConsultation, onNavigateHome }) {
                 A Note on Growth
               </h3>
               <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-light">
-                Three years in, 2BHK Interiors is still a small studio by design. We take on a limited number of residential projects at a time, which is what lets every layout be reviewed carefully, every mood board be genuinely tailored, and every 3D visualization go through real revision rounds. Fewer projects, done properly, over more projects done quickly.
+                Three years in, 2BHK Interiors is still a small studio by design. We take on a limited number of residential projects at a time, which is what lets every layout be reviewed carefully, every mood board be genuinely tailored, and every 3D visualisation go through real revision rounds. Fewer projects, done properly, over more projects done quickly.
               </p>
             </div>
 
@@ -278,9 +277,8 @@ export default function AboutPage({ onOpenConsultation, onNavigateHome }) {
         </div>
       </section>
 
-      {/* 7. Stats & Materials */}
+      {/* 7. Stats */}
       <StatsSection />
-      <MaterialsSection />
 
       {/* 8. FAQs & Location Coverage */}
       <FAQSection

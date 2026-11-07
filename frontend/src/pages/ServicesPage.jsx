@@ -7,7 +7,6 @@ import { servicesFaqs } from '../content/faqs';
 export default function ServicesPage({ onOpenConsultation, onNavigateHome }) {
   const [lightingMode, setLightingMode] = useState('day'); // 'day' | 'evening'
 
-
   return (
     <div className="space-y-0 pt-24 bg-[#0e0e0e] text-white">
       {/* 1. Page Intro Banner */}
@@ -16,7 +15,7 @@ export default function ServicesPage({ onOpenConsultation, onNavigateHome }) {
           <img
             fetchpriority="high"
             src="/images/service_3d_render.jpg"
-            alt="2BHK Interiors Services Showcase"
+            alt="Photorealistic 3D interior design visualisation by 2BHK Interiors"
             className="w-full h-full object-cover filter brightness-[0.65] contrast-[1.1]"
           />
           <div className="absolute inset-0 bg-linear-to-t from-[#0e0e0e] via-black/50 to-black/70" />
@@ -32,180 +31,24 @@ export default function ServicesPage({ onOpenConsultation, onNavigateHome }) {
           </nav>
 
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold font-syne tracking-tight uppercase max-w-4xl leading-tight">
-            Interior Design Services in Mumbai
+            Interior Design Services in Bangalore and Across India
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-neutral-200 font-light max-w-3xl leading-relaxed">
-            From the first floor plan to the final render, every 2BHK Interiors project moves through three connected stages designed to remove guesswork from your home's design, so what you approve on screen is what you get in your space.
+            From the first mood board to scaled 2D layouts and photorealistic 3D renders, every 2BHK Interiors project moves through three connected stages designed to remove guesswork from your home's design, so what you approve on screen is what you get in your space.
           </p>
         </div>
       </section>
 
-      {/* 2. Deep Dive: 2D Space Planning */}
-      <section id="service-2d" className="py-24 sm:py-32 border-b border-white/10 bg-[#0b0b0b]">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-            <div className="lg:col-span-6 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/20 text-xs font-semibold uppercase tracking-widest text-amber-300 font-syne">
-                <Layout className="w-3.5 h-3.5" />
-                <span>STAGE 01 • SPATIAL FOUNDATION</span>
-              </div>
-
-              <h2 className="text-3xl sm:text-5xl font-bold font-syne tracking-tight">
-                2D Interior Design & Space Planning
-              </h2>
-
-              <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
-                Every project starts on paper, literally. We create detailed, to-scale 2D floor plans that map furniture placement, traffic flow, storage, electrical and lighting points, and spatial proportions before any styling decisions are made. This is the stage that decides whether a home works.
-              </p>
-
-              <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
-                A good 2D layout answers questions most people don't think to ask until living with the wrong answer: where does the sofa actually fit without blocking the walkway, is there enough clearance to open the wardrobe fully, does the kitchen counter get natural light. Getting these right on paper is far cheaper than discovering them after execution.
-              </p>
-
-              <div className="pt-4 space-y-3 border-t border-white/10">
-                <span className="text-xs font-bold font-syne uppercase tracking-wider text-amber-300">What's Included:</span>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-neutral-300">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
-                    <span>Measured floor plans of existing space</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
-                    <span>Furniture layout & zoning options</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
-                    <span>Electrical & switch-point planning</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
-                    <span>Storage & utility optimization</span>
-                  </li>
-                  <li className="flex items-center gap-2 sm:col-span-2">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
-                    <span>Multiple layout iterations before final sign-off</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="lg:col-span-6">
-              <div className="rounded-3xl overflow-hidden border border-white/15 shadow-2xl bg-[#141414] p-4">
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  src="/images/service_2d_plan.jpg"
-                  alt="Scaled Architectural 2D Floor Plan Layout"
-                  className="w-full h-auto rounded-2xl object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. Deep Dive: 3D Interior Design & Visualization */}
-      <section id="service-3d" className="py-24 sm:py-32 border-b border-white/10 bg-[#141414]">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-            <div className="lg:col-span-6 order-2 lg:order-1">
-              <div className="rounded-3xl overflow-hidden border border-white/15 shadow-2xl bg-[#0e0e0e] p-4 space-y-4">
-                <div className="relative aspect-video rounded-2xl overflow-hidden">
-                  <img
-                    loading="lazy"
-                    decoding="async"
-                    src="/images/service_3d_render.jpg"
-                    alt="Photorealistic 3D Master Bedroom Visualization"
-                    className={`w-full h-full object-cover transition-all duration-700 ${
-                      lightingMode === 'evening' ? 'brightness-75 contrast-125 saturate-110' : 'brightness-100'
-                    }`}
-                  />
-                  <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 flex items-center gap-3">
-                    <button
-                      onClick={() => setLightingMode('day')}
-                      className={`flex items-center gap-1.5 text-xs font-bold font-syne uppercase tracking-wider px-3 py-1 rounded-full transition-all ${
-                        lightingMode === 'day' ? 'bg-amber-400 text-black' : 'text-neutral-400 hover:text-white'
-                      }`}
-                    >
-                      <Sun className="w-3.5 h-3.5" />
-                      <span>Daylight</span>
-                    </button>
-                    <button
-                      onClick={() => setLightingMode('evening')}
-                      className={`flex items-center gap-1.5 text-xs font-bold font-syne uppercase tracking-wider px-3 py-1 rounded-full transition-all ${
-                        lightingMode === 'evening' ? 'bg-amber-400 text-black' : 'text-neutral-400 hover:text-white'
-                      }`}
-                    >
-                      <Moon className="w-3.5 h-3.5" />
-                      <span>Evening Ambient</span>
-                    </button>
-                  </div>
-                </div>
-                <div className="p-2 text-center">
-                  <span className="text-xs font-mono text-amber-300 uppercase tracking-widest">
-                    Interactive Preview: Toggle Lighting Study (Daylight vs Evening Ambient)
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div className="lg:col-span-6 space-y-6 order-1 lg:order-2">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/20 text-xs font-semibold uppercase tracking-widest text-amber-300 font-syne">
-                <Eye className="w-3.5 h-3.5" />
-                <span>STAGE 02 • IMMERSIVE VISUALIZATION</span>
-              </div>
-
-              <h2 className="text-3xl sm:text-5xl font-bold font-syne tracking-tight">
-                3D Interior Design & Visualization
-              </h2>
-
-              <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
-                Once the layout is locked, we build your space in 3D: photorealistic renders and walkthroughs that show true-to-life materials, finishes, lighting and furniture, room by room. This is where the mood board and floor plan come together into something you can actually walk through before committing.
-              </p>
-
-              <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
-                3D visualization removes the single biggest source of anxiety in any home renovation: not knowing what you're going to get. Instead of imagining how a material looks from a swatch, you see it rendered in your own room.
-              </p>
-
-              <div className="pt-4 space-y-3 border-t border-white/10">
-                <span className="text-xs font-bold font-syne uppercase tracking-wider text-amber-300">What's Included:</span>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-neutral-300">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
-                    <span>High-resolution 3D renders per room</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
-                    <span>Walkthrough visualization for full homes</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
-                    <span>Exact material & furniture matching</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
-                    <span>Day vs Evening lighting studies</span>
-                  </li>
-                  <li className="flex items-center gap-2 sm:col-span-2">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
-                    <span>Dedicated revision rounds based on your feedback</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 4. Deep Dive: Mood Boards & Concept Styling */}
-      <section id="service-moodboard" className="py-24 sm:py-32 border-b border-white/10 bg-[#0b0b0b]">
+      {/* 2. STAGE 01: Mood Boards & Concept Styling */}
+      <section id="mood-boards" className="py-24 sm:py-32 border-b border-white/10 bg-[#0b0b0b] scroll-mt-24">
+        <span id="service-moodboard" className="sr-only" />
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             <div className="lg:col-span-6 space-y-6">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/20 text-xs font-semibold uppercase tracking-widest text-amber-300 font-syne">
                 <Layers className="w-3.5 h-3.5" />
-                <span>STAGE 03 • VISUAL DIRECTION</span>
+                <span>STAGE 01 • VISUAL DIRECTION</span>
               </div>
 
               <h2 className="text-3xl sm:text-5xl font-bold font-syne tracking-tight">
@@ -249,9 +92,173 @@ export default function ServicesPage({ onOpenConsultation, onNavigateHome }) {
                   loading="lazy"
                   decoding="async"
                   src="/images/service_moodboard.jpg"
-                  alt="Tactile Physical Mood Board Flat-Lay"
+                  alt="Curated interior mood board with tactile material samples and swatches"
                   className="w-full h-auto rounded-2xl object-cover"
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. STAGE 02: 2D Interior Design & Space Planning */}
+      <section id="2d-space-planning" className="py-24 sm:py-32 border-b border-white/10 bg-[#141414] scroll-mt-24">
+        <span id="service-2d" className="sr-only" />
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            <div className="lg:col-span-6 space-y-6">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/20 text-xs font-semibold uppercase tracking-widest text-amber-300 font-syne">
+                <Layout className="w-3.5 h-3.5" />
+                <span>STAGE 02 • SPATIAL FOUNDATION</span>
+              </div>
+
+              <h2 className="text-3xl sm:text-5xl font-bold font-syne tracking-tight">
+                2D Interior Design & Space Planning
+              </h2>
+
+              <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
+                Every project starts on paper, literally. We create detailed, to-scale 2D floor plans that map furniture placement, traffic flow, storage, electrical and lighting points, and spatial proportions before any styling decisions are made. This is the stage that decides whether a home works.
+              </p>
+
+              <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
+                A good 2D layout answers questions most people don't think to ask until living with the wrong answer: where does the sofa actually fit without blocking the walkway, is there enough clearance to open the wardrobe fully, does the kitchen counter get natural light. Getting these right on paper is far cheaper than discovering them after execution.
+              </p>
+
+              <div className="pt-4 space-y-3 border-t border-white/10">
+                <span className="text-xs font-bold font-syne uppercase tracking-wider text-amber-300">What's Included:</span>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-neutral-300">
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
+                    <span>Measured floor plans of existing space</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
+                    <span>Furniture layout & zoning options</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
+                    <span>Electrical & switch-point planning</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
+                    <span>Storage & utility optimization</span>
+                  </li>
+                  <li className="flex items-center gap-2 sm:col-span-2">
+                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
+                    <span>Multiple layout iterations before final sign-off</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="lg:col-span-6">
+              <div className="rounded-3xl overflow-hidden border border-white/15 shadow-2xl bg-[#0e0e0e] p-4">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="/images/service_2d_plan.jpg"
+                  alt="Scaled architectural 2D floor plan layout with furniture positioning"
+                  className="w-full h-auto rounded-2xl object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. STAGE 03: 3D Interior Design & Visualisation */}
+      <section id="3d-visualisation" className="py-24 sm:py-32 border-b border-white/10 bg-[#0b0b0b] scroll-mt-24">
+        <span id="service-3d" className="sr-only" />
+        <span id="3d-visualization" className="sr-only" />
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            <div className="lg:col-span-6 order-2 lg:order-1">
+              <div className="rounded-3xl overflow-hidden border border-white/15 shadow-2xl bg-[#141414] p-4 space-y-4">
+                <div className="relative aspect-video rounded-2xl overflow-hidden">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/images/service_3d_render.jpg"
+                    alt={`3D master bedroom visualisation shown in ${lightingMode === 'evening' ? 'warm evening ambient lighting' : 'natural daylight'}`}
+                    className={`w-full h-full object-cover transition-all duration-700 ${
+                      lightingMode === 'evening' ? 'brightness-75 contrast-125 saturate-110' : 'brightness-100'
+                    }`}
+                  />
+                  <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 flex items-center gap-3">
+                    <button
+                      type="button"
+                      aria-pressed={lightingMode === 'day'}
+                      onClick={() => setLightingMode('day')}
+                      className={`flex items-center gap-1.5 text-xs font-bold font-syne uppercase tracking-wider px-3 py-1 rounded-full transition-all cursor-pointer ${
+                        lightingMode === 'day' ? 'bg-amber-400 text-black' : 'text-neutral-400 hover:text-white'
+                      }`}
+                    >
+                      <Sun className="w-3.5 h-3.5" />
+                      <span>Daylight</span>
+                    </button>
+                    <button
+                      type="button"
+                      aria-pressed={lightingMode === 'evening'}
+                      onClick={() => setLightingMode('evening')}
+                      className={`flex items-center gap-1.5 text-xs font-bold font-syne uppercase tracking-wider px-3 py-1 rounded-full transition-all cursor-pointer ${
+                        lightingMode === 'evening' ? 'bg-amber-400 text-black' : 'text-neutral-400 hover:text-white'
+                      }`}
+                    >
+                      <Moon className="w-3.5 h-3.5" />
+                      <span>Evening Ambient</span>
+                    </button>
+                  </div>
+                </div>
+                <div className="p-2 text-center">
+                  <span className="text-xs font-mono text-amber-300 uppercase tracking-widest">
+                    Interactive Preview: Toggle Lighting Study (Daylight vs Evening Ambient)
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div className="lg:col-span-6 space-y-6 order-1 lg:order-2">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/20 text-xs font-semibold uppercase tracking-widest text-amber-300 font-syne">
+                <Eye className="w-3.5 h-3.5" />
+                <span>STAGE 03 • IMMERSIVE VISUALISATION</span>
+              </div>
+
+              <h2 className="text-3xl sm:text-5xl font-bold font-syne tracking-tight">
+                3D Interior Design & Visualisation
+              </h2>
+
+              <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
+                Once the layout is locked, we build your space in 3D: photorealistic renders and walkthroughs that show true-to-life materials, finishes, lighting and furniture, room by room. This is where the mood board and floor plan come together into something you can actually walk through before committing.
+              </p>
+
+              <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
+                3D visualisation removes the single biggest source of anxiety in any home renovation: not knowing what you're going to get. Instead of imagining how a material looks from a swatch, you see it rendered in your own room.
+              </p>
+
+              <div className="pt-4 space-y-3 border-t border-white/10">
+                <span className="text-xs font-bold font-syne uppercase tracking-wider text-amber-300">What's Included:</span>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-neutral-300">
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
+                    <span>High-resolution 3D renders per room</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
+                    <span>Walkthrough visualisation for full homes</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
+                    <span>Exact material & furniture matching</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
+                    <span>Day vs Evening lighting studies</span>
+                  </li>
+                  <li className="flex items-center gap-2 sm:col-span-2">
+                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
+                    <span>Dedicated revision rounds based on your feedback</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -300,7 +307,7 @@ export default function ServicesPage({ onOpenConsultation, onNavigateHome }) {
               <span className="w-10 h-10 rounded-full bg-amber-400 text-black font-extrabold font-syne flex items-center justify-center mx-auto text-lg">
                 3
               </span>
-              <h3 className="text-xl font-bold font-syne text-white">3D Visualization</h3>
+              <h3 className="text-xl font-bold font-syne text-white">3D Visualisation</h3>
               <p className="text-xs text-amber-300 font-semibold uppercase tracking-wider">Agrees the Final Result</p>
               <p className="text-xs text-neutral-400 font-light leading-relaxed">
                 Combines look and layout into photorealistic 3D renders so you experience your home before touching site execution.
@@ -332,7 +339,7 @@ export default function ServicesPage({ onOpenConsultation, onNavigateHome }) {
                 <span className="text-xs font-mono uppercase tracking-widest text-amber-300">Shape 01</span>
                 <h3 className="text-xl font-bold font-syne text-white">Single Room Refresh</h3>
                 <p className="text-xs text-neutral-300 font-light leading-relaxed">
-                  Usually a mood board plus 3D visualization for one space, such as a master bedroom, living room, or home office, without full 2D re-layout if existing layout already works.
+                  Usually a mood board plus 3D visualisation for one space, such as a master bedroom, living room, or home office, without full 2D re-layout if existing layout already works.
                 </p>
               </div>
 
@@ -340,7 +347,7 @@ export default function ServicesPage({ onOpenConsultation, onNavigateHome }) {
                 <span className="text-xs font-mono uppercase tracking-widest text-amber-300">Shape 02</span>
                 <h3 className="text-xl font-bold font-syne text-white">Partial Home Update</h3>
                 <p className="text-xs text-neutral-300 font-light leading-relaxed">
-                  2D layout, mood board and 3D visualization for a few connected spaces, such as a living and dining area, or a kitchen and adjoining utility space.
+                  2D layout, mood board and 3D visualisation for a few connected spaces, such as a living and dining area, or a kitchen and adjoining utility space.
                 </p>
               </div>
 
@@ -383,7 +390,7 @@ export default function ServicesPage({ onOpenConsultation, onNavigateHome }) {
               </div>
 
               <div className="p-6 rounded-2xl bg-[#0e0e0e] border border-white/5 space-y-2">
-                <span className="text-xs text-neutral-400 font-syne uppercase">3D Visualization</span>
+                <span className="text-xs text-neutral-400 font-syne uppercase">3D Visualisation</span>
                 <div className="text-2xl font-bold font-syne text-amber-300">1 Week / Room</div>
                 <p className="text-[11px] text-neutral-400">High-res photorealistic renders</p>
               </div>

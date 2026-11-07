@@ -9,16 +9,22 @@ export default function ProjectHighlight({ onOpenGallery }) {
       title: 'Sage and oak bedroom',
       image: '/images/portfolio/p01-1.jpg',
       subtitle: 'Low oak platform bed and a two-tone sage wardrobe wall',
+      meta: 'Master Bedroom · 180 sq ft',
+      alt: '3D visualisation of a sage and oak bedroom with a low platform bed and two-tone wardrobe wall',
     },
     {
       title: 'Living room with timber beam ceiling',
       image: '/images/portfolio/p07-1.jpg',
       subtitle: 'Dark coffered beams over a pale room with a built-in window seat',
+      meta: 'Living Room · 240 sq ft',
+      alt: '3D visualisation of a living room with a dark timber beam ceiling and built-in window seat',
     },
     {
       title: 'Dining room with mirror wall',
       image: '/images/portfolio/p11-1.jpg',
       subtitle: 'Arch-cut mirror panels and wall lights around a long dining table',
+      meta: 'Dining Room · 160 sq ft',
+      alt: '3D visualisation of a dining room with arch-cut wall panels and a long dining table',
     },
   ];
 
@@ -73,6 +79,10 @@ export default function ProjectHighlight({ onOpenGallery }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Left Text Block */}
           <div className="lg:col-span-4 space-y-6">
+            <h2 className="text-2xl sm:text-3xl font-bold font-syne text-white tracking-tight">
+              Three Rooms, Three Design Problems Solved
+            </h2>
+
             <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
               Three rooms from our portfolio, shown as the 3D visualisations clients approve before work starts on site. Each one solves a different problem: storage in a bedroom, character in a plain living room, light in a dining room.
             </p>
@@ -87,11 +97,16 @@ export default function ProjectHighlight({ onOpenGallery }) {
               <p className="text-xs text-neutral-400 mt-1">
                 {slides[currentSlide].subtitle}
               </p>
+              {slides[currentSlide].meta && (
+                <p className="text-[11px] font-mono text-amber-300/80 mt-1 uppercase tracking-wider">
+                  {slides[currentSlide].meta}
+                </p>
+              )}
             </div>
 
             <button
               onClick={() => onOpenGallery(slides[currentSlide].image)}
-              className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-neutral-300 hover:text-white border-b border-white/30 pb-1 pt-2 transition-all"
+              className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-neutral-300 hover:text-white border-b border-white/30 pb-1 pt-2 transition-all cursor-pointer"
             >
               <Expand className="w-3.5 h-3.5" />
               <span>View larger</span>
@@ -105,7 +120,7 @@ export default function ProjectHighlight({ onOpenGallery }) {
                 loading="lazy"
                 decoding="async"
                 src={slides[currentSlide].image}
-                alt={`${slides[currentSlide].title}: ${slides[currentSlide].subtitle}`}
+                alt={slides[currentSlide].alt}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
