@@ -28,7 +28,6 @@ export default function Navbar({ currentPage = 'home', onNavigate, onOpenConsult
     { name: 'About Studio', page: 'about', sectionId: null },
     { name: 'Services', page: 'services', sectionId: null },
     { name: 'Portfolio', page: 'portfolio', sectionId: null },
-    { name: 'Process', page: 'home', sectionId: 'process' },
   ];
 
   return (
