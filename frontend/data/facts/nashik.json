@@ -1,117 +1,7 @@
 {
   "city": "nashik",
-  "checked": "2026-10-30",
+  "checked": "2026-11-07",
   "facts": [
-    {
-      "id": "nashik-ls-served",
-      "claim": "Livspace lists Nashik as a city it serves, with experience centres where homeowners can meet its designers.",
-      "source_url": "https://www.livspace.com/in/interiors/nashik",
-      "source_title": "Interior Designers in Nashik",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "Eager to see your future home? Visit our Livspace experience centers and connect with the best interior designers in Nashik.",
-      "city_specific": true,
-      "source_type": "Livspace city page"
-    },
-    {
-      "id": "nashik-ls-centres",
-      "claim": "Livspace lists two Nashik locations: a \"Bello by Livspace\" modular kitchens and wardrobes store at Mumbai Naka, and a Livspace Interior Design Studio at Sharanpur near Canada Corner.",
-      "source_url": "https://www.livspace.com/in/interiors/nashik",
-      "source_title": "Interior Designers in Nashik",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "Bello by Livspace, Mumbai Naka - Modular Kitchens & Wardrobes ... Livspace - Interior Design Studio - ... Sharanpur Link Rd, Near Canada Corner",
-      "city_specific": true,
-      "source_type": "Livspace city page"
-    },
-    {
-      "id": "nashik-ls-hours",
-      "claim": "Both Nashik locations are listed as open Tuesday to Sunday (Mumbai Naka 10 AM–7 PM, Sharanpur 11 AM–8 PM).",
-      "source_url": "https://www.livspace.com/in/interiors/nashik",
-      "source_title": "Interior Designers in Nashik",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "Tuesday to Sunday | 10 AM - 7 PM ... Tuesday to Sunday | 11 AM - 8 PM",
-      "city_specific": true,
-      "source_type": "Livspace city page"
-    },
-    {
-      "id": "nashik-ls-appointments",
-      "claim": "Nashik locations offer a 30-minute experience centre tour and a 60-minute design consultation.",
-      "source_url": "https://www.livspace.com/in/interiors/nashik",
-      "source_title": "Interior Designers in Nashik",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "Appointment types Experience Centre Tour - 30 minutes Design consultation - 60 minutes",
-      "city_specific": true,
-      "source_type": "Livspace city page"
-    },
-    {
-      "id": "nashik-ls-prices",
-      "claim": "Livspace's Nashik page lists the same starting prices as its Pune page: ₹3.57 lakh (2BHK), ₹4.23 lakh (3BHK), ₹4.81 lakh (4BHK), ₹1.37 lakh (modular kitchen), for modular interiors in new homes only.",
-      "source_url": "https://www.livspace.com/in/interiors/nashik",
-      "source_title": "Interior Designers in Nashik",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "2BHK Starting at 3.57L* 3BHK Starting at 4.23L* 4BHK Starting at 4.81L* Modular kitchens Starting at 1.37L* ... *The prices include only modular interiors for new homes.",
-      "city_specific": false,
-      "source_type": "Livspace city page"
-    },
-    {
-      "id": "nashik-ls-scope",
-      "claim": "Livspace says it also handles flooring, painting, false ceiling and plumbing.",
-      "source_url": "https://www.livspace.com/in/interiors/nashik",
-      "source_title": "Interior Designers in Nashik",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "We'll do all the heavy-lifting–flooring, painting, false ceiling, plumbing and everything else in between",
-      "city_specific": false,
-      "source_type": "Livspace city page"
-    },
-    {
-      "id": "nashik-ls-warranty",
-      "claim": "Livspace's Nashik FAQ mentions \"up to 10 years of warranty on modular products and 1 year of service support\".",
-      "source_url": "https://www.livspace.com/in/interiors/nashik",
-      "source_title": "Interior Designers in Nashik",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "Livspace offers up to 10 years of warranty on modular products and 1 year of service support",
-      "city_specific": false,
-      "source_type": "Livspace city page"
-    },
-    {
-      "id": "ls-warranty-lifetime",
-      "claim": "Livspace's city pages also advertise a lifetime warranty for modular and semi-modular products, with full scope on its service page.",
-      "source_url": "https://www.livspace.com/in/interiors/pune",
-      "source_title": "Interior Designers in Pune",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "T&Cs apply: *Lifetime warranty for modular and semi-modular products. For full scope on warranty, please visit www.livspace.com/in/service",
-      "city_specific": false,
-      "source_type": "Livspace city page"
-    },
-    {
-      "id": "ls-payments-n",
-      "claim": "Livspace asks for 10% of the final quote or ₹49,000 (whichever is higher) to book, a cumulative 60% to place the order, and 100% when materials are ready for dispatch.",
-      "source_url": "https://www.livspace.com/in/interiors/how-it-works",
-      "source_title": "How it works",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "pay 10% of the final quote or ₹49,000 (whichever is higher) to book us. ... Confirm your order with 60% payment ... Pay 100% at intimation of material dispatch",
-      "city_specific": false,
-      "source_type": "Livspace process page"
-    },
-    {
-      "id": "ls-order-types",
-      "claim": "Livspace splits projects into order types (civil and MEP work, workshop-made custom furniture, on-site custom furniture, catalogue products), each paid against its own milestones.",
-      "source_url": "https://www.livspace.com/in/interiors/how-it-works",
-      "source_title": "How it works",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "Order type 1 Civil & MEP (Mechanical, Electrical & Plumbing) ... Order type 1 Custom furniture (workshop) ... Order type 1 Custom furniture (on-site) ... Order type 2 Catalogue products",
-      "city_specific": false,
-      "source_type": "Livspace process page"
-    },
     {
       "id": "nashik-imd-rain",
       "claim": "Nashik (IMD station 42921) averages 845.9 mm of rain a year over 52.0 rainy days (1991–2020).",
@@ -256,66 +146,20 @@
       "quote": "(a) Nashik [8] ... 2011 ... 1486053",
       "city_specific": true,
       "source_type": "Census of India"
-    },
-    {
-      "id": "nashik-ls-vacate",
-      "claim": "Livspace's Nashik FAQ says you may stay at home for kitchen or partial upgrades, but recommends vacating for full-home projects.",
-      "source_url": "https://www.livspace.com/in/interiors/nashik",
-      "source_title": "Interior Designers in Nashik",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "Not always. For kitchens or partial upgrades, you may stay during installation. However, for full-home projects , vacating is recommended to avoid dust and delays.",
-      "city_specific": false,
-      "source_type": "Livspace city page"
     }
   ],
-  "questions": [
-    {
-      "q": "What is the cost of interior design in Nashik?",
-      "source": "https://www.livspace.com/in/interiors/nashik"
-    },
-    {
-      "q": "What’s the cost for a 2 BHK interior in Nashik?",
-      "source": "https://www.livspace.com/in/interiors/nashik"
-    },
-    {
-      "q": "How much is per sq ft pricing in Nashik?",
-      "source": "https://www.livspace.com/in/interiors/nashik"
-    },
-    {
-      "q": "Do I need to vacate for installation?",
-      "source": "https://www.livspace.com/in/interiors/nashik"
-    },
-    {
-      "q": "How long until my home is completed?",
-      "source": "https://www.livspace.com/in/interiors/nashik"
-    },
-    {
-      "q": "Are there warranties or after-sales support?",
-      "source": "https://www.livspace.com/in/interiors/nashik"
-    }
-  ],
-  "questions_note": "Google \"People also ask\" could not be read from this environment; questions are taken from the FAQ headings on Livspace's Nashik page, which mirror common searches.",
   "removed_claims": [
     {
       "claim": "1,082+ homes delivered in Nashik",
       "reason": "Livspace self-reported count; not needed and not independently verifiable."
     },
     {
-      "claim": "Nashik 2BHK ~950 sq ft costing ₹3.5–8 lakh; turnkey ₹1,200–4,500/sq ft (Livspace FAQ)",
-      "reason": "Livspace marketing estimates; the same page also lists 2BHK sizes of 680–780 sq ft, so the figures contradict each other."
-    },
-    {
-      "claim": "Consultation-only service from ₹50,000 (Livspace FAQ)",
-      "reason": "Not confirmed on Livspace's offerings or process pages; left out."
-    },
-    {
-      "claim": "Paithani textiles and local crafts can be integrated (Livspace FAQ)",
-      "reason": "Promotional claim without a source on what Livspace actually supplies."
-    },
-    {
       "claim": "Nashik growth corridors and a 335-acre IT park at Adgaon (CREDAI map)",
       "reason": "Map labels could not be read reliably from the PDF; left out."
+    },
+    {
+      "claim": "All Livspace facts (11 entries: prices, payment stages, timelines, warranties, locations)",
+      "reason": "Removed on 2026-11-07. 2BHK Interiors is not associated with Livspace and the guides no longer reference it."
     }
   ]
 }

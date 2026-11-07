@@ -1,5 +1,73 @@
 {
-  "generated": "2026-10-30",
+  "generated": "2026-11-07",
   "mode": "production",
-  "pages": {}
+  "pages": {
+    "/interior-design/maharashtra/pune/": {
+      "url": "/interior-design/maharashtra/pune/",
+      "title": "Interior Design in Pune: Costs, Climate and Planning Guide",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 18.5204,
+      "lon": 73.8567,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/nashik/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/nashik/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/nashik/": {
+      "url": "/interior-design/maharashtra/nashik/",
+      "title": "Interior Design in Nashik: Homes, Climate and Costs Guide",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 20.0112,
+      "lon": 73.7909,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/pune/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/pune/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/": {
+      "url": "/interior-design/maharashtra/",
+      "title": "Maharashtra",
+      "type": "state-hub",
+      "state": "Maharashtra",
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/nashik/",
+        "/interior-design/maharashtra/pune/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/pune/",
+        "/interior-design/maharashtra/nashik/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/": {
+      "url": "/interior-design/",
+      "title": "National hub",
+      "type": "national-hub",
+      "outbound": [
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/nashik/",
+        "/interior-design/maharashtra/pune/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/pune/",
+        "/interior-design/maharashtra/nashik/",
+        "/interior-design/maharashtra/"
+      ]
+    }
+  }
 }

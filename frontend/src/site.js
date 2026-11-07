@@ -13,8 +13,8 @@ export const SITE_NAME = '2BHK Interiors';
 export const BUSINESS = {
   phone: null, // e.g. '+91 XXXXX XXXXX'
   email: null, // a working inbox on the live domain, e.g. 'hello@2bhkinteriors.in'
-  city: 'Mumbai',
-  region: 'Maharashtra',
+  city: 'Bengaluru',
+  region: 'Karnataka',
   country: 'IN',
   social: {
     instagram: null, // full profile URL, e.g. 'https://www.instagram.com/<handle>/'
@@ -153,7 +153,7 @@ function organization() {
     name: SITE_NAME,
     url: `${SITE_URL}/`,
     description: ROUTES[0].description,
-    areaServed: { '@type': 'City', name: BUSINESS.city },
+    areaServed: { '@type': 'Country', name: 'India' },
     address: {
       '@type': 'PostalAddress',
       addressLocality: BUSINESS.city,

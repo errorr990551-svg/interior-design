@@ -20,6 +20,4 @@ console.log('Status:', Object.entries(counts).map(([k, v]) => `${k} ${v}`).join(
 const next = cities.filter((c) => ['queued', 'researching'].includes(c.status));
 const batch = next.length ? next.filter((c) => c.queue_batch === next[0].queue_batch) : [];
 console.log(batch.length ? `Next batch (${batch[0].queue_batch}):` : 'Queue empty.');
-for (const c of batch) console.log(`  ${c.city}, ${c.state} — Livspace: ${c.livspace_served}${c.livspace_city_url ? ` (${c.livspace_city_url})` : ''}`);
-const unserved = batch.filter((c) => c.livspace_served !== 'yes');
-if (unserved.length) console.log('  ! Not confirmed as Livspace service cities — see rule 11 before writing.');
+for (const c of batch) console.log(`  ${c.city}, ${c.state}`);

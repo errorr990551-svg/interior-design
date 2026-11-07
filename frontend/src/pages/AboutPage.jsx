@@ -209,13 +209,13 @@ export default function AboutPage({ onOpenConsultation, onNavigateHome }) {
                 <img
                   loading="lazy"
                   decoding="async"
-                  src="/images/about_founder.jpg"
-                  alt="2BHK Interiors Lead Designer Portrait"
+                  src="/images/portfolio/p15-2.jpg"
+                  alt="Living room with a curved white sofa and oval coffee tables, a 2BHK Interiors design"
                   className="w-full h-full object-cover filter brightness-95"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent p-6 flex flex-col justify-end">
-                  <span className="text-lg font-bold font-syne text-white">Ananya Sharma</span>
-                  <span className="text-xs text-amber-300 font-mono uppercase tracking-widest">Founder & Principal Designer</span>
+                  <span className="text-lg font-bold font-syne text-white">Ayush</span>
+                  <span className="text-xs text-amber-300 font-mono uppercase tracking-widest">Founder, 2BHK Interiors</span>
                 </div>
               </div>
             </div>
@@ -228,7 +228,7 @@ export default function AboutPage({ onOpenConsultation, onNavigateHome }) {
                 Meet the Team
               </h2>
               <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
-                With over a decade of architectural and interior experience across premium residential developments, Ananya founded 2BHK Interiors to give homeowners an intentional, transparent design practice where nothing is left to chance.
+                Ayush founded 2BHK Interiors to give homeowners a clear, transparent design process, with every decision agreed on paper before work starts on site. The studio is based in Bengaluru and takes on projects in cities across India.
               </p>
               <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
                 "Our promise to every client is simplicity and precision. You sign off on exact 2D floor plans, exact material boards, and photorealistic 3D renders so you can step into your finished home with total confidence."

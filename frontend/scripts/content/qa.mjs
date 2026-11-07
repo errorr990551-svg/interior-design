@@ -37,6 +37,8 @@ const BANNED = [
   'it is important to note', 'when it comes to', 'delve', 'tapestry', 'vibrant city',
 ];
 const SUPERLATIVES = /\b(the best|best interior|#1|number one|no\.\s?1|cheapest|top-rated|top rated|leading interior|guaranteed|lowest price)\b/i;
+// Pages of the main React site that city guides may link to.
+const MAIN_ROUTES = ['/', '/about/', '/services/', '/portfolio/'];
 const GENERIC_ANCHORS = /^(click here|here|read more|this page|link|more|learn more)$/i;
 // Digits that are not factual claims: BHK labels, ordinals used as list numbering.
 const EXEMPT_NUMBERS = [/\b[1-5]\s?-?BHK\b/gi, /^\s*\d+\.\s/gm];
@@ -120,8 +122,9 @@ for (const c of targets) {
     if (GENERIC_ANCHORS.test(text)) fail(5, `generic anchor text "${text}" -> ${href}`);
     if (href.startsWith('/')) {
       const file = path.join(PREVIEW, href.split('#')[0], href.endsWith('/') ? 'index.html' : '');
-      if (!href.startsWith('/interior-design/') && href !== '/') fail(5, `internal link outside the section: ${href}`);
-      else if (href !== '/' && !fs.existsSync(file)) fail(5, `broken internal link: ${href}`);
+      const mainSite = MAIN_ROUTES.includes(href.split('#')[0]);
+      if (!href.startsWith('/interior-design/') && !mainSite) fail(5, `internal link to an unknown page: ${href}`);
+      else if (!mainSite && !fs.existsSync(file)) fail(5, `broken internal link: ${href}`);
       if (!a.closest('section.sources')) {
         targetsSeen.set(href, (targetsSeen.get(href) || 0) + 1);
         const key = text.toLowerCase();
@@ -130,10 +133,7 @@ for (const c of targets) {
         anchors.set(key, href);
       }
     }
-    if (/livspace\.com/.test(href) && config.relationship !== 'official') {
-      const rel = a.getAttribute('rel') || '';
-      if (!/sponsored/.test(rel) || !/nofollow/.test(rel)) fail(5, `Livspace link without rel="sponsored nofollow": ${href}`);
-    }
+    if (/livspace\.com/i.test(href)) fail(5, `link to livspace.com (2BHK Interiors is not associated with Livspace): ${href}`);
   }
   for (const [href, n] of targetsSeen) if (n > 1) fail(5, `${n} links to ${href} in the article (max 1)`);
   const cityLinks = new Set([...targetsSeen.keys()].filter((h) => builtCities.some((o) => o.url === h && o.slug !== c.slug)));
@@ -180,15 +180,16 @@ for (const c of targets) {
   for (const img of article.querySelectorAll('img'))
     if (!img.getAttribute('alt') || !img.getAttribute('width') || !img.getAttribute('height')) fail(6, `image without alt/width/height: ${img.getAttribute('src')}`);
   if (!sitemap.includes(SITE + c.url)) fail(6, 'missing from sitemap');
-  if (c.status === 'published' && /noindex/.test(root.querySelector('meta[name="robots"]')?.getAttribute('content') || '')) fail(6, 'published page is noindex');
+  // Preview pages are always noindex; check the production build instead when there is one.
+  const prodFile = path.join(ROOT, 'dist', c.url, 'index.html');
+  if (c.status === 'published' && fs.existsSync(prodFile) && /noindex/.test(parse(fs.readFileSync(prodFile, 'utf8')).querySelector('meta[name="robots"]')?.getAttribute('content') || '')) fail(6, 'published page is noindex in dist/');
 
   // Publishing blockers: not quality failures, but the page cannot go live.
   const blockers = [];
-  if (!['official', 'partner', 'affiliate', 'independent'].includes(config.relationship)) blockers.push('relationship with Livspace not set in data/site.config.json (disclosure is a TODO)');
-  if (/TODO/.test(JSON.stringify(config.author))) blockers.push('author name/role/credentials are TODO in data/site.config.json');
-  if (c.livspace_served !== 'yes') blockers.push(`Livspace service in ${c.city} is "${c.livspace_served}"`);
-  if (!config.leadUrl && !c.livspace_city_url) blockers.push('no lead URL');
-  if (!article.querySelectorAll('img').length) blockers.push('no images (add licensed images or confirm text-only)');
+  if (!config.author?.name || /TODO/.test(JSON.stringify(config.author))) blockers.push('author name/role are TODO in data/site.config.json');
+  if (!config.leadUrl) blockers.push('no leadUrl in data/site.config.json');
+  if (!article.querySelectorAll('img').length) blockers.push('no images (add the studio\'s own or licensed images)');
+  if (/livspace/i.test(page.body + JSON.stringify(page.meta))) blockers.push('page mentions Livspace (2BHK Interiors is not associated with Livspace)');
 
   results.push({ c, gates, blockers, words: totalWords, facts: usedSpecific.length, overlap: worst });
 }

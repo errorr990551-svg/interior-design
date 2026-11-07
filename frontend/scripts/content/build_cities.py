@@ -8,6 +8,10 @@ Inputs (downloaded during setup, see data/README.md):
     matches; the 4 mismatches were replaced with the Census municipal figure)
   - livspace.com/in/interior-designer-near-me -> Livspace city pages (each URL
     checked for HTTP 200 without redirect)
+Note (Nov 2026): the livspace_served / livspace_city_url columns this script wrote were
+later removed from cities.csv. 2BHK Interiors is not associated with Livspace and serves
+cities across India, so the queue no longer depends on any other company's service list.
+
 Usage: python3 build_cities.py top100.json status.txt > ../../data/cities.csv
 """
 import csv, json, math, re, sys

@@ -18,7 +18,6 @@ if (!statuses) throw new Error(`Unknown mode ${MODE}`);
 
 const config = loadConfig();
 const SITE = config.siteUrl.replace(/\/$/, '');
-const commercialRel = config.relationship === 'official' ? '' : 'sponsored nofollow';
 const cities = loadCities();
 const built = cities.filter((c) => statuses.includes(c.status) && loadCityPage(c));
 const builtUrls = new Set(built.map((c) => c.url));
@@ -37,18 +36,22 @@ function write(url, html) {
 // Post-process rendered Markdown: rel on outbound links, scrollable tables.
 function finishHtml(html) {
   return html
-    .replace(/<a href="(https?:\/\/[^"]+)"/g, (m, href) => {
-      const rel = /(^|\.)livspace\.com\//.test(new URL(href).host + '/') ? commercialRel : 'noopener';
-      return rel ? `<a href="${href}" rel="${rel}"` : m;
-    })
+    .replace(/<a href="(https?:\/\/[^"]+)"/g, (m, href) => `<a href="${href}" rel="noopener"`)
     .replace(/<table>/g, '<div class="table-wrap"><table>')
     .replace(/<\/table>/g, '</table></div>');
 }
 
-function leadUrl(c) {
-  const base = config.leadUrl || c.livspace_city_url;
-  return base ? base + (config.leadUrlParams || '') : '';
+// {{img:key}} on its own line in the Markdown -> a <figure> from the page's front-matter `images`.
+// Images must be the studio's own work (or properly licensed) and captioned honestly.
+function insertImages(html, images = {}, file = '') {
+  return html.replace(/<p>\{\{img:([a-z0-9-]+)\}\}<\/p>/g, (_, key) => {
+    const im = images[key];
+    if (!im) throw new Error(`${file}: {{img:${key}}} has no entry under images in the front matter`);
+    return `<figure><img src="${esc(im.src)}" width="${im.width}" height="${im.height}" alt="${esc(im.alt)}" loading="lazy" decoding="async">${im.caption ? `<figcaption>${esc(im.caption)}</figcaption>` : ''}</figure>`;
+  });
 }
+
+const leadUrl = () => (config.leadUrl ? config.leadUrl + (config.leadUrlParams || '') : '');
 
 function nearbyFor(c, alreadyLinked) {
   return built
@@ -81,6 +84,7 @@ blockquote{margin:20px 0;background:var(--accent-bg);border-radius:10px;padding:
 sup.ref{font-size:11px;margin-left:1px}sup.ref a{text-decoration:none}.cta{background:var(--head);color:#f5f5f5;border-radius:14px;padding:22px;margin:40px 0}.cta h2{margin-top:0;color:#fff}.cta a.btn{display:inline-block;background:#fbbf24;color:#111;font-weight:700;padding:12px 20px;border-radius:999px;text-decoration:none}.cta p{color:#e7e5e4}
 .cards{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}.cards li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px}
 .sources{font-size:14px;color:var(--muted)}.sources li{margin:4px 0;overflow-wrap:anywhere}.draft{background:#fee2e2;color:#7f1d1d;padding:8px 16px;text-align:center;font-size:14px}
+figure{margin:28px 0}figure img{display:block;width:100%;height:auto;border-radius:12px;background:#e7e5e4}figcaption{font-size:14px;color:var(--muted);margin-top:8px}
 footer{border-top:1px solid var(--line);padding:24px 16px;font-size:14px;color:var(--muted);text-align:center}`;
 
 function layout({ url, title, description, status, jsonld, body }) {
@@ -105,7 +109,7 @@ ${jsonld.map((j) => `<script type="application/ld+json">${JSON.stringify(j)}</sc
 </head>
 <body>
 ${MODE === 'preview' ? `<div class="draft">Preview build: status "${esc(status)}", not for publishing (noindex)</div>` : ''}
-<header class="site"><div class="in"><a href="/">${esc(config.siteName)}</a><nav><a href="${SECTION}/">City guides</a></nav></div></header>
+<header class="site"><div class="in"><a href="/">${esc(config.siteName)}</a><nav><a href="/portfolio/">Portfolio</a> &nbsp; <a href="${SECTION}/">City guides</a></nav></div></header>
 ${body}
 <footer>© ${new Date().getFullYear()} ${esc(config.siteName)} · <a href="${SECTION}/">All city guides</a></footer>
 </body>
@@ -133,7 +137,7 @@ for (const c of built) {
   const { facts } = loadFacts(c.slug);
   const m = page.meta;
   const { html, sources } = renderBody(page.body, facts);
-  const content = finishHtml(html);
+  const content = insertImages(finishHtml(html), m.images, page.file);
   const linked = new Set([...content.matchAll(/href="(\/interior-design\/[^"#]+)"/g)].map((x) => x[1]));
   const nearby = nearbyFor(c, linked);
   const faqs = extractFaqs(page.body);
@@ -141,9 +145,8 @@ for (const c of built) {
     { name: 'Home', url: '/' }, { name: 'Interior Design', url: `${SECTION}/` },
     { name: c.state, url: `${SECTION}/${c.state_slug}/` }, { name: c.city, url: c.url },
   ]);
-  const served = c.livspace_served === 'yes';
-  const lead = leadUrl(c);
-  const disclosure = config.disclosures[config.relationship] ?? config.disclosures.unset;
+  const lead = leadUrl();
+  const disclosure = config.disclosure || '';
   const updated = m.updated || today();
   const published = c.publish_date || m.published || updated;
   const jsonld = [
@@ -167,14 +170,14 @@ ${bc.html}
 <p class="byline">Last updated <time datetime="${updated}">${new Date(updated).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}</time> · Written by ${authorLine}${config.reviewer ? ` · Reviewed by ${esc(config.reviewer.name)}` : ''}</p>
 ${disclosure ? `<p class="disclosure">${esc(disclosure)}</p>` : ''}
 ${content}
-${served && lead ? `<section class="cta" aria-labelledby="cta-h"><h2 id="cta-h">${esc(m.cta_heading || `Talk to a Livspace designer in ${c.city}`)}</h2>
-<p>${esc(m.cta_text || `Book a free consultation and get a quote based on your floor plan. Check current prices, inclusions and warranty terms with Livspace before you sign.`)}</p>
-<a class="btn" href="${lead}"${commercialRel ? ` rel="${commercialRel}"` : ''}>Book a free consultation with Livspace</a></section>` : ''}
+${lead ? `<section class="cta" aria-labelledby="cta-h"><h2 id="cta-h">${esc(m.cta_heading || `Planning interiors in ${c.city}?`)}</h2>
+<p>${esc(m.cta_text || `Tell us about your home and we will get back to you to talk through your floor plan, budget and timeline.`)}</p>
+<a class="btn" href="${lead}">Talk to 2BHK Interiors</a></section>` : ''}
 ${nearby.length ? `<section aria-labelledby="nearby-h"><h2 id="nearby-h">Nearby city guides</h2><ul class="cards">${nearby
     .map(({ o, d }) => `<li><a href="${o.url}">Interior design in ${esc(o.city)}</a><br><small>${Math.round(d)} km away</small></li>`).join('')}</ul></section>` : ''}
 <section class="sources" aria-labelledby="src-h"><h2 id="src-h">How we researched this page</h2>
-<p>We checked every figure on this page against the sources below on the dates shown${sourceTypes.length ? ` (${sourceTypes.map(esc).join(', ')})` : ''}. Livspace prices, offers and warranty terms change, so confirm them on Livspace's own pages before you book. If you spot something out of date, tell us and we will correct it.</p>
-<ol>${sources.map((s, i) => `<li id="source-${i + 1}">${esc(s.publisher)}: <a href="${s.url}"${/livspace\.com/.test(s.url) && commercialRel ? ` rel="${commercialRel}"` : ' rel="noopener"'}>${esc(s.title)}</a> (accessed ${esc(s.accessed)})</li>`).join('')}</ol>
+<p>We checked every figure on this page against the sources below on the dates shown${sourceTypes.length ? ` (${sourceTypes.map(esc).join(', ')})` : ''}. If you spot something out of date, tell us and we will correct it.</p>
+<ol>${sources.map((s, i) => `<li id="source-${i + 1}">${esc(s.publisher)}: <a href="${s.url}" rel="noopener">${esc(s.title)}</a> (accessed ${esc(s.accessed)})</li>`).join('')}</ol>
 </section>
 </article>
 </main>`;

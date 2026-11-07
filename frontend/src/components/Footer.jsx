@@ -209,6 +209,14 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
               </li>
               <li>
                 <a
+                  href="/interior-design/"
+                  className="text-xs text-neutral-300 hover:text-white transition-colors"
+                >
+                  City Guides
+                </a>
+              </li>
+              <li>
+                <a
                   href="/pptt.pdf"
                   download="2BHK_Interiors_Portfolio_Presentation.pdf"
                   className="text-xs text-amber-300 font-semibold hover:text-amber-200 transition-colors inline-flex items-center gap-1"

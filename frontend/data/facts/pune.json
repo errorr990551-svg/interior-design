@@ -1,142 +1,7 @@
 {
   "city": "pune",
-  "checked": "2026-10-30",
+  "checked": "2026-11-07",
   "facts": [
-    {
-      "id": "pune-ls-served",
-      "claim": "Livspace lists Pune as a city it serves, with experience centres where homeowners can meet its designers.",
-      "source_url": "https://www.livspace.com/in/interiors/pune",
-      "source_title": "Interior Designers in Pune",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "Visit Your Nearest Livspace Experience Centre in Pune and Meet Our Home Interior Designers",
-      "city_specific": true,
-      "source_type": "Livspace city page"
-    },
-    {
-      "id": "pune-ls-centres",
-      "claim": "Livspace lists Pune locations at NIBM, Kharadi, Bibwewadi, Hinjawadi, Pimpri Chinchwad (Rahatani), Baner and Bhawani Peth, plus \"Bello by Livspace\" modular kitchen and wardrobe stores in Kharadi and Baner.",
-      "source_url": "https://www.livspace.com/in/interiors/pune",
-      "source_title": "Interior Designers in Pune",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "NIBM, Pune Kharadi, Pune Bibwewadi, Pune Bello by Livspace, Kharadi Hinjawadi, Pune Pimpri Chinchwad, Pune Bello by Livspace, Baner Baner, Pune Bhawani Peth, Pune",
-      "city_specific": true,
-      "source_type": "Livspace city page"
-    },
-    {
-      "id": "pune-ls-appointments",
-      "claim": "Pune locations offer a 30-minute experience centre tour and a 60-minute design consultation.",
-      "source_url": "https://www.livspace.com/in/interiors/pune",
-      "source_title": "Interior Designers in Pune",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "Appointment types Experience Centre Tour - 30 minutes Design consultation - 60 minutes",
-      "city_specific": true,
-      "source_type": "Livspace city page"
-    },
-    {
-      "id": "pune-ls-prices",
-      "claim": "Livspace's Pune page lists starting prices of ₹3.57 lakh (2BHK), ₹4.23 lakh (3BHK), ₹4.81 lakh (4BHK) and ₹1.37 lakh (modular kitchen), covering only modular interiors for new homes.",
-      "source_url": "https://www.livspace.com/in/interiors/pune",
-      "source_title": "Interior Designers in Pune",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "2BHK Starting at 3.57L* 3BHK Starting at 4.23L* 4BHK Starting at 4.81L* Modular kitchens Starting at 1.37L* ... *The prices include only modular interiors for new homes.",
-      "city_specific": false,
-      "source_type": "Livspace city page",
-      "note": "Same figures appear on the Nashik page, so treat as national starting prices."
-    },
-    {
-      "id": "pune-ls-scope",
-      "claim": "Livspace says it also handles flooring, painting, false ceiling and plumbing work.",
-      "source_url": "https://www.livspace.com/in/interiors/pune",
-      "source_title": "Interior Designers in Pune",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "We handle the heavy lifting for you, including flooring, painting, false ceiling, plumbing and everything in between",
-      "city_specific": false,
-      "source_type": "Livspace city page"
-    },
-    {
-      "id": "pune-ls-timeline",
-      "claim": "Livspace's Pune FAQ says modular solutions are installed within 45 days and full-home interiors take around 90 days, varying by project.",
-      "source_url": "https://www.livspace.com/in/interiors/pune",
-      "source_title": "Interior Designers in Pune",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "all the modular solutions will be installed within a period of 45 days. To complete your full home interiors, we take around 90 days to complete your interior design project. However, the completion timeline may vary",
-      "city_specific": false,
-      "source_type": "Livspace city page"
-    },
-    {
-      "id": "pune-ls-45day-caveat",
-      "claim": "Livspace's 45-day installation claim applies to select finishes on modular products.",
-      "source_url": "https://www.livspace.com/in/interiors/pune",
-      "source_title": "Interior Designers in Pune",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "45-day installation^ ... ^For select finishes on modular products",
-      "city_specific": false,
-      "source_type": "Livspace city page"
-    },
-    {
-      "id": "pune-ls-warranty",
-      "claim": "Livspace advertises a lifetime warranty for modular and semi-modular products, with full scope on its service page.",
-      "source_url": "https://www.livspace.com/in/interiors/pune",
-      "source_title": "Interior Designers in Pune",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "T&Cs apply: *Lifetime warranty for modular and semi-modular products. For full scope on warranty, please visit www.livspace.com/in/service",
-      "city_specific": false,
-      "source_type": "Livspace city page"
-    },
-    {
-      "id": "pune-ls-warranty-10yr",
-      "claim": "The FAQ on the same Livspace Pune page refers to a 10-year product warranty.",
-      "source_url": "https://www.livspace.com/in/interiors/pune",
-      "source_title": "Interior Designers in Pune",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "What's covered under the 10-year product warranty?",
-      "city_specific": false,
-      "source_type": "Livspace city page",
-      "note": "Conflicts with the lifetime-warranty line on the same page; readers are told to get warranty terms in writing."
-    },
-    {
-      "id": "pune-ls-estimates",
-      "claim": "Livspace's Pune FAQ publishes its own per-sq-ft and package estimates.",
-      "source_url": "https://www.livspace.com/in/interiors/pune",
-      "source_title": "Interior Designers in Pune",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "What's the ₹/sq ft rate for interior design in Pune?",
-      "city_specific": false,
-      "source_type": "Livspace city page",
-      "note": "Figures not reproduced because they are Livspace marketing estimates without a stated basis."
-    },
-    {
-      "id": "ls-payments",
-      "claim": "Livspace asks for 10% of the final quote or ₹49,000 (whichever is higher) to book, a cumulative 60% to place the order, and 100% when materials are ready for dispatch.",
-      "source_url": "https://www.livspace.com/in/interiors/how-it-works",
-      "source_title": "How it works",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "pay 10% of the final quote or ₹49,000 (whichever is higher) to book us. ... Confirm your order with 60% payment ... Pay 100% at intimation of material dispatch",
-      "city_specific": false,
-      "source_type": "Livspace process page"
-    },
-    {
-      "id": "ls-roles",
-      "claim": "Livspace assigns a Design Lead and a Business Manager to each project.",
-      "source_url": "https://www.livspace.com/in/interiors/how-it-works",
-      "source_title": "How it works",
-      "publisher": "Livspace",
-      "date_accessed": "2026-10-30",
-      "quote": "The Design Lead (DL) The Design Lead gets to know your requirements and your lifestyle ... your Business Manager oversees the entire design process",
-      "city_specific": false,
-      "source_type": "Livspace process page"
-    },
     {
       "id": "pune-imd-rain",
       "claim": "Pune (IMD station 43063) receives 841.2 mm of rain a year on average over 51.3 rainy days (1991–2020).",
@@ -283,53 +148,18 @@
       "source_type": "IMD climate normals"
     }
   ],
-  "questions": [
-    {
-      "q": "What is the cost for a 2 BHK interior in Pune?",
-      "source": "https://www.livspace.com/in/interiors/pune"
-    },
-    {
-      "q": "What's the ₹/sq ft rate for interior design in Pune?",
-      "source": "https://www.livspace.com/in/interiors/pune"
-    },
-    {
-      "q": "How do designers charge—% or per sq ft?",
-      "source": "https://www.livspace.com/in/interiors/pune"
-    },
-    {
-      "q": "What is the timeline for kitchen handover via Livspace?",
-      "source": "https://www.livspace.com/in/interiors/pune"
-    },
-    {
-      "q": "Do quotes include false ceiling, painting, lighting & electricals?",
-      "source": "https://www.livspace.com/in/interiors/pune"
-    },
-    {
-      "q": "Can I get local project references in my society (Baner/Wakad)?",
-      "source": "https://www.livspace.com/in/interiors/pune"
-    }
-  ],
-  "questions_note": "Google \"People also ask\" could not be read from this environment; questions are taken from the FAQ headings on Livspace's Pune page, which mirror common searches.",
   "removed_claims": [
-    {
-      "claim": "Livspace has delivered 18,073+ / 16,601+ homes in Pune",
-      "reason": "The same Livspace page gives two different numbers; not used."
-    },
-    {
-      "claim": "Interior rates of ₹1,000–6,000 per sq ft and 2BHK ranges of ₹3.5–10 lakh (Livspace FAQ)",
-      "reason": "Livspace marketing estimates without a stated basis; only the dated 'starting at' prices are quoted."
-    },
     {
       "claim": "Typical Pune 2BHK/3BHK carpet areas",
       "reason": "No credible, current source found; page gives size-led guidance without figures."
     },
     {
-      "claim": "Customer reviews and ratings shown on the Livspace page",
-      "reason": "Rule 3: no reviews or ratings reproduced."
-    },
-    {
       "claim": "Experience-centre street addresses and phone numbers",
       "reason": "These change; the page names localities and links to Livspace for current details."
+    },
+    {
+      "claim": "All Livspace facts (12 entries: prices, payment stages, timelines, warranties, locations)",
+      "reason": "Removed on 2026-11-07. 2BHK Interiors is not associated with Livspace and the guides no longer reference it."
     }
   ]
 }
