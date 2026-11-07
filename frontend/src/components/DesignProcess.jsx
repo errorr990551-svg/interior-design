@@ -11,7 +11,7 @@ export default function DesignProcess() {
       content:
         'We start with your floor plan, photos of the space and a conversation about how you live: who uses each room, what isn\'t working today, what furniture stays, your budget range and when you need to move in. You leave with a clear scope of which rooms and services the project needs.',
       image: '/images/process-01.jpg',
-      alt: 'Designer and client discussing a home brief',
+      alt: 'Wood-panelled study with a burgundy desk and patterned chairs during design consultation',
     },
     {
       id: '02',
@@ -19,7 +19,7 @@ export default function DesignProcess() {
       content:
         'We agree the look first with a mood board of colours, finishes and references, then fix the function in a scaled 2D plan: furniture placement, walking clearances, storage, and electrical and switch points. Layout options are revised until you sign off.',
       image: '/images/process-02.jpg',
-      alt: 'Mood board with colour and material references',
+      alt: 'Detailed mood board and scaled 2D floor plan layout on designer desk',
     },
     {
       id: '03',
@@ -27,7 +27,7 @@ export default function DesignProcess() {
       content:
         'The approved plan and mood board become photorealistic 3D renders of each room, with day and evening lighting, so you can check proportions, colours and finishes before anything is built. Revision rounds happen here, on screen, where changes cost nothing on site.',
       image: '/images/process-03.jpg',
-      alt: 'Material samples laid out for selection',
+      alt: 'Photorealistic 3D room render and material swatches on screen',
     },
     {
       id: '04',
@@ -35,7 +35,7 @@ export default function DesignProcess() {
       content:
         'You receive an execution-ready package: dimensioned drawings, the render set and a material specification sheet that contractors can price and build from. We also work with execution contractors we trust so the finished home matches what you approved.',
       image: '/images/process-04.jpg',
-      alt: 'Finished interior after execution',
+      alt: 'Finished residential interior after execution and handover',
     },
   ];
 
@@ -80,13 +80,18 @@ export default function DesignProcess() {
           </div>
 
           {/* Right Content & Accordion List */}
-          <div className="lg:col-span-6 space-y-10">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight leading-snug font-syne text-neutral-900">
-              Four stages, each signed off before the next begins, so the look, the layout and the finishes are settled before money is spent on site.
-            </h2>
+          <div className="lg:col-span-6 space-y-8">
+            <div className="space-y-3">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight leading-snug font-syne text-neutral-900">
+                Our Interior Design Process in 4 Stages
+              </h2>
+              <p className="text-sm sm:text-base text-neutral-600 leading-relaxed font-light">
+                Each stage is signed off before the next begins, so the look, the layout and the finishes are settled before money is spent on site.
+              </p>
+            </div>
 
             {/* Accordion List */}
-            <div className="divide-y divide-neutral-300 pt-4">
+            <div className="divide-y divide-neutral-300 pt-2">
               {steps.map((step, index) => {
                 const isOpen = activeStep === index;
                 return (
@@ -129,8 +134,11 @@ export default function DesignProcess() {
                       </div>
                     </button>
 
-                    <div id={`process-step-${step.id}`} hidden={!isOpen} className="pt-4 pl-12 pr-6 animate-fadeIn">
-                      <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-light">
+                    <div
+                      id={`process-step-${step.id}`}
+                      className={`pt-4 pl-12 pr-6 ${isOpen ? 'block animate-fadeIn' : 'hidden'}`}
+                    >
+                      <p className={`text-xs sm:text-sm leading-relaxed font-light ${isOpen ? 'text-neutral-300' : 'text-neutral-600'}`}>
                         {step.content}
                       </p>
                     </div>

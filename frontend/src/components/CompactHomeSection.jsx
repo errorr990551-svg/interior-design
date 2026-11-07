@@ -4,7 +4,7 @@ import { Ruler } from 'lucide-react';
 const tips = [
   {
     title: 'Fix switch and socket points before carpentry',
-    text: 'Bedside charging, the TV wall, a work-from-home desk and every kitchen appliance (mixer, microwave, chimney, water purifier, fridge) need a point in the right place. Moving one after panelling and cabinets are built means breaking finished work, so we mark them on the 2D plan.',
+    text: 'Bedside charging, the TV wall, a work-from-home desk and every kitchen appliance (mixer, microwave, chimney, water purifier, fridge) need a point in the right place, as does the inverter or UPS wiring many Bangalore homes rely on. Moving one after panelling and cabinets are built means breaking finished work, so we mark them on the 2D plan.',
   },
   {
     title: 'Use the full height of the wall',
@@ -24,7 +24,7 @@ const tips = [
   },
   {
     title: 'Plan for the monsoon',
-    text: 'Specify water-resistant ply where cabinets meet water, leave ventilation behind wardrobes on external walls, and plan a place to dry clothes indoors, such as a ceiling-mounted airer in the balcony or utility, before the layout is final.',
+    text: 'Bangalore gets rain from both the southwest and northeast monsoons, roughly June to November. Specify water-resistant ply where cabinets meet water, leave ventilation behind wardrobes on external walls, and plan a place to dry clothes indoors, such as a ceiling-mounted airer in the balcony or utility, before the layout is final.',
   },
 ];
 
@@ -39,11 +39,11 @@ export default function CompactHomeSection() {
               <span>PLANNING NOTES</span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-bold font-syne tracking-tight leading-tight">
-              Designing a Compact Mumbai Apartment
+              Designing a Compact Bangalore Apartment
             </h2>
           </div>
           <p className="lg:col-span-7 text-sm sm:text-base text-neutral-600 leading-relaxed font-light self-end">
-            Most Mumbai homes are apartments where every square foot is already spoken for. These are the decisions we look at first on any 1BHK, 2BHK or 3BHK layout, because getting them right on paper is far cheaper than fixing them after the carpenter has left.
+            In Bangalore's gated apartment communities, every square foot is already spoken for. These are the decisions we look at first on any 1BHK, 2BHK or 3BHK layout, because getting them right on paper is far cheaper than fixing them after the carpenter has left.
           </p>
         </div>
 

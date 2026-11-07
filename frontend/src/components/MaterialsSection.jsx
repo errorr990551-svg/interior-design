@@ -6,7 +6,7 @@ export default function MaterialsSection() {
       name: 'The right plywood for each room',
       category: 'Carcass & ply',
       description:
-        "Mumbai's monsoon humidity is hard on cabinetry. We specify boiling-water-proof (BWP) grade ply where units meet water, under the kitchen sink and in bathroom vanities, and keep moisture-resistant grades for dry areas like bedroom wardrobes.",
+        "Bangalore's long rainy season is hard on cabinetry. We specify boiling-water-proof (BWP) grade ply where units meet water, under the kitchen sink and in bathroom vanities, and keep moisture-resistant grades for dry areas like bedroom wardrobes.",
       image: '/images/material_wood.jpg',
       alt: 'Wood and veneer samples',
     },
@@ -22,7 +22,7 @@ export default function MaterialsSection() {
       name: 'Hardware you use every day',
       category: 'Hinges & fittings',
       description:
-        'Shutters and drawers are opened thousands of times a year. Soft-close hinges, good drawer channels and corrosion-resistant finishes matter more in a humid, coastal city than the look of a handle.',
+        'Shutters and drawers are opened thousands of times a year. Soft-close hinges, good drawer channels and corrosion-resistant finishes matter more through damp monsoon months and year-round daily use.',
       image: '/images/material_brass.jpg',
       alt: 'Brushed metal hardware samples',
     },
@@ -46,12 +46,12 @@ export default function MaterialsSection() {
               <span>MATERIAL CHOICES</span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-bold font-syne tracking-tight leading-tight">
-              Materials That Last in Mumbai Homes
+              Materials That Last in Bangalore Homes
             </h2>
           </div>
           <div className="lg:col-span-6">
             <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
-              Good interiors are decided as much by what you can't see as what you can: the ply behind a laminate, the hinge behind a shutter, the finish under a coat of paint. At 2BHK Interiors, every material recommendation in a mood board and every specification in a 3D visualization is chosen with longevity in mind, not just how it looks in a render.
+              Good interiors are decided as much by what you can't see as what you can: the ply behind a laminate, the hinge behind a shutter, the finish under a coat of paint. At 2BHK Interiors, every material recommendation in a mood board and every specification in a 3D visualisation is chosen with longevity in mind, not just how it looks in a render.
             </p>
           </div>
         </div>

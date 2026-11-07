@@ -16,7 +16,7 @@ export default function Hero({ onOpenConsultation, onNavigateToWork }) {
       <div className="absolute inset-0 z-0">
         <img
           src="/images/home_hero_bg.jpg"
-          alt="Living room interior"
+          alt="Dark-toned living room with panelled walls and sheer curtains, designed by 2BHK Interiors"
           width="1376"
           height="768"
           fetchpriority="high"
@@ -31,7 +31,7 @@ export default function Hero({ onOpenConsultation, onNavigateToWork }) {
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full my-auto py-12 sm:py-16">
         <div className="max-w-4xl text-left space-y-6">
           <h1 className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs sm:text-sm font-medium tracking-widest text-amber-200 uppercase font-syne">
-            Residential Interior Designer in Mumbai
+            Residential Interior Designer in Bangalore
           </h1>
 
           <p className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-white uppercase font-syne leading-[1.02] drop-shadow-2xl">
@@ -42,7 +42,7 @@ export default function Hero({ onOpenConsultation, onNavigateToWork }) {
           </p>
 
           <p className="text-base sm:text-lg md:text-xl text-neutral-200 leading-relaxed font-light max-w-3xl drop-shadow-md">
-            2BHK Interiors designs apartments and homes across Mumbai. We plan every room to scale in 2D, agree the look on a mood board and show you the finished space in photorealistic 3D, so the layout, storage and finishes are settled before any work starts on site.
+            2BHK Interiors designs apartments and homes across Bangalore. We plan every room to scale in 2D, agree the look on a mood board and show you the finished space in photorealistic 3D, so the layout, storage and finishes are settled before any work starts on site.
           </p>
 
           <div className="pt-4 flex flex-wrap items-center gap-4 sm:gap-6">
@@ -69,7 +69,7 @@ export default function Hero({ onOpenConsultation, onNavigateToWork }) {
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs tracking-wider text-neutral-300 uppercase font-syne">
           <div className="flex items-center gap-3">
             <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-            <span>MUMBAI & SURROUNDING AREAS</span>
+            <span>BANGALORE & SURROUNDING AREAS</span>
           </div>
 
           <button

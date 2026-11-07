@@ -3,50 +3,58 @@
 export const homeFaqs = [
   {
     q: 'What does 2BHK Interiors do?',
-    a: "We're a residential interior design studio in Mumbai. We design homes through three connected services: mood boards to agree the look, scaled 2D layouts to fix furniture, storage and electrical points, and photorealistic 3D visualisation so you can see each room before execution.",
+    a: "We're a residential interior design studio in Bangalore. We design homes through three connected services: mood boards to agree the look, scaled 2D layouts to fix furniture, storage and electrical points, and photorealistic 3D visualisation so you can see each room before execution.",
   },
   {
     q: 'Do you only design 2BHK flats?',
-    a: 'No. We design apartments of every size, as well as villas and independent homes. Compact flats are where careful planning makes the biggest difference, because every wardrobe, door swing and switch point competes for the same few square feet.',
+    a: "No. We design 1BHK, 2BHK and 3BHK apartments, villas and independent houses. What stays the same is that every project is a home: we don't take on offices, restaurants or retail.",
   },
   {
-    q: 'How much does interior design cost?',
-    a: "It depends on how many rooms are involved and which services you need: a mood board for one room is a very different job from a full-home layout and render set. We don't quote a flat rate before seeing your floor plan; after the consultation you get a fee for the agreed scope. Execution costs such as carpentry, materials and labour are separate and depend on the specification you approve.",
+    q: 'How much does interior design cost in Bangalore?',
+    a: 'Our design fee depends on carpet area, number of rooms and the stages you choose. Execution (carpentry, civil work and furnishing) is priced separately by the contractor, using our drawings and material specification.',
   },
   {
     q: 'What should I share before the first consultation?',
-    a: "Your floor plan (the builder's layout is fine), photos or a short video of each room, the furniture you want to keep, what isn't working in the home today, a budget range and your move-in date. The more we know about how you use the home, the more useful the first layout options will be.",
+    a: "Your floor plan (the builder's plan is fine), photos or a video of the space, the furniture you're keeping, a budget range and your move-in date.",
   },
   {
     q: 'How long does a typical project take?',
-    a: 'A single room visualisation typically takes 1 to 2 weeks, while a full-home project (mood board, 2D plan and 3D renders) takes 4 to 8 weeks depending on the number of rooms and revision rounds.',
+    a: 'Design for a typical 2BHK takes 4–8 weeks, from consultation to signed-off 3D renders. Execution time depends on the contractor and scope.',
   },
   {
     q: 'Do you also handle execution?',
-    a: 'We hand over execution-ready drawings, the 3D render set and a material specification sheet that any contractor can price and build from. We also work with execution contractors we trust, so the finished home matches what you signed off.',
+    a: "We're a design studio. You get an execution-ready package (dimensioned drawings, 3D renders and a material specification) that any contractor can price and build from. We also work with execution contractors we trust, so the finished home matches what you approved.",
   },
   {
-    q: 'Can you design my home if I live outside Mumbai?',
-    a: 'Yes. Consultation, mood boards, 2D layouts and 3D visualisation can all be done remotely over calls and shared files. Only site execution needs to be local.',
+    q: 'Can you design my Bangalore home if I live in another city or abroad?',
+    a: 'Yes. Consultation, mood boards, 2D layouts and 3D reviews all run over video calls, so you can complete the design remotely. Only site measurement and execution need someone on the ground in Bangalore.',
+  },
+  {
+    q: 'Can I see my home in 3D before work starts?',
+    a: 'Yes. Every room is rendered in photorealistic 3D with your chosen materials and day and evening lighting, and you sign off the renders before any carpentry or civil work begins.',
+  },
+  {
+    q: 'Do you follow Vastu?',
+    a: 'Yes, on request. We can plan the kitchen, pooja space, bed positions and entrance to Vastu guidelines while keeping the layout practical.',
   },
 ];
 
 export const aboutFaqs = [
   {
     q: 'How long has 2BHK Interiors been in business?',
-    a: '2BHK Interiors was founded three years ago and has worked exclusively on residential interior design projects since.',
+    a: "2BHK Interiors was founded three years ago. Since then we've worked only on residential interior design projects.",
   },
   {
     q: 'What areas does 2BHK Interiors serve?',
-    a: 'We currently design homes in Mumbai and surrounding areas. We also offer remote design services for clients outside our immediate region.',
+    a: 'We are based in Bangalore and design homes across India. Consultation, mood boards, 2D layouts and 3D renders all run online, so you can work with us from any city; site measurement and execution are arranged locally.',
   },
   {
     q: 'What makes 2BHK Interiors different from other design studios?',
-    a: 'We work only on residential projects, and every design goes through 2D planning, mood boarding and 3D visualization before execution, so clients see their finished home before committing to it.',
+    a: 'We design homes only, and every project is signed off in stages: mood board and 2D layout first, then photorealistic 3D, before anything is built. That focus means layouts, storage and materials are planned around daily family life, not a showroom first impression.',
   },
   {
     q: 'Does 2BHK Interiors handle execution, or only design?',
-    a: 'We provide execution-ready design files, floor plans, material spec sheets, and full 3D renders. We also collaborate with trusted execution contractors to ensure the final build matches sign-off exactly.',
+    a: "We're a design studio. You get an execution-ready package (dimensioned drawings, 3D renders and a material specification) that any contractor can price and build from. We also work with execution contractors we trust, so the finished home matches what you approved.",
   },
 ];
 
@@ -57,23 +65,31 @@ export const servicesFaqs = [
   },
   {
     q: 'How long does 3D interior design take?',
-    a: 'For a single room, 3D visualization typically takes about a week. A full home can take a few weeks depending on the number of rooms and revision rounds. Exact timelines are confirmed during consultation.',
+    a: 'About a week per room for photorealistic renders, including a revision round. For a full home, the whole process from mood board to handover usually takes 4–8 weeks.',
   },
   {
-    q: 'Do I need a 2D plan before 3D visualization?',
-    a: 'Yes. The 2D layout locks in furniture placement, flow and electrical points. This is what the 3D visualization is built on, so getting the plan right first avoids rework at the render stage.',
+    q: 'Do I need a 2D plan before 3D visualisation?',
+    a: 'Usually, yes. The 2D plan fixes where furniture, storage and electrical points go, and the 3D renders are built on it. For a single-room refresh where the existing layout already works, we can go straight from mood board to 3D.',
   },
   {
     q: 'Do you design only residential spaces?',
-    a: 'Yes, 2BHK Interiors works exclusively on residential interiors, apartments, villas and independent homes, and does not take on commercial or retail projects.',
+    a: 'Yes. We design apartments, villas and independent houses only: no offices, restaurants or retail.',
   },
   {
     q: 'How is the design fee worked out?',
-    a: 'By scope: the number of rooms and which of the three services they need. We confirm the fee after seeing your floor plan in the consultation, before any work begins. Execution costs (carpentry, materials, labour) are separate and depend on the specification you approve.',
+    a: 'The fee depends on your home’s carpet area, the number of rooms and which stages you choose. After the first consultation you get a written, fixed quote before any work starts.',
   },
   {
     q: 'Can I book just one service, like only a mood board?',
-    a: 'Yes. Each service can be booked on its own, though most clients move through mood board, 2D layout, and 3D visualization together for the most complete result.',
+    a: 'Yes. Each service can be booked on its own; a mood board alone is the quickest way to settle on a style, and you can add 2D and 3D later.',
+  },
+  {
+    q: 'Do you handle execution?',
+    a: "We're a design studio. You get an execution-ready package (dimensioned drawings, 3D renders and a material specification) that any contractor can price and build from. We also work with execution contractors we trust, so the finished home matches what you approved.",
+  },
+  {
+    q: "Can you design my home if I'm not in Bangalore?",
+    a: 'Yes. All three services run online, so we design homes across India. Only site measurement and execution need to be arranged locally.',
   },
 ];
 

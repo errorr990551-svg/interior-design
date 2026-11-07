@@ -9,12 +9,20 @@ export default function RecentTransformations({ onSelectProject, onViewAll }) {
     type: '3D visualisations',
     focus: 'Every render from our portfolio in one presentation: bedrooms, living rooms, a dining room and a study.',
     image: '/images/portfolio/p15-2.jpg',
-    pdfUrl: '/pptt.pdf',
+    pdfUrl: '/2bhk-interiors-portfolio.pdf',
     isPdf: true,
     fileSize: '2.6 MB',
   };
 
-  // A few rooms from the portfolio page; the first sentence of each description is enough here.
+  const FEATURED_FOCUS = {
+    'walnut-cove-bedroom':
+      'A warmer, more classic master bedroom: a walnut-toned cove ceiling, cane-panel bed and a wall-mounted dresser with a round mirror.',
+    'study-window-seat':
+      'A shared study planned around the window: a seat with storage below and a full-height wardrobe with botanical print shutters.',
+    'herringbone-living':
+      'A modern living room mixing textures: a herringbone TV wall in wood and concrete grey, a curved sofa and sheer-draped windows.',
+  };
+
   const featured = ['walnut-cove-bedroom', 'study-window-seat', 'herringbone-living'];
   const projects = [
     ...PORTFOLIO_ROOMS.filter((room) => featured.includes(room.id)).map((room) => ({
@@ -22,7 +30,7 @@ export default function RecentTransformations({ onSelectProject, onViewAll }) {
       title: room.title,
       dates: '3D visualisation',
       type: room.room,
-      focus: room.summary.split('. ')[0] + '.',
+      focus: FEATURED_FOCUS[room.id] || room.summary.split('. ')[0] + '.',
       image: room.images[0].src,
     })),
   ];
@@ -60,7 +68,7 @@ export default function RecentTransformations({ onSelectProject, onViewAll }) {
                   <FileText className="w-3.5 h-3.5" />
                   PDF PORTFOLIO DECK (2.6 MB)
                 </span>
-                <span className="text-xs font-mono text-neutral-400">pptt.pdf</span>
+                <span className="text-xs font-mono text-neutral-400">2bhk-interiors-portfolio.pdf</span>
               </div>
 
               <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-syne tracking-tight text-white">
@@ -82,8 +90,8 @@ export default function RecentTransformations({ onSelectProject, onViewAll }) {
               </button>
 
               <a
-                href="/pptt.pdf"
-                download="2BHK_Interiors_Portfolio_Presentation.pdf"
+                href="/2bhk-interiors-portfolio.pdf"
+                download="2bhk-interiors-portfolio.pdf"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold text-xs uppercase tracking-widest px-6 py-3.5 rounded-full transition-all"
               >
                 <Download className="w-4 h-4 text-amber-300" />
@@ -166,8 +174,8 @@ export default function RecentTransformations({ onSelectProject, onViewAll }) {
                       <span>View PDF Presentation</span>
                     </button>
                     <a
-                      href="/pptt.pdf"
-                      download="2BHK_Interiors_Portfolio_Presentation.pdf"
+                      href="/2bhk-interiors-portfolio.pdf"
+                      download="2bhk-interiors-portfolio.pdf"
                       className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider border border-neutral-400 text-neutral-800 px-5 py-2.5 rounded-full hover:bg-neutral-200 transition-all"
                     >
                       <Download className="w-3.5 h-3.5" />
@@ -191,8 +199,8 @@ export default function RecentTransformations({ onSelectProject, onViewAll }) {
           </button>
 
           <a
-            href="/pptt.pdf"
-            download="2BHK_Interiors_Portfolio_Presentation.pdf"
+            href="/2bhk-interiors-portfolio.pdf"
+            download="2bhk-interiors-portfolio.pdf"
             className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-amber-800 bg-amber-100 hover:bg-amber-200 px-5 py-2 rounded-full transition-all"
           >
             <Download className="w-4 h-4" />

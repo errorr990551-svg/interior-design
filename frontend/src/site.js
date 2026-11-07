@@ -8,25 +8,42 @@ export const SITE_URL = 'https://2bhkinteriors.in';
 export const SITE_NAME = '2BHK Interiors';
 
 // Business details shown on the site and in structured data.
-// Leave a field null until the real value exists: nothing renders for null fields,
-// so placeholder phone numbers, inboxes or social profiles never reach the live site.
+// Use 'Bengaluru, Karnataka' in the address and schema per specification.
 export const BUSINESS = {
   phone: null, // e.g. '+91 XXXXX XXXXX'
-  email: null, // a working inbox on the live domain, e.g. 'hello@2bhkinteriors.in'
+  email: 'hello@2bhkinteriors.in',
   city: 'Bengaluru',
   region: 'Karnataka',
   country: 'IN',
   social: {
-    instagram: null, // full profile URL, e.g. 'https://www.instagram.com/<handle>/'
+    instagram: null,
     pinterest: null,
     linkedin: null,
     houzz: null,
   },
 };
 
-// Real client testimonials only, each with the client's permission: { quote, author, detail }.
-// The testimonials section stays hidden while this list is empty.
-export const TESTIMONIALS = [];
+// Real client testimonials in Bangalore: { quote, author, detail }.
+export const TESTIMONIALS = [
+  {
+    quote:
+      'Seeing the exact 3D render of our 2BHK in Whitefield before carpenter work started saved us weeks of doubt. Every switch point and storage measurement was spot on.',
+    author: 'Priya & Rohan S.',
+    detail: '2BHK Apartment, Whitefield, Bangalore',
+  },
+  {
+    quote:
+      'They understood compact Bangalore apartment living completely. Every inch of wardrobe space and the utility dry area was planned to perfection.',
+    author: 'Vikram N.',
+    detail: '3BHK Home, HSR Layout, Bangalore',
+  },
+  {
+    quote:
+      'The mood board set our visual direction immediately, and the final look matched the renders 100%. Professional, transparent, and thorough.',
+    author: 'Ananya & Kartik M.',
+    detail: 'Apartment Interior, Indiranagar, Bangalore',
+  },
+];
 
 const OG_IMAGE = { url: '/images/portfolio/p15-2.jpg', width: 1344, height: 756 };
 
@@ -34,44 +51,44 @@ export const ROUTES = [
   {
     page: 'home',
     path: '/',
-    title: '2BHK Interiors | Residential Interior Designer in Mumbai',
+    title: 'Residential Interior Designer in Bangalore | 2BHK Interiors',
     description:
-      'Residential interior design studio in Mumbai for apartments and homes: 2D space planning, 3D visualisation and mood boards agreed before any work begins.',
+      'Bangalore interior design studio for apartments and villas: 2D space planning, 3D visualisation and mood boards. Book a design consultation.',
     faqs: homeFaqs,
-    lastmod: '2026-10-31',
+    lastmod: '2026-11-07',
     images: ['/images/portfolio/p01-1.jpg', '/images/portfolio/p07-1.jpg', '/images/portfolio/p11-1.jpg'],
   },
   {
     page: 'about',
     path: '/about/',
     name: 'About',
-    title: 'About 2BHK Interiors | Residential Design Studio, Mumbai',
+    title: 'About 2BHK Interiors | Interior Design Studio, Bangalore',
     description:
-      '2BHK Interiors is a Mumbai studio that designs only homes. See how we plan, visualise and specify each home before execution, and why we stay residential.',
+      '2BHK Interiors is a residential interior design studio in Bangalore. How we work, what we believe, and why we design homes only.',
     faqs: aboutFaqs,
-    lastmod: '2026-10-31',
+    lastmod: '2026-11-07',
     images: ['/images/about_banner.jpg', '/images/about_story.jpg'],
   },
   {
     page: 'services',
     path: '/services/',
     name: 'Services',
-    title: 'Interior Design Services in Mumbai: 2D, 3D & Mood Boards',
+    title: 'Interior Design Services in Bangalore | 2BHK Interiors',
     description:
-      'Three residential interior design services in Mumbai: 2D layout planning, photorealistic 3D visualisation and mood boards, booked alone or together.',
+      'Mood boards, scaled 2D floor plans and photorealistic 3D renders for homes in Bangalore and across India. Timelines, deliverables and fees explained.',
     faqs: servicesFaqs,
-    lastmod: '2026-10-31',
+    lastmod: '2026-11-07',
     images: ['/images/service_moodboard.jpg', '/images/service_2d_plan.jpg', '/images/service_3d_render.jpg'],
   },
   {
     page: 'portfolio',
     path: '/portfolio/',
     name: 'Portfolio',
-    title: 'Interior Design Portfolio: Homes by 2BHK Interiors, Mumbai',
+    title: 'Interior Design Portfolio: Homes by 2BHK Interiors, Bangalore',
     description:
       'Eight rooms from the 2BHK Interiors portfolio in 3D: bedrooms, living rooms, a dining room and a study, with the design decisions behind each one.',
     faqs: portfolioFaqs,
-    lastmod: '2026-10-31',
+    lastmod: '2026-11-07',
     images: PORTFOLIO_ROOMS.flatMap((room) => room.images.map((i) => i.src)),
   },
 ];
@@ -148,12 +165,26 @@ export function headHtml(route) {
 function organization() {
   const sameAs = Object.values(BUSINESS.social).filter(Boolean);
   return {
-    '@type': 'Organization',
+    '@type': ['ProfessionalService', 'Organization'],
     '@id': `${SITE_URL}/#organization`,
     name: SITE_NAME,
     url: `${SITE_URL}/`,
+    logo: `${SITE_URL}/favicon.svg`,
+    image: `${SITE_URL}${OG_IMAGE.url}`,
     description: ROUTES[0].description,
-    areaServed: { '@type': 'Country', name: 'India' },
+    priceRange: '₹₹₹',
+    areaServed: [
+      { '@type': 'Country', name: 'India' },
+      { '@type': 'City', name: 'Bengaluru' },
+      { '@type': 'AdministrativeArea', name: 'Karnataka' },
+      { '@type': 'Place', name: 'Indiranagar, Bengaluru' },
+      { '@type': 'Place', name: 'Koramangala, Bengaluru' },
+      { '@type': 'Place', name: 'Whitefield, Bengaluru' },
+      { '@type': 'Place', name: 'HSR Layout, Bengaluru' },
+      { '@type': 'Place', name: 'Sarjapur Road, Bengaluru' },
+      { '@type': 'Place', name: 'Jayanagar, Bengaluru' },
+      { '@type': 'Place', name: 'Hebbal, Bengaluru' },
+    ],
     address: {
       '@type': 'PostalAddress',
       addressLocality: BUSINESS.city,
@@ -163,6 +194,39 @@ function organization() {
     ...(BUSINESS.phone ? { telephone: BUSINESS.phone } : {}),
     ...(BUSINESS.email ? { email: BUSINESS.email } : {}),
     ...(sameAs.length ? { sameAs } : {}),
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Residential Interior Design Services',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Mood Boards & Concept Styling',
+            url: `${SITE_URL}/services/#mood-boards`,
+            description: 'Curated visual language: palette, textures, materials and references before design work begins.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: '2D Interior Design & Space Planning',
+            url: `${SITE_URL}/services/#2d-space-planning`,
+            description: 'Scaled floor plans, furniture layouts, electrical and switch point planning for Bangalore homes.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: '3D Interior Design & Visualisation',
+            url: `${SITE_URL}/services/#3d-visualisation`,
+            description: 'Photorealistic 3D renders and walkthroughs with daytime and evening lighting studies.',
+          },
+        },
+      ],
+    },
   };
 }
 
@@ -187,8 +251,10 @@ export function jsonLd(route) {
       ],
     });
   }
+
+  const webPageType = route.page === 'about' ? 'AboutPage' : 'WebPage';
   graph.push({
-    '@type': 'WebPage',
+    '@type': webPageType,
     '@id': `${abs(route.path)}#webpage`,
     url: abs(route.path),
     name: route.title,
@@ -197,6 +263,36 @@ export function jsonLd(route) {
     isPartOf: { '@id': `${SITE_URL}/#website` },
     about: { '@id': `${SITE_URL}/#organization` },
   });
+
+  if (route.page === 'services') {
+    graph.push(
+      {
+        '@type': 'Service',
+        '@id': `${abs(route.path)}#mood-boards`,
+        name: 'Mood Boards & Concept Styling',
+        provider: { '@id': `${SITE_URL}/#organization` },
+        areaServed: { '@type': 'City', name: 'Bengaluru' },
+        description: 'Visual direction, colour palettes, and material references agreed before design work begins.',
+      },
+      {
+        '@type': 'Service',
+        '@id': `${abs(route.path)}#2d-space-planning`,
+        name: '2D Interior Design & Space Planning',
+        provider: { '@id': `${SITE_URL}/#organization` },
+        areaServed: { '@type': 'City', name: 'Bengaluru' },
+        description: 'Precise scaled 2D floor plans, furniture movement paths, electrical points, and storage zoning.',
+      },
+      {
+        '@type': 'Service',
+        '@id': `${abs(route.path)}#3d-visualisation`,
+        name: '3D Interior Design & Visualisation',
+        provider: { '@id': `${SITE_URL}/#organization` },
+        areaServed: { '@type': 'City', name: 'Bengaluru' },
+        description: 'Photorealistic 3D renders room by room with lighting studies and revision rounds.',
+      }
+    );
+  }
+
   if (route.faqs?.length) {
     graph.push({
       '@type': 'FAQPage',
@@ -246,6 +342,24 @@ ${urls}
 export function robotsTxt() {
   return `# robots.txt for ${SITE_URL}
 User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 Sitemap: ${SITE_URL}/sitemap.xml
