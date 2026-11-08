@@ -2,6 +2,97 @@
   "generated": "2026-11-08",
   "mode": "production",
   "pages": {
+    "/interior-design/maharashtra/mumbai/": {
+      "url": "/interior-design/maharashtra/mumbai/",
+      "title": "Interior Design in Mumbai: Small Flats, Monsoon and Costs",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 19.076,
+      "lon": 72.8777,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/thane/",
+        "/interior-design/maharashtra/navi-mumbai/",
+        "/interior-design/maharashtra/mira-bhayandar/",
+        "/interior-design/maharashtra/panvel/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/ulhasnagar/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/navi-mumbai/",
+        "/interior-design/maharashtra/thane/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/mira-bhayandar/",
+        "/interior-design/maharashtra/vasai-virar/",
+        "/interior-design/maharashtra/panvel/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/navi-mumbai/": {
+      "url": "/interior-design/maharashtra/navi-mumbai/",
+      "title": "Interior Design in Navi Mumbai: Rentals, Monsoon and Costs",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 19.033,
+      "lon": 73.0297,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/panvel/",
+        "/interior-design/maharashtra/mumbai/",
+        "/interior-design/maharashtra/thane/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/mira-bhayandar/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/mumbai/",
+        "/interior-design/maharashtra/thane/",
+        "/interior-design/maharashtra/pune/",
+        "/interior-design/maharashtra/pimpri-chinchwad/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/mira-bhayandar/",
+        "/interior-design/maharashtra/vasai-virar/",
+        "/interior-design/maharashtra/panvel/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/thane/": {
+      "url": "/interior-design/maharashtra/thane/",
+      "title": "Interior Design in Thane: 1BHK to 2BHK Planning and Costs",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 19.2183,
+      "lon": 72.9781,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/mira-bhayandar/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/mumbai/",
+        "/interior-design/maharashtra/navi-mumbai/",
+        "/interior-design/maharashtra/vasai-virar/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/mumbai/",
+        "/interior-design/maharashtra/navi-mumbai/",
+        "/interior-design/maharashtra/nashik/",
+        "/interior-design/maharashtra/pimpri-chinchwad/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/mira-bhayandar/",
+        "/interior-design/maharashtra/vasai-virar/",
+        "/interior-design/maharashtra/panvel/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
     "/interior-design/maharashtra/pune/": {
       "url": "/interior-design/maharashtra/pune/",
       "title": "Interior Design in Pune: Costs, Climate and Planning Guide",
@@ -12,10 +103,23 @@
       "outbound": [
         "/interior-design/",
         "/interior-design/maharashtra/",
-        "/interior-design/maharashtra/nashik/"
+        "/interior-design/maharashtra/nashik/",
+        "/interior-design/maharashtra/pimpri-chinchwad/",
+        "/interior-design/maharashtra/panvel/",
+        "/interior-design/maharashtra/navi-mumbai/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/kalyan-dombivli/"
       ],
       "inbound": [
         "/interior-design/maharashtra/nashik/",
+        "/interior-design/maharashtra/chhatrapati-sambhajinagar/",
+        "/interior-design/maharashtra/solapur/",
+        "/interior-design/maharashtra/sangli-miraj-and-kupwad/",
+        "/interior-design/maharashtra/kolhapur/",
+        "/interior-design/maharashtra/pimpri-chinchwad/",
+        "/interior-design/maharashtra/ichalkaranji/",
+        "/interior-design/maharashtra/latur/",
+        "/interior-design/maharashtra/ahilyanagar/",
         "/interior-design/maharashtra/",
         "/interior-design/"
       ]
@@ -30,10 +134,486 @@
       "outbound": [
         "/interior-design/",
         "/interior-design/maharashtra/",
-        "/interior-design/maharashtra/pune/"
+        "/interior-design/maharashtra/pune/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/vasai-virar/",
+        "/interior-design/maharashtra/thane/",
+        "/interior-design/maharashtra/mira-bhayandar/"
       ],
       "inbound": [
         "/interior-design/maharashtra/pune/",
+        "/interior-design/maharashtra/chhatrapati-sambhajinagar/",
+        "/interior-design/maharashtra/ahilyanagar/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/chhatrapati-sambhajinagar/": {
+      "url": "/interior-design/maharashtra/chhatrapati-sambhajinagar/",
+      "title": "Chhatrapati Sambhajinagar Interiors: Owners and Renters",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 19.8762,
+      "lon": 75.3433,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/nashik/",
+        "/interior-design/maharashtra/ahilyanagar/",
+        "/interior-design/maharashtra/akola/",
+        "/interior-design/maharashtra/latur/",
+        "/interior-design/maharashtra/pimpri-chinchwad/",
+        "/interior-design/maharashtra/pune/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/nagpur/",
+        "/interior-design/maharashtra/amravati/",
+        "/interior-design/maharashtra/chandrapur/",
+        "/interior-design/maharashtra/akola/",
+        "/interior-design/maharashtra/latur/",
+        "/interior-design/maharashtra/ahilyanagar/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/solapur/": {
+      "url": "/interior-design/maharashtra/solapur/",
+      "title": "Interior Design in Solapur: Compact Homes and Dry Summers",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 17.68,
+      "lon": 75.92,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/pune/",
+        "/interior-design/maharashtra/latur/",
+        "/interior-design/maharashtra/sangli-miraj-and-kupwad/",
+        "/interior-design/maharashtra/ichalkaranji/",
+        "/interior-design/maharashtra/ahilyanagar/",
+        "/interior-design/maharashtra/kolhapur/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/sangli-miraj-and-kupwad/",
+        "/interior-design/maharashtra/kolhapur/",
+        "/interior-design/maharashtra/nagpur/",
+        "/interior-design/maharashtra/ichalkaranji/",
+        "/interior-design/maharashtra/chandrapur/",
+        "/interior-design/maharashtra/latur/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/sangli-miraj-and-kupwad/": {
+      "url": "/interior-design/maharashtra/sangli-miraj-and-kupwad/",
+      "title": "Interior Design in Sangli: Humid Mornings and Family Homes",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 16.860446,
+      "lon": 74.565518,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/kolhapur/",
+        "/interior-design/maharashtra/ichalkaranji/",
+        "/interior-design/maharashtra/solapur/",
+        "/interior-design/maharashtra/pune/",
+        "/interior-design/maharashtra/pimpri-chinchwad/",
+        "/interior-design/maharashtra/ahilyanagar/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/solapur/",
+        "/interior-design/maharashtra/kolhapur/",
+        "/interior-design/maharashtra/ichalkaranji/",
+        "/interior-design/maharashtra/latur/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/kolhapur/": {
+      "url": "/interior-design/maharashtra/kolhapur/",
+      "title": "Interior Design in Kolhapur: Humid Monsoon and Larger Homes",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 16.69167,
+      "lon": 74.23333,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/ichalkaranji/",
+        "/interior-design/maharashtra/sangli-miraj-and-kupwad/",
+        "/interior-design/maharashtra/pune/",
+        "/interior-design/maharashtra/solapur/",
+        "/interior-design/maharashtra/pimpri-chinchwad/",
+        "/interior-design/maharashtra/ahilyanagar/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/solapur/",
+        "/interior-design/maharashtra/sangli-miraj-and-kupwad/",
+        "/interior-design/maharashtra/ichalkaranji/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/nagpur/": {
+      "url": "/interior-design/maharashtra/nagpur/",
+      "title": "Interior Design in Nagpur: Heat, Larger Homes and Costs",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 21.1458,
+      "lon": 79.0882,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/chandrapur/",
+        "/interior-design/maharashtra/amravati/",
+        "/interior-design/maharashtra/akola/",
+        "/interior-design/maharashtra/latur/",
+        "/interior-design/maharashtra/chhatrapati-sambhajinagar/",
+        "/interior-design/maharashtra/solapur/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/amravati/",
+        "/interior-design/maharashtra/chandrapur/",
+        "/interior-design/maharashtra/akola/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/pimpri-chinchwad/": {
+      "url": "/interior-design/maharashtra/pimpri-chinchwad/",
+      "title": "Interior Design in Pimpri-Chinchwad: Rentals and Owner Homes",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 18.6279,
+      "lon": 73.8009,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/pune/",
+        "/interior-design/maharashtra/panvel/",
+        "/interior-design/maharashtra/navi-mumbai/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/thane/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/pune/",
+        "/interior-design/maharashtra/chhatrapati-sambhajinagar/",
+        "/interior-design/maharashtra/sangli-miraj-and-kupwad/",
+        "/interior-design/maharashtra/kolhapur/",
+        "/interior-design/maharashtra/ichalkaranji/",
+        "/interior-design/maharashtra/ahilyanagar/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/ulhasnagar/": {
+      "url": "/interior-design/maharashtra/ulhasnagar/",
+      "title": "Interior Design in Ulhasnagar: Renovating Long-Owned Homes",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 19.22,
+      "lon": 73.15,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/thane/",
+        "/interior-design/maharashtra/navi-mumbai/",
+        "/interior-design/maharashtra/panvel/",
+        "/interior-design/maharashtra/mira-bhayandar/",
+        "/interior-design/maharashtra/mumbai/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/mumbai/",
+        "/interior-design/maharashtra/navi-mumbai/",
+        "/interior-design/maharashtra/thane/",
+        "/interior-design/maharashtra/pune/",
+        "/interior-design/maharashtra/nashik/",
+        "/interior-design/maharashtra/pimpri-chinchwad/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/mira-bhayandar/",
+        "/interior-design/maharashtra/vasai-virar/",
+        "/interior-design/maharashtra/panvel/",
+        "/interior-design/maharashtra/ahilyanagar/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/kalyan-dombivli/": {
+      "url": "/interior-design/maharashtra/kalyan-dombivli/",
+      "title": "Interior Design in Kalyan-Dombivli: 1BHK Space and Budgets",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 19.2358,
+      "lon": 73.1307,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/thane/",
+        "/interior-design/maharashtra/navi-mumbai/",
+        "/interior-design/maharashtra/panvel/",
+        "/interior-design/maharashtra/mira-bhayandar/",
+        "/interior-design/maharashtra/mumbai/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/mumbai/",
+        "/interior-design/maharashtra/navi-mumbai/",
+        "/interior-design/maharashtra/thane/",
+        "/interior-design/maharashtra/pune/",
+        "/interior-design/maharashtra/nashik/",
+        "/interior-design/maharashtra/pimpri-chinchwad/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/mira-bhayandar/",
+        "/interior-design/maharashtra/vasai-virar/",
+        "/interior-design/maharashtra/panvel/",
+        "/interior-design/maharashtra/ahilyanagar/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/mira-bhayandar/": {
+      "url": "/interior-design/maharashtra/mira-bhayandar/",
+      "title": "Interior Design in Mira-Bhayandar: Compact Homes, Damp Air",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 19.29,
+      "lon": 72.85,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/vasai-virar/",
+        "/interior-design/maharashtra/thane/",
+        "/interior-design/maharashtra/mumbai/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/navi-mumbai/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/mumbai/",
+        "/interior-design/maharashtra/navi-mumbai/",
+        "/interior-design/maharashtra/thane/",
+        "/interior-design/maharashtra/nashik/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/vasai-virar/",
+        "/interior-design/maharashtra/panvel/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/vasai-virar/": {
+      "url": "/interior-design/maharashtra/vasai-virar/",
+      "title": "Interior Design in Vasai-Virar: First Homes on a Budget",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 19.3925,
+      "lon": 72.8328,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/mira-bhayandar/",
+        "/interior-design/maharashtra/thane/",
+        "/interior-design/maharashtra/mumbai/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/navi-mumbai/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/thane/",
+        "/interior-design/maharashtra/nashik/",
+        "/interior-design/maharashtra/mira-bhayandar/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/amravati/": {
+      "url": "/interior-design/maharashtra/amravati/",
+      "title": "Interior Design in Amravati: Long-Owned Homes and Hot Mays",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 20.92583,
+      "lon": 77.76472,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/akola/",
+        "/interior-design/maharashtra/nagpur/",
+        "/interior-design/maharashtra/chandrapur/",
+        "/interior-design/maharashtra/chhatrapati-sambhajinagar/",
+        "/interior-design/maharashtra/latur/",
+        "/interior-design/maharashtra/ahilyanagar/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/nagpur/",
+        "/interior-design/maharashtra/chandrapur/",
+        "/interior-design/maharashtra/akola/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/panvel/": {
+      "url": "/interior-design/maharashtra/panvel/",
+      "title": "Interior Design in Panvel: New Flats, Airport Area and Costs",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 18.99444444,
+      "lon": 73.11388889,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/navi-mumbai/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/mumbai/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/thane/",
+        "/interior-design/maharashtra/mira-bhayandar/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/mumbai/",
+        "/interior-design/maharashtra/navi-mumbai/",
+        "/interior-design/maharashtra/pune/",
+        "/interior-design/maharashtra/pimpri-chinchwad/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/ichalkaranji/": {
+      "url": "/interior-design/maharashtra/ichalkaranji/",
+      "title": "Interior Design in Ichalkaranji: Compact Homes and Damp Air",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 16.7,
+      "lon": 74.47,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/kolhapur/",
+        "/interior-design/maharashtra/sangli-miraj-and-kupwad/",
+        "/interior-design/maharashtra/solapur/",
+        "/interior-design/maharashtra/pune/",
+        "/interior-design/maharashtra/pimpri-chinchwad/",
+        "/interior-design/maharashtra/ahilyanagar/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/solapur/",
+        "/interior-design/maharashtra/sangli-miraj-and-kupwad/",
+        "/interior-design/maharashtra/kolhapur/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/chandrapur/": {
+      "url": "/interior-design/maharashtra/chandrapur/",
+      "title": "Interior Design in Chandrapur: Heavy Rain and Roomy Homes",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 19.95,
+      "lon": 79.297,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/nagpur/",
+        "/interior-design/maharashtra/amravati/",
+        "/interior-design/maharashtra/akola/",
+        "/interior-design/maharashtra/latur/",
+        "/interior-design/maharashtra/chhatrapati-sambhajinagar/",
+        "/interior-design/maharashtra/solapur/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/nagpur/",
+        "/interior-design/maharashtra/amravati/",
+        "/interior-design/maharashtra/akola/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/akola/": {
+      "url": "/interior-design/maharashtra/akola/",
+      "title": "Interior Design in Akola: Very Dry Air and Fierce May Heat",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 20.7,
+      "lon": 77,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/amravati/",
+        "/interior-design/maharashtra/chhatrapati-sambhajinagar/",
+        "/interior-design/maharashtra/nagpur/",
+        "/interior-design/maharashtra/chandrapur/",
+        "/interior-design/maharashtra/latur/",
+        "/interior-design/maharashtra/ahilyanagar/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/chhatrapati-sambhajinagar/",
+        "/interior-design/maharashtra/nagpur/",
+        "/interior-design/maharashtra/amravati/",
+        "/interior-design/maharashtra/chandrapur/",
+        "/interior-design/maharashtra/latur/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/latur/": {
+      "url": "/interior-design/maharashtra/latur/",
+      "title": "Interior Design in Latur: September Rains and Mixed Homes",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 18.4,
+      "lon": 76.56,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/solapur/",
+        "/interior-design/maharashtra/ahilyanagar/",
+        "/interior-design/maharashtra/chhatrapati-sambhajinagar/",
+        "/interior-design/maharashtra/akola/",
+        "/interior-design/maharashtra/sangli-miraj-and-kupwad/",
+        "/interior-design/maharashtra/pune/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/chhatrapati-sambhajinagar/",
+        "/interior-design/maharashtra/solapur/",
+        "/interior-design/maharashtra/nagpur/",
+        "/interior-design/maharashtra/amravati/",
+        "/interior-design/maharashtra/chandrapur/",
+        "/interior-design/maharashtra/akola/",
+        "/interior-design/maharashtra/",
+        "/interior-design/"
+      ]
+    },
+    "/interior-design/maharashtra/ahilyanagar/": {
+      "url": "/interior-design/maharashtra/ahilyanagar/",
+      "title": "Interior Design in Ahilyanagar: Low Rain and Cold Nights",
+      "type": "city",
+      "state": "Maharashtra",
+      "lat": 19.08,
+      "lon": 74.73,
+      "outbound": [
+        "/interior-design/",
+        "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/pune/",
+        "/interior-design/maharashtra/chhatrapati-sambhajinagar/",
+        "/interior-design/maharashtra/pimpri-chinchwad/",
+        "/interior-design/maharashtra/nashik/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/kalyan-dombivli/"
+      ],
+      "inbound": [
+        "/interior-design/maharashtra/chhatrapati-sambhajinagar/",
+        "/interior-design/maharashtra/solapur/",
+        "/interior-design/maharashtra/sangli-miraj-and-kupwad/",
+        "/interior-design/maharashtra/kolhapur/",
+        "/interior-design/maharashtra/amravati/",
+        "/interior-design/maharashtra/ichalkaranji/",
+        "/interior-design/maharashtra/akola/",
+        "/interior-design/maharashtra/latur/",
         "/interior-design/maharashtra/",
         "/interior-design/"
       ]
@@ -45,12 +625,52 @@
       "state": "Maharashtra",
       "outbound": [
         "/interior-design/",
+        "/interior-design/maharashtra/ahilyanagar/",
+        "/interior-design/maharashtra/akola/",
+        "/interior-design/maharashtra/amravati/",
+        "/interior-design/maharashtra/chandrapur/",
+        "/interior-design/maharashtra/chhatrapati-sambhajinagar/",
+        "/interior-design/maharashtra/ichalkaranji/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/kolhapur/",
+        "/interior-design/maharashtra/latur/",
+        "/interior-design/maharashtra/mira-bhayandar/",
+        "/interior-design/maharashtra/mumbai/",
+        "/interior-design/maharashtra/nagpur/",
         "/interior-design/maharashtra/nashik/",
-        "/interior-design/maharashtra/pune/"
+        "/interior-design/maharashtra/navi-mumbai/",
+        "/interior-design/maharashtra/panvel/",
+        "/interior-design/maharashtra/pimpri-chinchwad/",
+        "/interior-design/maharashtra/pune/",
+        "/interior-design/maharashtra/sangli-miraj-and-kupwad/",
+        "/interior-design/maharashtra/solapur/",
+        "/interior-design/maharashtra/thane/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/vasai-virar/"
       ],
       "inbound": [
+        "/interior-design/maharashtra/mumbai/",
+        "/interior-design/maharashtra/navi-mumbai/",
+        "/interior-design/maharashtra/thane/",
         "/interior-design/maharashtra/pune/",
         "/interior-design/maharashtra/nashik/",
+        "/interior-design/maharashtra/chhatrapati-sambhajinagar/",
+        "/interior-design/maharashtra/solapur/",
+        "/interior-design/maharashtra/sangli-miraj-and-kupwad/",
+        "/interior-design/maharashtra/kolhapur/",
+        "/interior-design/maharashtra/nagpur/",
+        "/interior-design/maharashtra/pimpri-chinchwad/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/mira-bhayandar/",
+        "/interior-design/maharashtra/vasai-virar/",
+        "/interior-design/maharashtra/amravati/",
+        "/interior-design/maharashtra/panvel/",
+        "/interior-design/maharashtra/ichalkaranji/",
+        "/interior-design/maharashtra/chandrapur/",
+        "/interior-design/maharashtra/akola/",
+        "/interior-design/maharashtra/latur/",
+        "/interior-design/maharashtra/ahilyanagar/",
         "/interior-design/"
       ]
     },
@@ -60,12 +680,52 @@
       "type": "national-hub",
       "outbound": [
         "/interior-design/maharashtra/",
+        "/interior-design/maharashtra/ahilyanagar/",
+        "/interior-design/maharashtra/akola/",
+        "/interior-design/maharashtra/amravati/",
+        "/interior-design/maharashtra/chandrapur/",
+        "/interior-design/maharashtra/chhatrapati-sambhajinagar/",
+        "/interior-design/maharashtra/ichalkaranji/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/kolhapur/",
+        "/interior-design/maharashtra/latur/",
+        "/interior-design/maharashtra/mira-bhayandar/",
+        "/interior-design/maharashtra/mumbai/",
+        "/interior-design/maharashtra/nagpur/",
         "/interior-design/maharashtra/nashik/",
-        "/interior-design/maharashtra/pune/"
+        "/interior-design/maharashtra/navi-mumbai/",
+        "/interior-design/maharashtra/panvel/",
+        "/interior-design/maharashtra/pimpri-chinchwad/",
+        "/interior-design/maharashtra/pune/",
+        "/interior-design/maharashtra/sangli-miraj-and-kupwad/",
+        "/interior-design/maharashtra/solapur/",
+        "/interior-design/maharashtra/thane/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/vasai-virar/"
       ],
       "inbound": [
+        "/interior-design/maharashtra/mumbai/",
+        "/interior-design/maharashtra/navi-mumbai/",
+        "/interior-design/maharashtra/thane/",
         "/interior-design/maharashtra/pune/",
         "/interior-design/maharashtra/nashik/",
+        "/interior-design/maharashtra/chhatrapati-sambhajinagar/",
+        "/interior-design/maharashtra/solapur/",
+        "/interior-design/maharashtra/sangli-miraj-and-kupwad/",
+        "/interior-design/maharashtra/kolhapur/",
+        "/interior-design/maharashtra/nagpur/",
+        "/interior-design/maharashtra/pimpri-chinchwad/",
+        "/interior-design/maharashtra/ulhasnagar/",
+        "/interior-design/maharashtra/kalyan-dombivli/",
+        "/interior-design/maharashtra/mira-bhayandar/",
+        "/interior-design/maharashtra/vasai-virar/",
+        "/interior-design/maharashtra/amravati/",
+        "/interior-design/maharashtra/panvel/",
+        "/interior-design/maharashtra/ichalkaranji/",
+        "/interior-design/maharashtra/chandrapur/",
+        "/interior-design/maharashtra/akola/",
+        "/interior-design/maharashtra/latur/",
+        "/interior-design/maharashtra/ahilyanagar/",
         "/interior-design/maharashtra/"
       ]
     }
