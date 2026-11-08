@@ -1,0 +1,167 @@
+{
+  "city": "kolhapur",
+  "checked": "2026-11-07",
+  "facts": [
+    {
+      "id": "kolhapur-census-pop",
+      "claim": "Kolhapur (M Corp.) had 549,236 residents in the 2011 Census.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/42876/download/46544/CLASS_I.xlsx",
+      "source_title": "Census 2011 Table A-4: Towns and Urban Agglomerations by population size class",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "(a) Kolhapur | 2011 | M.Corp. | 66.82 | 549236",
+      "city_specific": true,
+      "source_type": "Census of India"
+    },
+    {
+      "id": "kolhapur-hh-total",
+      "claim": "Kolhapur (M Corp.) had 120,678 households in the 2011 Census.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Kolhapur (M Corp.) | Urban | Total | All Households | 120678 | 3234 | 31878 | 35504 | 25010 | 14133 | 5253 | 5666",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "Columns: total households, no exclusive room, one room, two rooms, three, four, five, six rooms and above."
+    },
+    {
+      "id": "kolhapur-hh-small",
+      "claim": "In 2011, 29.1% of households in Kolhapur lived in one dwelling room or had no exclusive room.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Kolhapur (M Corp.) | Urban | Total | All Households | 120678 | 3234 | 31878 | 35504 | 25010 | 14133 | 5253 | 5666",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "(3234+31878)/120678"
+    },
+    {
+      "id": "kolhapur-hh-two",
+      "claim": "In 2011, 29.4% of households in Kolhapur had two dwelling rooms.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Kolhapur (M Corp.) | Urban | Total | All Households | 120678 | 3234 | 31878 | 35504 | 25010 | 14133 | 5253 | 5666",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "35504/120678"
+    },
+    {
+      "id": "kolhapur-hh-large",
+      "claim": "In 2011, 41.5% of households in Kolhapur had three or more dwelling rooms.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Kolhapur (M Corp.) | Urban | Total | All Households | 120678 | 3234 | 31878 | 35504 | 25010 | 14133 | 5253 | 5666",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "(25010+14133+5253+5666)/120678"
+    },
+    {
+      "id": "kolhapur-hh-rented",
+      "claim": "In 2011, 23.0% of households in Kolhapur lived in rented homes.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Kolhapur (M Corp.) | Rented | Urban | All Households | 27735",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "27735/120678"
+    },
+    {
+      "id": "kolhapur-hh-owned",
+      "claim": "In 2011, 75.0% of households in Kolhapur lived in homes they owned.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Kolhapur (M Corp.) | Owned | Urban | All Households | 90507",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "90507/120678"
+    },
+    {
+      "id": "census-room-definition",
+      "claim": "The Census counts living rooms, bedrooms, dining, drawing and study rooms as dwelling rooms, but not kitchens, bathrooms, store rooms, passages or verandahs.",
+      "source_url": "https://catalog.ihsn.org/catalog/4161/download/55469",
+      "source_title": "Census of India 2011: Instruction Manual for Houselisting and Housing Census",
+      "publisher": "Office of the Registrar General & Census Commissioner, India",
+      "date_accessed": "2026-11-07",
+      "quote": "Do not include kitchen, bathroom, latrine, store room, passageway and verandah. Include living room, bedroom, dining room, drawing room, study room, servant's room and other similar rooms.",
+      "city_specific": false,
+      "source_type": "Census of India (definitions)"
+    },
+    {
+      "id": "kolhapur-district-income",
+      "claim": "Per capita nominal net district domestic product for Kolhapur district was ₹2,82,297 in 2023-24, ranking 6 of the 34 district figures in the Economic Survey of Maharashtra 2024-25.",
+      "source_url": "https://data.opencity.in/dataset/economic-survey-of-maharashtra-2024-25",
+      "source_title": "District-wise GDP and Per-Capita Income Data 2023-24 (Economic Survey of Maharashtra 2024-25)",
+      "publisher": "Government of Maharashtra (Economic Survey 2024-25), via OpenCity",
+      "date_accessed": "2026-11-07",
+      "quote": "Kolhapur ... Per-capita Nominal NDDP 2023-24 (Current Prices): 2,82,297",
+      "city_specific": true,
+      "source_type": "Economic Survey of Maharashtra"
+    },
+    {
+      "id": "kolhapur-imd-rain",
+      "claim": "Kolhapur (IMD station 43157) receives 1077.5 mm of rain a year on average over 68.4 rainy days (1991–2020).",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : KOLHAPUR (index 43157) ... ANNUAL I 947.3 22.3 19.7 31.2 19.9 40.2 12.1 42.3 9 8.6 28 79 21.5 3.4 1.8 1077.5 68.4 1954.9 568.8 304.0 5 3.6",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "kolhapur-imd-monsoon",
+      "claim": "At Kolhapur, June to September bring 872.4 mm, about 81% of the annual rain; the wettest month is July with 296.5 mm.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : KOLHAPUR (index 43157) ... monthly totals JUN 214.1, JUL 296.5, AUG 227.9, SEP 133.9, OCT 118.5",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "kolhapur-imd-humidity",
+      "claim": "At Kolhapur, morning (08:30) relative humidity averages 91% in July and 92% in August; evening (17:30) humidity is lowest in February at 32%.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : KOLHAPUR (index 43157) ... JUL I RH 91 ... AUG I RH 92 ... FEB II RH 32",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "kolhapur-imd-heat",
+      "claim": "April is the hottest month at Kolhapur, with an average daily maximum of 36.8 °C.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : KOLHAPUR (index 43157) ... APR I mean daily max 36.8",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "kolhapur-imd-winter",
+      "claim": "January nights at Kolhapur average a minimum of 15.5 °C.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : KOLHAPUR (index 43157) ... JAN I mean daily min 15.5",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    }
+  ],
+  "removed_claims": []
+}

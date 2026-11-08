@@ -43,9 +43,12 @@ function finishHtml(html) {
 
 // {{img:key}} on its own line in the Markdown -> a <figure> from the page's front-matter `images`.
 // Images must be the studio's own work (or properly licensed) and captioned honestly.
+// `photo: p07-1` pulls src/size/alt from data/portfolio-images.json (generated from src/content/portfolio.js).
+const PHOTOS = JSON.parse(fs.readFileSync(path.join(DATA, 'portfolio-images.json'), 'utf8'));
 function insertImages(html, images = {}, file = '') {
   return html.replace(/<p>\{\{img:([a-z0-9-]+)\}\}<\/p>/g, (_, key) => {
-    const im = images[key];
+    const im = images[key]?.photo ? { ...PHOTOS[images[key].photo], ...images[key] } : images[key];
+    if (images[key]?.photo && !PHOTOS[images[key].photo]) throw new Error(`${file}: unknown photo ${images[key].photo}`);
     if (!im) throw new Error(`${file}: {{img:${key}}} has no entry under images in the front matter`);
     return `<figure><img src="${esc(im.src)}" width="${im.width}" height="${im.height}" alt="${esc(im.alt)}" loading="lazy" decoding="async">${im.caption ? `<figcaption>${esc(im.caption)}</figcaption>` : ''}</figure>`;
   });

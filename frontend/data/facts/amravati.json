@@ -1,0 +1,167 @@
+{
+  "city": "amravati",
+  "checked": "2026-11-07",
+  "facts": [
+    {
+      "id": "amravati-census-pop",
+      "claim": "Amravati (M Corp.) had 647,057 residents in the 2011 Census.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/42876/download/46544/CLASS_I.xlsx",
+      "source_title": "Census 2011 Table A-4: Towns and Urban Agglomerations by population size class",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Amravati [13] | 2011 | M.Corp. | 121.65 | 647057",
+      "city_specific": true,
+      "source_type": "Census of India"
+    },
+    {
+      "id": "amravati-hh-total",
+      "claim": "Amravati (M Corp.) had 133,562 households in the 2011 Census.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Amravati (M Corp.) | Urban | Total | All Households | 133562 | 3753 | 40168 | 38894 | 25518 | 15006 | 5678 | 4545",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "Columns: total households, no exclusive room, one room, two rooms, three, four, five, six rooms and above."
+    },
+    {
+      "id": "amravati-hh-small",
+      "claim": "In 2011, 32.9% of households in Amravati lived in one dwelling room or had no exclusive room.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Amravati (M Corp.) | Urban | Total | All Households | 133562 | 3753 | 40168 | 38894 | 25518 | 15006 | 5678 | 4545",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "(3753+40168)/133562"
+    },
+    {
+      "id": "amravati-hh-two",
+      "claim": "In 2011, 29.1% of households in Amravati had two dwelling rooms.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Amravati (M Corp.) | Urban | Total | All Households | 133562 | 3753 | 40168 | 38894 | 25518 | 15006 | 5678 | 4545",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "38894/133562"
+    },
+    {
+      "id": "amravati-hh-large",
+      "claim": "In 2011, 38.0% of households in Amravati had three or more dwelling rooms.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Amravati (M Corp.) | Urban | Total | All Households | 133562 | 3753 | 40168 | 38894 | 25518 | 15006 | 5678 | 4545",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "(25518+15006+5678+4545)/133562"
+    },
+    {
+      "id": "amravati-hh-rented",
+      "claim": "In 2011, 18.3% of households in Amravati lived in rented homes.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Amravati (M Corp.) | Rented | Urban | All Households | 24383",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "24383/133562"
+    },
+    {
+      "id": "amravati-hh-owned",
+      "claim": "In 2011, 79.3% of households in Amravati lived in homes they owned.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Amravati (M Corp.) | Owned | Urban | All Households | 105973",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "105973/133562"
+    },
+    {
+      "id": "census-room-definition",
+      "claim": "The Census counts living rooms, bedrooms, dining, drawing and study rooms as dwelling rooms, but not kitchens, bathrooms, store rooms, passages or verandahs.",
+      "source_url": "https://catalog.ihsn.org/catalog/4161/download/55469",
+      "source_title": "Census of India 2011: Instruction Manual for Houselisting and Housing Census",
+      "publisher": "Office of the Registrar General & Census Commissioner, India",
+      "date_accessed": "2026-11-07",
+      "quote": "Do not include kitchen, bathroom, latrine, store room, passageway and verandah. Include living room, bedroom, dining room, drawing room, study room, servant's room and other similar rooms.",
+      "city_specific": false,
+      "source_type": "Census of India (definitions)"
+    },
+    {
+      "id": "amravati-district-income",
+      "claim": "Per capita nominal net district domestic product for Amravati district was ₹1,91,401 in 2023-24, ranking 20 of the 34 district figures in the Economic Survey of Maharashtra 2024-25.",
+      "source_url": "https://data.opencity.in/dataset/economic-survey-of-maharashtra-2024-25",
+      "source_title": "District-wise GDP and Per-Capita Income Data 2023-24 (Economic Survey of Maharashtra 2024-25)",
+      "publisher": "Government of Maharashtra (Economic Survey 2024-25), via OpenCity",
+      "date_accessed": "2026-11-07",
+      "quote": "Amravati ... Per-capita Nominal NDDP 2023-24 (Current Prices): 1,91,401",
+      "city_specific": true,
+      "source_type": "Economic Survey of Maharashtra"
+    },
+    {
+      "id": "amravati-imd-rain",
+      "claim": "Amravati (IMD station 42937) receives 763.1 mm of rain a year on average over 41.4 rainy days (1991–2020).",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : AMRAVATI (index 42937) ... ANNUAL I 968.8 25.2 20.8 32.9 19.7 43.6 10.1 48.3 6 5.0 9 67 21.7 0.8 0.5 763.1 41.4 1533.7 65.5 235.0 15 5.8",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "amravati-imd-monsoon",
+      "claim": "At Amravati, June to September bring 661.1 mm, about 87% of the annual rain; the wettest month is July with 205.6 mm.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : AMRAVATI (index 42937) ... monthly totals JUN 137.5, JUL 205.6, AUG 179.1, SEP 138.9, OCT 47.5",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "amravati-imd-humidity",
+      "claim": "At Amravati, morning (08:30) relative humidity averages 85% in July and 88% in August; evening (17:30) humidity is lowest in May at 31%.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : AMRAVATI (index 42937) ... JUL I RH 85 ... AUG I RH 88 ... MAY II RH 31",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "amravati-imd-heat",
+      "claim": "May is the hottest month at Amravati, with an average daily maximum of 41.6 °C.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : AMRAVATI (index 42937) ... MAY I mean daily max 41.6",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "amravati-imd-winter",
+      "claim": "December nights at Amravati average a minimum of 14.1 °C.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : AMRAVATI (index 42937) ... DEC I mean daily min 14.1",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    }
+  ],
+  "removed_claims": []
+}

@@ -1,0 +1,167 @@
+{
+  "city": "chandrapur",
+  "checked": "2026-11-07",
+  "facts": [
+    {
+      "id": "chandrapur-census-pop",
+      "claim": "Chandrapur (M Cl) had 320,379 residents in the 2011 Census.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/42876/download/46544/CLASS_I.xlsx",
+      "source_title": "Census 2011 Table A-4: Towns and Urban Agglomerations by population size class",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Chandrapur | 2011 | M Cl | 56.35 | 320379",
+      "city_specific": true,
+      "source_type": "Census of India"
+    },
+    {
+      "id": "chandrapur-hh-total",
+      "claim": "Chandrapur (M Cl) had 73,035 households in the 2011 Census.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Chandrapur (M Cl) | Urban | Total | All Households | 73035 | 961 | 16179 | 23815 | 17799 | 9053 | 2840 | 2388",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "Columns: total households, no exclusive room, one room, two rooms, three, four, five, six rooms and above."
+    },
+    {
+      "id": "chandrapur-hh-small",
+      "claim": "In 2011, 23.5% of households in Chandrapur lived in one dwelling room or had no exclusive room.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Chandrapur (M Cl) | Urban | Total | All Households | 73035 | 961 | 16179 | 23815 | 17799 | 9053 | 2840 | 2388",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "(961+16179)/73035"
+    },
+    {
+      "id": "chandrapur-hh-two",
+      "claim": "In 2011, 32.6% of households in Chandrapur had two dwelling rooms.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Chandrapur (M Cl) | Urban | Total | All Households | 73035 | 961 | 16179 | 23815 | 17799 | 9053 | 2840 | 2388",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "23815/73035"
+    },
+    {
+      "id": "chandrapur-hh-large",
+      "claim": "In 2011, 43.9% of households in Chandrapur had three or more dwelling rooms.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Chandrapur (M Cl) | Urban | Total | All Households | 73035 | 961 | 16179 | 23815 | 17799 | 9053 | 2840 | 2388",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "(17799+9053+2840+2388)/73035"
+    },
+    {
+      "id": "chandrapur-hh-rented",
+      "claim": "In 2011, 24.5% of households in Chandrapur lived in rented homes.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Chandrapur (M Cl) | Rented | Urban | All Households | 17907",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "17907/73035"
+    },
+    {
+      "id": "chandrapur-hh-owned",
+      "claim": "In 2011, 72.3% of households in Chandrapur lived in homes they owned.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Chandrapur (M Cl) | Owned | Urban | All Households | 52776",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "52776/73035"
+    },
+    {
+      "id": "census-room-definition",
+      "claim": "The Census counts living rooms, bedrooms, dining, drawing and study rooms as dwelling rooms, but not kitchens, bathrooms, store rooms, passages or verandahs.",
+      "source_url": "https://catalog.ihsn.org/catalog/4161/download/55469",
+      "source_title": "Census of India 2011: Instruction Manual for Houselisting and Housing Census",
+      "publisher": "Office of the Registrar General & Census Commissioner, India",
+      "date_accessed": "2026-11-07",
+      "quote": "Do not include kitchen, bathroom, latrine, store room, passageway and verandah. Include living room, bedroom, dining room, drawing room, study room, servant's room and other similar rooms.",
+      "city_specific": false,
+      "source_type": "Census of India (definitions)"
+    },
+    {
+      "id": "chandrapur-district-income",
+      "claim": "Per capita nominal net district domestic product for Chandrapur district was ₹2,21,846 in 2023-24, ranking 16 of the 34 district figures in the Economic Survey of Maharashtra 2024-25.",
+      "source_url": "https://data.opencity.in/dataset/economic-survey-of-maharashtra-2024-25",
+      "source_title": "District-wise GDP and Per-Capita Income Data 2023-24 (Economic Survey of Maharashtra 2024-25)",
+      "publisher": "Government of Maharashtra (Economic Survey 2024-25), via OpenCity",
+      "date_accessed": "2026-11-07",
+      "quote": "Chandrapur ... Per-capita Nominal NDDP 2023-24 (Current Prices): 2,21,846",
+      "city_specific": true,
+      "source_type": "Economic Survey of Maharashtra"
+    },
+    {
+      "id": "chandrapur-imd-rain",
+      "claim": "Chandrapur (IMD station 43029) receives 1255.8 mm of rain a year on average over 59.0 rainy days (1991–2020).",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : CHANDRAPUR (index 43029) ... ANNUAL I 987.4 25.6 21.3 34.5 21.8 46.4 8.9 49.0 2 2.8 10 69 22.6 2.7 1.0 1255.8 59.0 2391.8 577.3 329.0 14",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "chandrapur-imd-monsoon",
+      "claim": "At Chandrapur, June to September bring 1100.4 mm, about 88% of the annual rain; the wettest month is July with 373.8 mm.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : CHANDRAPUR (index 43029) ... monthly totals JUN 219.9, JUL 373.8, AUG 325.0, SEP 181.7, OCT 65.5",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "chandrapur-imd-humidity",
+      "claim": "At Chandrapur, morning (08:30) relative humidity averages 83% in July and 86% in August; evening (17:30) humidity is lowest in May at 23%.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : CHANDRAPUR (index 43029) ... JUL I RH 83 ... AUG I RH 86 ... MAY II RH 23",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "chandrapur-imd-heat",
+      "claim": "May is the hottest month at Chandrapur, with an average daily maximum of 43.1 °C.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : CHANDRAPUR (index 43029) ... MAY I mean daily max 43.1",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "chandrapur-imd-winter",
+      "claim": "December nights at Chandrapur average a minimum of 13.7 °C.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : CHANDRAPUR (index 43029) ... DEC I mean daily min 13.7",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    }
+  ],
+  "removed_claims": []
+}

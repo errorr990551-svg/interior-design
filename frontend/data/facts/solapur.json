@@ -1,0 +1,167 @@
+{
+  "city": "solapur",
+  "checked": "2026-11-07",
+  "facts": [
+    {
+      "id": "solapur-census-pop",
+      "claim": "Solapur (M Corp.) had 951,558 residents in the 2011 Census.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/42876/download/46544/CLASS_I.xlsx",
+      "source_title": "Census 2011 Table A-4: Towns and Urban Agglomerations by population size class",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Solapur [11] | 2011 | M.Corp. | 178.57 | 951558",
+      "city_specific": true,
+      "source_type": "Census of India"
+    },
+    {
+      "id": "solapur-hh-total",
+      "claim": "Solapur (M Corp.) had 184,971 households in the 2011 Census.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Solapur (M Corp.) | Urban | Total | All Households | 184971 | 9277 | 77738 | 52498 | 27129 | 10688 | 3861 | 3780",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "Columns: total households, no exclusive room, one room, two rooms, three, four, five, six rooms and above."
+    },
+    {
+      "id": "solapur-hh-small",
+      "claim": "In 2011, 47.0% of households in Solapur lived in one dwelling room or had no exclusive room.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Solapur (M Corp.) | Urban | Total | All Households | 184971 | 9277 | 77738 | 52498 | 27129 | 10688 | 3861 | 3780",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "(9277+77738)/184971"
+    },
+    {
+      "id": "solapur-hh-two",
+      "claim": "In 2011, 28.4% of households in Solapur had two dwelling rooms.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Solapur (M Corp.) | Urban | Total | All Households | 184971 | 9277 | 77738 | 52498 | 27129 | 10688 | 3861 | 3780",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "52498/184971"
+    },
+    {
+      "id": "solapur-hh-large",
+      "claim": "In 2011, 24.6% of households in Solapur had three or more dwelling rooms.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Solapur (M Corp.) | Urban | Total | All Households | 184971 | 9277 | 77738 | 52498 | 27129 | 10688 | 3861 | 3780",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "(27129+10688+3861+3780)/184971"
+    },
+    {
+      "id": "solapur-hh-rented",
+      "claim": "In 2011, 28.5% of households in Solapur lived in rented homes.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Solapur (M Corp.) | Rented | Urban | All Households | 52708",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "52708/184971"
+    },
+    {
+      "id": "solapur-hh-owned",
+      "claim": "In 2011, 69.8% of households in Solapur lived in homes they owned.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Solapur (M Corp.) | Owned | Urban | All Households | 129032",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "129032/184971"
+    },
+    {
+      "id": "census-room-definition",
+      "claim": "The Census counts living rooms, bedrooms, dining, drawing and study rooms as dwelling rooms, but not kitchens, bathrooms, store rooms, passages or verandahs.",
+      "source_url": "https://catalog.ihsn.org/catalog/4161/download/55469",
+      "source_title": "Census of India 2011: Instruction Manual for Houselisting and Housing Census",
+      "publisher": "Office of the Registrar General & Census Commissioner, India",
+      "date_accessed": "2026-11-07",
+      "quote": "Do not include kitchen, bathroom, latrine, store room, passageway and verandah. Include living room, bedroom, dining room, drawing room, study room, servant's room and other similar rooms.",
+      "city_specific": false,
+      "source_type": "Census of India (definitions)"
+    },
+    {
+      "id": "solapur-district-income",
+      "claim": "Per capita nominal net district domestic product for Solapur district was ₹2,53,088 in 2023-24, ranking 9 of the 34 district figures in the Economic Survey of Maharashtra 2024-25.",
+      "source_url": "https://data.opencity.in/dataset/economic-survey-of-maharashtra-2024-25",
+      "source_title": "District-wise GDP and Per-Capita Income Data 2023-24 (Economic Survey of Maharashtra 2024-25)",
+      "publisher": "Government of Maharashtra (Economic Survey 2024-25), via OpenCity",
+      "date_accessed": "2026-11-07",
+      "quote": "Solapur ... Per-capita Nominal NDDP 2023-24 (Current Prices): 2,53,088",
+      "city_specific": true,
+      "source_type": "Economic Survey of Maharashtra"
+    },
+    {
+      "id": "solapur-imd-rain",
+      "claim": "Solapur (IMD station 43117) receives 706.7 mm of rain a year on average over 44.2 rainy days (1991–2020).",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : SOLAPUR (index 43117) ... ANNUAL I 957.1 24.7 20.1 34.4 20.8 44.0 10.4 46.0 10 4.4 7 65 20.7 2.9 1.0 706.7 44.2 1296.0 306.5 191.0 12 4.1",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "solapur-imd-monsoon",
+      "claim": "At Solapur, June to September bring 509.6 mm, about 72% of the annual rain; the wettest month is September with 154.3 mm.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : SOLAPUR (index 43117) ... monthly totals JUN 111.1, JUL 121.4, AUG 122.8, SEP 154.3, OCT 106.9",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "solapur-imd-humidity",
+      "claim": "At Solapur, morning (08:30) relative humidity averages 80% in July and 80% in August; evening (17:30) humidity is lowest in April at 24%.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : SOLAPUR (index 43117) ... JUL I RH 80 ... AUG I RH 80 ... APR II RH 24",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "solapur-imd-heat",
+      "claim": "May is the hottest month at Solapur, with an average daily maximum of 40.4 °C.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : SOLAPUR (index 43117) ... MAY I mean daily max 40.4",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "solapur-imd-winter",
+      "claim": "December nights at Solapur average a minimum of 15.6 °C.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : SOLAPUR (index 43117) ... DEC I mean daily min 15.6",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    }
+  ],
+  "removed_claims": []
+}

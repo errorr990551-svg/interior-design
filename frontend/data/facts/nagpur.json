@@ -1,0 +1,167 @@
+{
+  "city": "nagpur",
+  "checked": "2026-11-07",
+  "facts": [
+    {
+      "id": "nagpur-census-pop",
+      "claim": "Nagpur (M Corp.) had 2,405,665 residents in the 2011 Census.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/42876/download/46544/CLASS_I.xlsx",
+      "source_title": "Census 2011 Table A-4: Towns and Urban Agglomerations by population size class",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "(a) Nagpur | 2011 | M.Corp. | 217.56 | 2405665",
+      "city_specific": true,
+      "source_type": "Census of India"
+    },
+    {
+      "id": "nagpur-hh-total",
+      "claim": "Nagpur (M Corp.) had 506,353 households in the 2011 Census.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Nagpur (M Corp.) | Urban | Total | All Households | 506353 | 9885 | 121104 | 150653 | 119800 | 62467 | 22292 | 20152",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "Columns: total households, no exclusive room, one room, two rooms, three, four, five, six rooms and above."
+    },
+    {
+      "id": "nagpur-hh-small",
+      "claim": "In 2011, 25.9% of households in Nagpur lived in one dwelling room or had no exclusive room.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Nagpur (M Corp.) | Urban | Total | All Households | 506353 | 9885 | 121104 | 150653 | 119800 | 62467 | 22292 | 20152",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "(9885+121104)/506353"
+    },
+    {
+      "id": "nagpur-hh-two",
+      "claim": "In 2011, 29.8% of households in Nagpur had two dwelling rooms.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Nagpur (M Corp.) | Urban | Total | All Households | 506353 | 9885 | 121104 | 150653 | 119800 | 62467 | 22292 | 20152",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "150653/506353"
+    },
+    {
+      "id": "nagpur-hh-large",
+      "claim": "In 2011, 44.4% of households in Nagpur had three or more dwelling rooms.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Nagpur (M Corp.) | Urban | Total | All Households | 506353 | 9885 | 121104 | 150653 | 119800 | 62467 | 22292 | 20152",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "(119800+62467+22292+20152)/506353"
+    },
+    {
+      "id": "nagpur-hh-rented",
+      "claim": "In 2011, 22.5% of households in Nagpur lived in rented homes.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Nagpur (M Corp.) | Rented | Urban | All Households | 113895",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "113895/506353"
+    },
+    {
+      "id": "nagpur-hh-owned",
+      "claim": "In 2011, 74.7% of households in Nagpur lived in homes they owned.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Nagpur (M Corp.) | Owned | Urban | All Households | 378404",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "378404/506353"
+    },
+    {
+      "id": "census-room-definition",
+      "claim": "The Census counts living rooms, bedrooms, dining, drawing and study rooms as dwelling rooms, but not kitchens, bathrooms, store rooms, passages or verandahs.",
+      "source_url": "https://catalog.ihsn.org/catalog/4161/download/55469",
+      "source_title": "Census of India 2011: Instruction Manual for Houselisting and Housing Census",
+      "publisher": "Office of the Registrar General & Census Commissioner, India",
+      "date_accessed": "2026-11-07",
+      "quote": "Do not include kitchen, bathroom, latrine, store room, passageway and verandah. Include living room, bedroom, dining room, drawing room, study room, servant's room and other similar rooms.",
+      "city_specific": false,
+      "source_type": "Census of India (definitions)"
+    },
+    {
+      "id": "nagpur-district-income",
+      "claim": "Per capita nominal net district domestic product for Nagpur district was ₹3,22,927 in 2023-24, ranking 4 of the 34 district figures in the Economic Survey of Maharashtra 2024-25.",
+      "source_url": "https://data.opencity.in/dataset/economic-survey-of-maharashtra-2024-25",
+      "source_title": "District-wise GDP and Per-Capita Income Data 2023-24 (Economic Survey of Maharashtra 2024-25)",
+      "publisher": "Government of Maharashtra (Economic Survey 2024-25), via OpenCity",
+      "date_accessed": "2026-11-07",
+      "quote": "Nagpur ... Per-capita Nominal NDDP 2023-24 (Current Prices): 3,22,927",
+      "city_specific": true,
+      "source_type": "Economic Survey of Maharashtra"
+    },
+    {
+      "id": "nagpur-imd-rain",
+      "claim": "Nagpur (IMD station 42867) receives 1151.2 mm of rain a year on average over 57.1 rainy days (1991–2020).",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : NAGPUR (index 42867) ... ANNUAL I 974.8 25.2 20.2 34.0 20.5 45.9 7.0 47.9 23 3.5 29 64 20.5 3.1 1.1 1151.2 57.1 1931.4 364.7 315.0 12 4.9",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "nagpur-imd-monsoon",
+      "claim": "At Nagpur, June to September bring 999.2 mm, about 87% of the annual rain; the wettest month is July with 347.7 mm.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : NAGPUR (index 42867) ... monthly totals JUN 190.6, JUL 347.7, AUG 277.2, SEP 183.7, OCT 53.3",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "nagpur-imd-humidity",
+      "claim": "At Nagpur, morning (08:30) relative humidity averages 84% in July and 86% in August; evening (17:30) humidity is lowest in April at 23%.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : NAGPUR (index 42867) ... JUL I RH 84 ... AUG I RH 86 ... APR II RH 23",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "nagpur-imd-heat",
+      "claim": "May is the hottest month at Nagpur, with an average daily maximum of 43.1 °C.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : NAGPUR (index 42867) ... MAY I mean daily max 43.1",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "nagpur-imd-winter",
+      "claim": "December nights at Nagpur average a minimum of 12.8 °C.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : NAGPUR (index 42867) ... DEC I mean daily min 12.8",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    }
+  ],
+  "removed_claims": []
+}

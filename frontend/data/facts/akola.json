@@ -1,0 +1,167 @@
+{
+  "city": "akola",
+  "checked": "2026-11-07",
+  "facts": [
+    {
+      "id": "akola-census-pop",
+      "claim": "Akola (M Corp.) had 425,817 residents in the 2011 Census.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/42876/download/46544/CLASS_I.xlsx",
+      "source_title": "Census 2011 Table A-4: Towns and Urban Agglomerations by population size class",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Akola | 2011 | M.Corp. | 23.44 | 425817",
+      "city_specific": true,
+      "source_type": "Census of India"
+    },
+    {
+      "id": "akola-hh-total",
+      "claim": "Akola (M Corp.) had 85,027 households in the 2011 Census.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Akola (M Corp.) | Urban | Total | All Households | 85027 | 5164 | 29060 | 23996 | 14867 | 6706 | 2700 | 2534",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "Columns: total households, no exclusive room, one room, two rooms, three, four, five, six rooms and above."
+    },
+    {
+      "id": "akola-hh-small",
+      "claim": "In 2011, 40.3% of households in Akola lived in one dwelling room or had no exclusive room.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Akola (M Corp.) | Urban | Total | All Households | 85027 | 5164 | 29060 | 23996 | 14867 | 6706 | 2700 | 2534",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "(5164+29060)/85027"
+    },
+    {
+      "id": "akola-hh-two",
+      "claim": "In 2011, 28.2% of households in Akola had two dwelling rooms.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Akola (M Corp.) | Urban | Total | All Households | 85027 | 5164 | 29060 | 23996 | 14867 | 6706 | 2700 | 2534",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "23996/85027"
+    },
+    {
+      "id": "akola-hh-large",
+      "claim": "In 2011, 31.5% of households in Akola had three or more dwelling rooms.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Akola (M Corp.) | Urban | Total | All Households | 85027 | 5164 | 29060 | 23996 | 14867 | 6706 | 2700 | 2534",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "(14867+6706+2700+2534)/85027"
+    },
+    {
+      "id": "akola-hh-rented",
+      "claim": "In 2011, 24.0% of households in Akola lived in rented homes.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Akola (M Corp.) | Rented | Urban | All Households | 20424",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "20424/85027"
+    },
+    {
+      "id": "akola-hh-owned",
+      "claim": "In 2011, 72.3% of households in Akola lived in homes they owned.",
+      "source_url": "https://censusindia.gov.in/nada/index.php/catalog/8267",
+      "source_title": "Census 2011 Table HH-4 (HL-04): Households by ownership status, size of household and number of dwelling rooms, Maharashtra",
+      "publisher": "Census of India",
+      "date_accessed": "2026-11-07",
+      "quote": "Akola (M Corp.) | Owned | Urban | All Households | 61499",
+      "city_specific": true,
+      "source_type": "Census of India (houselisting)",
+      "note": "61499/85027"
+    },
+    {
+      "id": "census-room-definition",
+      "claim": "The Census counts living rooms, bedrooms, dining, drawing and study rooms as dwelling rooms, but not kitchens, bathrooms, store rooms, passages or verandahs.",
+      "source_url": "https://catalog.ihsn.org/catalog/4161/download/55469",
+      "source_title": "Census of India 2011: Instruction Manual for Houselisting and Housing Census",
+      "publisher": "Office of the Registrar General & Census Commissioner, India",
+      "date_accessed": "2026-11-07",
+      "quote": "Do not include kitchen, bathroom, latrine, store room, passageway and verandah. Include living room, bedroom, dining room, drawing room, study room, servant's room and other similar rooms.",
+      "city_specific": false,
+      "source_type": "Census of India (definitions)"
+    },
+    {
+      "id": "akola-district-income",
+      "claim": "Per capita nominal net district domestic product for Akola district was ₹1,97,334 in 2023-24, ranking 17 of the 34 district figures in the Economic Survey of Maharashtra 2024-25.",
+      "source_url": "https://data.opencity.in/dataset/economic-survey-of-maharashtra-2024-25",
+      "source_title": "District-wise GDP and Per-Capita Income Data 2023-24 (Economic Survey of Maharashtra 2024-25)",
+      "publisher": "Government of Maharashtra (Economic Survey 2024-25), via OpenCity",
+      "date_accessed": "2026-11-07",
+      "quote": "Akola ... Per-capita Nominal NDDP 2023-24 (Current Prices): 1,97,334",
+      "city_specific": true,
+      "source_type": "Economic Survey of Maharashtra"
+    },
+    {
+      "id": "akola-imd-rain",
+      "claim": "Akola (IMD station 42933) receives 783.4 mm of rain a year on average over 44.9 rainy days (1991–2020).",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : AKOLA (index 42933) ... ANNUAL I 978.1 24.6 19.6 34.5 21.0 45.2 8.2 47.8 22 2.2 9 62 19.6 2.5 1.1 783.4 44.9 1683.0 306.8 365.4 15 3.0",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "akola-imd-monsoon",
+      "claim": "At Akola, June to September bring 681.3 mm, about 87% of the annual rain; the wettest month is July with 215.0 mm.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : AKOLA (index 42933) ... monthly totals JUN 146.8, JUL 215.0, AUG 181.8, SEP 137.7, OCT 42.5",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "akola-imd-humidity",
+      "claim": "At Akola, morning (08:30) relative humidity averages 80% in July and 83% in August; evening (17:30) humidity is lowest in April at 19%.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : AKOLA (index 42933) ... JUL I RH 80 ... AUG I RH 83 ... APR II RH 19",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "akola-imd-heat",
+      "claim": "May is the hottest month at Akola, with an average daily maximum of 42.4 °C.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : AKOLA (index 42933) ... MAY I mean daily max 42.4",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    },
+    {
+      "id": "akola-imd-winter",
+      "claim": "December nights at Akola average a minimum of 13.5 °C.",
+      "source_url": "https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+      "source_title": "Climatological Tables of Observatories in India 1991–2020 (9th edition, 2022)",
+      "publisher": "India Meteorological Department",
+      "date_accessed": "2026-11-07",
+      "quote": "STATION : AKOLA (index 42933) ... DEC I mean daily min 13.5",
+      "city_specific": true,
+      "source_type": "IMD climate normals"
+    }
+  ],
+  "removed_claims": []
+}

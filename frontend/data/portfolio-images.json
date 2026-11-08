@@ -1,0 +1,182 @@
+{
+  "p01-1": {
+    "src": "/images/portfolio/p01-1.jpg",
+    "width": 960,
+    "height": 540,
+    "alt": "Bedroom with low oak platform bed, sage green wall and arched mirror niche"
+  },
+  "p01-2": {
+    "src": "/images/portfolio/p01-2.jpg",
+    "width": 859,
+    "height": 616,
+    "alt": "Side view of the sage bedroom showing the curved bedside shelf and pendant light"
+  },
+  "p02-1": {
+    "src": "/images/portfolio/p02-1.jpg",
+    "width": 815,
+    "height": 673,
+    "alt": "Sage bedroom with full-height two-tone wardrobe along one wall"
+  },
+  "p02-2": {
+    "src": "/images/portfolio/p02-2.jpg",
+    "width": 1028,
+    "height": 612,
+    "alt": "Two-tone wardrobe with sage upper shutters, oak lower shutters and long vertical handles"
+  },
+  "p03-1": {
+    "src": "/images/portfolio/p03-1.jpg",
+    "width": 853,
+    "height": 651,
+    "alt": "Master bedroom with cane headboard bed, bench and dark wood ceiling cove"
+  },
+  "p03-2": {
+    "src": "/images/portfolio/p03-2.jpg",
+    "width": 881,
+    "height": 639,
+    "alt": "Bed wall with marble-look panels and dark wood vertical trims"
+  },
+  "p04-2": {
+    "src": "/images/portfolio/p04-2.jpg",
+    "width": 1030,
+    "height": 689,
+    "alt": "Opposite wall with dark wood door and compact dressing table with round mirror"
+  },
+  "p05-1": {
+    "src": "/images/portfolio/p05-1.jpg",
+    "width": 1002,
+    "height": 635,
+    "alt": "Study room with printed wardrobe shutters and a cushioned window seat"
+  },
+  "p05-2": {
+    "src": "/images/portfolio/p05-2.jpg",
+    "width": 914,
+    "height": 648,
+    "alt": "Twin study desk with two chairs and wall panel behind"
+  },
+  "p06-1": {
+    "src": "/images/portfolio/p06-1.jpg",
+    "width": 1008,
+    "height": 648,
+    "alt": "Window seat with blue cushion and storage below, next to the printed wardrobe"
+  },
+  "p06-2": {
+    "src": "/images/portfolio/p06-2.jpg",
+    "width": 701,
+    "height": 648,
+    "alt": "View along the study room from the desk towards the window seat"
+  },
+  "p07-1": {
+    "src": "/images/portfolio/p07-1.jpg",
+    "width": 1094,
+    "height": 630,
+    "alt": "Living room with low L-shaped sofa under a dark coffered beam ceiling"
+  },
+  "p07-2": {
+    "src": "/images/portfolio/p07-2.jpg",
+    "width": 932,
+    "height": 540,
+    "alt": "TV wall with arched niche, low TV unit and window seat with sheer curtains"
+  },
+  "p08-1": {
+    "src": "/images/portfolio/p08-1.jpg",
+    "width": 915,
+    "height": 540,
+    "alt": "View down the length of the living room showing the beam ceiling and window seat"
+  },
+  "p09-1": {
+    "src": "/images/portfolio/p09-1.jpg",
+    "width": 1152,
+    "height": 648,
+    "alt": "Bedroom with grey moulded wall panels, light wood bed and lounge chair"
+  },
+  "p09-2": {
+    "src": "/images/portfolio/p09-2.jpg",
+    "width": 960,
+    "height": 540,
+    "alt": "Lounge end of the bedroom with armchairs, rug and wall-mounted TV"
+  },
+  "p10-1": {
+    "src": "/images/portfolio/p10-1.jpg",
+    "width": 1152,
+    "height": 648,
+    "alt": "Bed with grey panelled wall and stone-look tall panel beside the TV unit"
+  },
+  "p10-2": {
+    "src": "/images/portfolio/p10-2.jpg",
+    "width": 1152,
+    "height": 648,
+    "alt": "Bedroom view towards the slatted wood strip and TV unit"
+  },
+  "p11-1": {
+    "src": "/images/portfolio/p11-1.jpg",
+    "width": 960,
+    "height": 540,
+    "alt": "Dining room with long table, arched mirror panels and sideboard"
+  },
+  "p11-2": {
+    "src": "/images/portfolio/p11-2.jpg",
+    "width": 1152,
+    "height": 648,
+    "alt": "Dining room with long tufted bench, wall lights and patterned floor"
+  },
+  "p12-1": {
+    "src": "/images/portfolio/p12-1.jpg",
+    "width": 960,
+    "height": 540,
+    "alt": "Close view of the dining table set in front of the arch-cut mirror wall"
+  },
+  "p12-2": {
+    "src": "/images/portfolio/p12-2.jpg",
+    "width": 1152,
+    "height": 648,
+    "alt": "Dining room with gallery wall of black and white frames"
+  },
+  "p13-1": {
+    "src": "/images/portfolio/p13-1.jpg",
+    "width": 1152,
+    "height": 648,
+    "alt": "Bedroom with black fluted headboard wall and a wall-mounted study desk"
+  },
+  "p13-2": {
+    "src": "/images/portfolio/p13-2.jpg",
+    "width": 1152,
+    "height": 648,
+    "alt": "Wall-mounted desk with floating shelves and the TV wall of the bedroom"
+  },
+  "p14-1": {
+    "src": "/images/portfolio/p14-1.jpg",
+    "width": 1152,
+    "height": 648,
+    "alt": "Bed and TV unit with dark slatted panel and wood door"
+  },
+  "p15-1": {
+    "src": "/images/portfolio/p15-1.jpg",
+    "width": 1152,
+    "height": 648,
+    "alt": "Living room with herringbone wood panel, grey wall and white sectional sofa"
+  },
+  "p15-2": {
+    "src": "/images/portfolio/p15-2.jpg",
+    "width": 1344,
+    "height": 756,
+    "alt": "Seating area with curved white sofa, oval coffee tables and round mirror wall decor"
+  },
+  "p16-1": {
+    "src": "/images/portfolio/p16-1.jpg",
+    "width": 1152,
+    "height": 648,
+    "alt": "View across the living room towards the herringbone feature and TV"
+  },
+  "p16-2": {
+    "src": "/images/portfolio/p16-2.jpg",
+    "width": 960,
+    "height": 540,
+    "alt": "Living room with black door, accent chair and padded wall panel"
+  },
+  "p17-2": {
+    "src": "/images/portfolio/p17-2.jpg",
+    "width": 1152,
+    "height": 648,
+    "alt": "Corner sofa under a framed map with vertical blinds on the windows"
+  }
+}
