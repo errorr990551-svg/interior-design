@@ -54,6 +54,16 @@ export default function App({ initialPath }) {
     }
   }, []);
 
+  // /#consultation (used by the city guide pages) opens the consultation form directly
+  useEffect(() => {
+    const openFromHash = () => {
+      if (window.location.hash === '#consultation') setIsConsultationOpen(true);
+    };
+    openFromHash();
+    window.addEventListener('hashchange', openFromHash);
+    return () => window.removeEventListener('hashchange', openFromHash);
+  }, []);
+
   // Back/forward buttons
   useEffect(() => {
     const onPopState = () => {
@@ -83,6 +93,9 @@ export default function App({ initialPath }) {
   const handleOpenConsultation = () => setIsConsultationOpen(true);
   const handleCloseConsultation = () => {
     setIsConsultationOpen(false);
+    if (window.location.hash === '#consultation') {
+      window.history.replaceState({}, '', window.location.pathname + window.location.search);
+    }
     try {
       localStorage.setItem('twobhk_seen_consultation_popup', 'true');
     } catch (_) {}

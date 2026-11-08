@@ -2,7 +2,7 @@
   "_readme": "Settings for the /interior-design/ city guides. QA blocks publishing while the author has TODOs or there is no leadUrl. disclosure is optional text shown under the byline (leave empty for none).",
   "siteUrl": "https://2bhkinteriors.in",
   "siteName": "2BHK Interiors",
-  "leadUrl": "/#contact",
+  "leadUrl": "/#consultation",
   "leadUrlParams": "",
   "author": {
     "name": "Ayush",

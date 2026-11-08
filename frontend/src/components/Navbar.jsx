@@ -73,6 +73,13 @@ export default function Navbar({ currentPage = 'home', onNavigate, onOpenConsult
               </PageLink>
             );
           })}
+          <a
+            href="/interior-design/"
+            className="transition-colors duration-200 py-1 relative group cursor-pointer text-sm font-medium hover:text-white text-neutral-300"
+          >
+            City Guides
+            <span className="absolute bottom-0 left-0 h-0.5 bg-amber-400 transition-all duration-300 w-0 group-hover:w-full"></span>
+          </a>
         </nav>
 
         {/* Action CTA */}
@@ -114,6 +121,9 @@ export default function Navbar({ currentPage = 'home', onNavigate, onOpenConsult
                 {link.name}
               </PageLink>
             ))}
+            <a href="/interior-design/" className="text-left text-lg font-medium transition-colors text-neutral-200 hover:text-white">
+              City Guides
+            </a>
             <div className="pt-4 border-t border-white/10">
               <button
                 onClick={() => {
