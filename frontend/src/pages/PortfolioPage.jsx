@@ -19,7 +19,7 @@ export default function PortfolioPage({ onOpenConsultation, onNavigateHome, onSe
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 space-y-6">
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs font-mono tracking-widest text-amber-300 uppercase">
-            <a href="/" onClick={(e) => { e.preventDefault(); onNavigateHome(); }} className="hover:underline cursor-pointer text-amber-300">
+            <a href="/" onClick={(e) => { e.preventDefault(); onNavigateHome(); }} className="inline-block py-3 -my-3 hover:underline cursor-pointer text-amber-300">
               HOME
             </a>
             <span>/</span>
@@ -33,7 +33,7 @@ export default function PortfolioPage({ onOpenConsultation, onNavigateHome, onSe
                 <span>{PORTFOLIO_ROOMS.length} ROOMS • 3D VISUALISATIONS</span>
               </div>
 
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-syne tracking-tight uppercase leading-tight text-white">
+              <h1 className="text-[clamp(1.375rem,7.2vw,1.875rem)] sm:text-5xl xl:text-6xl font-extrabold font-syne tracking-tight uppercase leading-tight text-white">
                 Residential Interior Design Portfolio
               </h1>
 

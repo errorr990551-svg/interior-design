@@ -41,16 +41,16 @@ export default function WhereWeWorkSection({ onOpenConsultation }) {
           </div>
 
           <div className="lg:col-span-6">
-            <div className="p-8 sm:p-10 rounded-3xl bg-[#141414] border border-white/10 space-y-8">
-              <h3 className="text-xl font-bold font-syne uppercase tracking-wider text-amber-300">
+            <div className="p-5 sm:p-10 rounded-3xl bg-[#141414] border border-white/10 space-y-8">
+              <h3 className="text-lg sm:text-xl font-bold font-syne uppercase tracking-wide sm:tracking-wider text-amber-300 [overflow-wrap:anywhere]">
                 Key Localities & Neighbourhoods
               </h3>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 min-[400px]:grid-cols-2 gap-3 sm:gap-4">
                 {localities.map((loc, idx) => (
-                  <div key={idx} className="flex items-center gap-3 p-3.5 rounded-xl bg-white/5 border border-white/5">
+                  <div key={idx} className="flex items-center gap-2.5 p-3 sm:p-3.5 min-w-0 rounded-xl bg-white/5 border border-white/5">
                     <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0" />
-                    <span className="text-xs sm:text-sm font-medium text-neutral-200">{loc}</span>
+                    <span className="min-w-0 text-xs sm:text-sm font-medium text-neutral-200 break-words">{loc}</span>
                   </div>
                 ))}
               </div>

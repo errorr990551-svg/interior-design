@@ -118,13 +118,13 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
 
             <address className="not-italic space-y-2 text-xs text-neutral-300 font-syne">
               {BUSINESS.phone && (
-                <a href={`tel:${BUSINESS.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 hover:text-white">
+                <a href={`tel:${BUSINESS.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 py-2 -my-2 hover:text-white">
                   <Phone className="w-3.5 h-3.5 text-amber-400" />
                   <span>{BUSINESS.phone}</span>
                 </a>
               )}
               {BUSINESS.email && (
-                <a href={`mailto:${BUSINESS.email}`} className="flex items-center gap-2 hover:text-white">
+                <a href={`mailto:${BUSINESS.email}`} className="flex items-center gap-2 py-2 -my-2 hover:text-white">
                   <Mail className="w-3.5 h-3.5 text-amber-400" />
                   <span>{BUSINESS.email}</span>
                 </a>
@@ -154,7 +154,7 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
             <div className="grid grid-cols-2 gap-6 pt-2">
               {locations.map((loc) => (
                 <div key={loc.area} className="space-y-1">
-                  <span className="text-xs font-bold font-syne text-white tracking-wider block">
+                  <span className="text-xs font-bold font-syne text-white tracking-wide lg:tracking-wider block">
                     {loc.area}
                   </span>
                   <span className="text-xs text-neutral-400 font-light block leading-normal">
@@ -167,7 +167,7 @@ export default function Footer({ onNavigate, onOpenConsultation }) {
 
           {/* Page Links */}
           <div className="md:col-span-2 space-y-4">
-            <span className="text-xs font-semibold tracking-widest uppercase text-amber-300 font-syne block">
+            <span className="text-xs font-semibold tracking-wide lg:tracking-widest uppercase text-amber-300 font-syne block">
               NAVIGATION
             </span>
             <ul className="space-y-3 pt-2">

@@ -26,7 +26,7 @@ export default function CTASection({
           <span>START YOUR JOURNEY</span>
         </div>
 
-        <h2 className="text-4xl sm:text-6xl md:text-7xl font-extrabold font-syne tracking-tight leading-tight uppercase">
+        <h2 className="text-[clamp(1.5rem,8vw,2.25rem)] sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-syne tracking-tight leading-tight uppercase">
           {headline}
         </h2>
 
@@ -47,13 +47,13 @@ export default function CTASection({
         {/* Contact Snapshot line */}
         <div className="pt-12 border-t border-white/10 flex flex-wrap items-center justify-center gap-8 text-xs sm:text-sm font-syne tracking-wider text-neutral-400 uppercase">
           {BUSINESS.phone && (
-            <a href={`tel:${BUSINESS.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 hover:text-white">
+            <a href={`tel:${BUSINESS.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 py-2 -my-2 hover:text-white">
               <Phone className="w-4 h-4 text-amber-400" />
               <span>{BUSINESS.phone}</span>
             </a>
           )}
           {BUSINESS.email && (
-            <a href={`mailto:${BUSINESS.email}`} className="flex items-center gap-2 hover:text-white normal-case">
+            <a href={`mailto:${BUSINESS.email}`} className="flex items-center gap-2 py-2 -my-2 hover:text-white normal-case">
               <Mail className="w-4 h-4 text-amber-400" />
               <span>{BUSINESS.email}</span>
             </a>

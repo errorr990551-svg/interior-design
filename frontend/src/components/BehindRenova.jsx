@@ -111,7 +111,7 @@ export default function BehindRenova({ onLearnMore, onSelectService }) {
             <div className="pt-2">
               <button
                 onClick={onLearnMore}
-                className="group inline-flex items-center gap-3 text-xs sm:text-sm font-bold tracking-widest uppercase text-amber-300 border-b border-amber-400/40 pb-1 hover:text-amber-200 hover:border-amber-300 transition-all cursor-pointer"
+                className="group relative inline-flex items-center gap-3 after:absolute after:-inset-x-2 after:-inset-y-3 text-xs sm:text-sm font-bold tracking-widest uppercase text-amber-300 border-b border-amber-400/40 pb-1 hover:text-amber-200 hover:border-amber-300 transition-all cursor-pointer"
               >
                 <span>Learn More About Our Story & Team</span>
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
@@ -181,7 +181,7 @@ export default function BehindRenova({ onLearnMore, onSelectService }) {
                 {/* Card Title & Content */}
                 <div className="p-8 space-y-4 flex-1 flex flex-col justify-between">
                   <div className="space-y-3">
-                    <h3 className="text-xl sm:text-2xl font-bold tracking-tight font-syne text-white group-hover:text-amber-200 transition-colors">
+                    <h3 className="text-xl sm:text-2xl md:text-xl lg:text-2xl font-bold tracking-tight font-syne text-white group-hover:text-amber-200 transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed font-light">

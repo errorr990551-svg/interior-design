@@ -12,7 +12,7 @@ export default function NotFoundPage({ onNavigate }) {
     <section className="min-h-[70vh] flex items-center pt-32 pb-24 bg-[#0e0e0e] text-white">
       <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 space-y-6">
         <span className="text-xs font-mono tracking-widest text-amber-300 uppercase">Error 404</span>
-        <h1 className="text-4xl sm:text-6xl font-extrabold font-syne tracking-tight uppercase leading-tight">
+        <h1 className="text-[clamp(1.5rem,8vw,2.25rem)] sm:text-5xl md:text-6xl font-extrabold font-syne tracking-tight uppercase leading-tight">
           Page not found
         </h1>
         <p className="text-base sm:text-lg text-neutral-300 font-light leading-relaxed">

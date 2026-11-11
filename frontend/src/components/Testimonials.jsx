@@ -33,14 +33,14 @@ export default function Testimonials() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-end min-h-80">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end min-h-80">
           {/* Left Column: TESTIMONIALS Tag, H2 & Counter */}
-          <div className="md:col-span-3 flex flex-col justify-between h-full space-y-8">
+          <div className="lg:col-span-3 flex flex-col justify-between h-full space-y-8">
             <div className="space-y-3">
               <span className="text-xs font-semibold tracking-widest uppercase text-amber-300 font-syne block">
                 TESTIMONIALS
               </span>
-              <h2 className="text-2xl sm:text-3xl font-bold font-syne tracking-tight text-white">
+              <h2 className="text-2xl sm:text-3xl lg:text-2xl xl:text-3xl font-bold font-syne tracking-tight text-white">
                 What Homeowners Say
               </h2>
             </div>
@@ -51,8 +51,8 @@ export default function Testimonials() {
           </div>
 
           {/* Right Column: Quote & Author & Slider Arrows */}
-          <div className="md:col-span-9 space-y-12">
-            <blockquote className="text-2xl sm:text-4xl md:text-5xl font-light font-syne leading-tight text-neutral-100 max-w-4xl">
+          <div className="lg:col-span-9 space-y-12">
+            <blockquote className="text-2xl sm:text-4xl lg:text-5xl font-light font-syne leading-tight text-neutral-100 max-w-4xl">
               “{testimonials[activeTestimonial].quote}”
             </blockquote>
 

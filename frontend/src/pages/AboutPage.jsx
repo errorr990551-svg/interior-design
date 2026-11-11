@@ -46,14 +46,14 @@ export default function AboutPage({ onOpenConsultation, onNavigateHome }) {
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 space-y-6">
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs font-mono tracking-widest text-amber-300 uppercase">
-            <a href="/" onClick={(e) => { e.preventDefault(); onNavigateHome(); }} className="hover:underline cursor-pointer">
+            <a href="/" onClick={(e) => { e.preventDefault(); onNavigateHome(); }} className="inline-block py-3 -my-3 hover:underline cursor-pointer">
               HOME
             </a>
             <span>/</span>
             <span className="text-white font-bold">ABOUT THE STUDIO</span>
           </nav>
 
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold font-syne tracking-tight uppercase max-w-4xl leading-tight">
+          <h1 className="text-[clamp(1.5rem,8vw,2.25rem)] sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-syne tracking-tight uppercase max-w-4xl leading-tight">
             Designed Around How You Live
           </h1>
 

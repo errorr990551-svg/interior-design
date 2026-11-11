@@ -34,7 +34,7 @@ export default function Hero({ onOpenConsultation, onNavigateToWork }) {
             Residential Interior Designer in Bangalore
           </h1>
 
-          <p className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-white uppercase font-syne leading-[1.02] drop-shadow-2xl">
+          <p className="text-[clamp(1.5rem,8vw,2.25rem)] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold tracking-tight text-white uppercase font-syne leading-[1.02] drop-shadow-2xl">
             TIMELESS INTERIORS, <br />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-amber-100 via-white to-amber-200">
               DESIGNED AROUND YOU
@@ -74,7 +74,7 @@ export default function Hero({ onOpenConsultation, onNavigateToWork }) {
 
           <button
             onClick={scrollToExplore}
-            className="flex items-center gap-2 hover:text-white transition-colors cursor-pointer group"
+            className="flex items-center gap-2 py-3 -my-3 hover:text-white transition-colors cursor-pointer group"
           >
             <span>Explore Our Process & Studio</span>
             <ChevronDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
